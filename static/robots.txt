@@ -1,0 +1,3 @@
+User-Agent: *
+Sitemap: https://bevbox.com.ua/sitemap.xml
+Host: bevbox.com.ua
