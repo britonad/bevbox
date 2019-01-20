@@ -15,6 +15,7 @@ class Common:
     DEBUG = False
     SECRET_KEY = os.environ.get('SECRET_KEY')
     BABEL_TRANSLATION_DIRECTORIES = os.path.join(BASE_DIR, 'translations')
+    BABEL_DEFAULT_LOCALE = 'uk'
     LANGUAGES = {
         'en': 'En',
         'uk': 'Uk',
