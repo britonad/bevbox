@@ -60,7 +60,9 @@ def create_app() -> Flask:
             return abort(404)
 
     # Register blueprints
+    from admin.views import admin_bp
     from app.views import app_bp
+    application.register_blueprint(admin_bp)
     application.register_blueprint(app_bp)
     application.register_blueprint(app_bp, url_prefix='/<lang>')
 
