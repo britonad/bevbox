@@ -1,486 +1,1100 @@
 {% extends 'base.html' %}
 
-{% block title %}{{ _('Bevbox - a home of taste & flavor') }}{% endblock %}
-
+{% block title %}{{ _("Bevbox - a home of taste & flavor") }}{% endblock %}
 {% block og_url %}https://bevbox.com.ua{% endblock %}
-{% block og_title %}{{ _('Bevbox - a home of taste & flavor') }}{% endblock %}
-{% block og_description %}{{ _('Bevbox is a marvelous mood for the evening at the expense of good whiskey, cigar and entertaining reading by subscription.')}}{% endblock %}
-{% block og_image %}{{ url_for('static', filename='images/tild3737-3966-4530-b862-633832373434__adam-jaime-119551-un.jpg') }}{% endblock %}
+{% block og_title %}{{ _("Bevbox - a home of taste & flavor") }}{% endblock %}
+{% block og_description %}
+    {{ _("Bevbox is a marvelous mood for the evening at the expense of good whiskey, cigar and entertaining reading by subscription.") }}
+{% endblock %}
+{% block og_image %}
+    {{ url_for('static', filename='images/tild3737-3966-4530-b862-633832373434__adam-jaime-119551-un.jpg') }}
+{% endblock %}
 
 {% block body %}
 <body class="t-body" style="margin:0;">
-    <!--allrecords-->
-    <div id="allrecords" class="t-records" data-hook="blocks-collection-content-node"
-         data-tilda-page-alias="home">
-        <div id="rec77476753" class="r t-rec" style=" " data-animationappear="off" data-record-type="461">
-            <!-- T461 -->
-            <div id="nav77476753marker"></div>
-            <div class="t461__mobile">
-                <div class="t461__mobile_container">
-                    <div class="t461__mobile_text t-name t-name_md" field="text">&nbsp;</div>
-                    <div class="t461__mobile_burger"> <span></span> <span></span> <span></span> <span></span> </div>
-                </div>
-            </div>
-            <div id="nav77476753" class="t461 t461__hidden t461__positionabsolute " style="background-color: rgba(20,20,20,0.0); "
-                data-bgcolor-hex="#141414" data-bgcolor-rgba="rgba(20,20,20,0.0)" data-navmarker="nav77476753marker"
-                data-appearoffset="" data-bgopacity-two="100" data-menushadow="0" data-bgopacity="0.0"
-                data-bgcolor-rgba-afterscroll="rgba(20,20,20,1)" data-menu-items-align="center" data-menu="yes">
-                <div class="t461__maincontainer ">
-                    <div class="t461__topwrapper" style="height:130px;">
-                        <div class="t461__logowrapper">
-                            <div class="t461__logowrapper2">
-                                <div style="display: block;"> <img src="{{ url_for('static', filename='images/icon.svg') }}"
-                                        class="t461__imglogo t461__imglogomobile" imgfield="img" style="max-width: 150px; width: 150px;"
-                                        alt="Bevbox"> </div>
-                            </div>
-                        </div>
-                        <div class="t461__listwrapper t461__mobilelist">
-                            <ul class="t461__list">
-                                <li class="t461__list_item"><a class="t-menu__link-item" href="#howto" style="color:#ffffff;font-size:20px;font-weight:600;"
-                                        data-menu-item-number="1">{{ _('How it works') }}</a></li>
-                                <li class="t461__list_item"><a class="t-menu__link-item" href="#features" style="color:#ffffff;font-size:20px;font-weight:600;"
-                                        data-menu-item-number="2">{{ _('Features') }}</a></li>
-                                <li class="t461__list_item"><a class="t-menu__link-item" href="#subscriptions" style="color:#ffffff;font-size:20px;font-weight:600;"
-                                        data-menu-item-number="3">{{ _('Subscriptions') }}</a></li>
-                                <li class="t461__list_item"><a class="t-menu__link-item" href="#about" style="color:#ffffff;font-size:20px;font-weight:600;"
-                                        data-menu-item-number="4">{{ _('About us') }}</a></li>
-                                <li class="t461__list_item"><a class="t-menu__link-item" href="#contacts" style="color:#ffffff;font-size:20px;font-weight:600;"
-                                        data-menu-item-number="5">{{ _('Contacts') }}</a></li>
-                            </ul>
-                        </div>
-                        <div class="t461__alladditional">
-                            <div class="t461__leftwrapper" style=" padding-right:125px;">
-                                <div class="t461__additionalwrapper"> </div>
-                            </div>
-                            <div class="t461__rightwrapper" style=" padding-left:125px;">
-                                <div class="t461__additionalwrapper">
-                                    <div class="t461__additional_langs t461__additionalitem">
-                                        <div class="t461__additional_buttons_wrap">
-                                            <div class="t461__additional_langs_lang"><a style="color:#ffffff;font-size:20px;font-weight:600;"
-                                                    href="{{ url_for('app.home', lang='uk') }}">Uk</a></div>
-                                             <div class="t461__additional_langs_lang"><a style="color:#ffffff;font-size:20px;font-weight:600;"
-                                                    href="{{ url_for('app.home', lang='en') }}">En</a></div>
-                                            <div class="t461__additional_langs_lang"><a style="color:#ffffff;font-size:20px;font-weight:600;"
-                                                    href="{{ url_for('app.home', lang='ru') }}">Ru</a></div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="t461__middlelinewrapper">
-                        <div class="t461__linewrapper">
-                            <hr class="t461__horizontalline" style=" background-color:#ffffff; ">
-                        </div>
-                    </div>
-                    <div class="t461__bottomwrapper t461__menualign_center" style=" ">
-                        <div class="t461__listwrapper t461__desktoplist">
-                            <ul class="t461__list">
-                                <li class="t461__list_item"><a class="t-menu__link-item" href="#howto" style="color:#ffffff;font-size:20px;font-weight:600;"
-                                        data-menu-item-number="1">{{ _('How it works') }}</a></li>
-                                <li class="t461__list_item"><a class="t-menu__link-item" href="#features" style="color:#ffffff;font-size:20px;font-weight:600;"
-                                        data-menu-item-number="2">{{ _('Features') }}</a></li>
-                                <li class="t461__list_item"><a class="t-menu__link-item" href="#subscriptions" style="color:#ffffff;font-size:20px;font-weight:600;"
-                                        data-menu-item-number="3">{{ _('Subscriptions') }}</a></li>
-                                <li class="t461__list_item"><a class="t-menu__link-item" href="#about" style="color:#ffffff;font-size:20px;font-weight:600;"
-                                        data-menu-item-number="4">{{ _('About us') }}</a></li>
-                                <li class="t461__list_item"><a class="t-menu__link-item" href="#contacts" style="color:#ffffff;font-size:20px;font-weight:600;"
-                                        data-menu-item-number="5">{{ _('Contacts') }}</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <style>@media screen and (max-width: 980px) { #rec77476753 .t461__leftcontainer{ padding: 20px; }
-               }
-               @media screen and (max-width: 980px) { #rec77476753 .t461__imglogo{ padding: 20px 0; }
-               }
-            </style>
-            <script type="text/javascript"> $(document).ready(function () { t461_highlight(); });
-                $(window).resize(function () {
-                    t461_setBg('77476753');
-                });
-                $(document).ready(function () {
-                    t461_setBg('77476753');
-                });
-            </script>
-            <script type="text/javascript"> $(document).ready(function () { t461_createMobileMenu('77476753'); }); </script>
-            <style>#rec77476753 .t-menu__link-item{ -webkit-transition: color 0.3s ease-in-out, opacity 0.3s ease-in-out; transition: color 0.3s ease-in-out, opacity 0.3s ease-in-out;	}
-               #rec77476753 .t-menu__link-item.t-active{ color:#b87528 !important; opacity:1 !important;}
-               @supports (overflow:-webkit-marquee) and (justify-content:inherit)
-               { #rec77476753 .t-menu__link-item, #rec77476753 .t-menu__link-item.t-active { opacity: 1 !important; }
-               }
-            </style>
-            <!--[if IE 8]>
-            <style>#rec77476753 .t461 { filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#D9141414', endColorstr='#D9141414');
-               }
-            </style>
-            <![endif]-->
+  <!--allrecords-->
+  <div
+    id="allrecords"
+    class="t-records"
+    data-hook="blocks-collection-content-node"
+    data-tilda-page-alias="home"
+  >
+    <div
+      id="rec77476753"
+      class="r t-rec"
+      style=" "
+      data-animationappear="off"
+      data-record-type="461"
+    >
+      <!-- T461 -->
+      <div id="nav77476753marker"></div>
+      <div class="t461__mobile">
+        <div class="t461__mobile_container">
+          <div class="t461__mobile_text t-name t-name_md" field="text">
+            &nbsp;
+          </div>
+          <div class="t461__mobile_burger">
+            <span></span> <span></span> <span></span> <span></span>
+          </div>
         </div>
-        <div id="rec77476754" class="r t-rec" style=" " data-animationappear="off" data-record-type="46">
-            <!-- cover -->
-            <div class="t-cover" id="recorddiv77476754" bgimgfield="img" style="height:100vh; background-image:url('{{ url_for('static', filename='images/tild6466-3931-4433-b337-613634623735__-__resize__20x__adam-jaime-119551-un.jpg') }}');">
-                <div class="t-cover__carrier" id="coverCarry77476754" data-content-cover-id="77476754"
-                    data-content-cover-bg="{{ url_for('static', filename='images/tild6466-3931-4433-b337-613634623735__adam-jaime-119551-un.jpg') }}"
-                    data-content-cover-height="100vh" data-content-cover-parallax="fixed" style="height:100vh; "></div>
-                <div class="t-cover__filter" style="height:100vh;background-image: -moz-linear-gradient(top, rgba(0,0,0,0.70), rgba(0,0,0,0.70));background-image: -webkit-linear-gradient(top, rgba(0,0,0,0.70), rgba(0,0,0,0.70));background-image: -o-linear-gradient(top, rgba(0,0,0,0.70), rgba(0,0,0,0.70));background-image: -ms-linear-gradient(top, rgba(0,0,0,0.70), rgba(0,0,0,0.70));background-image: linear-gradient(top, rgba(0,0,0,0.70), rgba(0,0,0,0.70));filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#4c000000', endColorstr='#4c000000');"></div>
-                <div class="t-container">
-                    <div class="t-cover__wrapper t-valign_middle" style="height:100vh;">
-                        <div class="t032">
-                            <div class="t032__wrapper" data-hook-content="covercontent">
-                                <h1 class="t032__title t-title t-title_md" style="" field="title">
-                                    {{ _('Try to experience increadiable taste & flavor')}}
-                                </h1>
-                                <div class="t-row">
-                                    <div class="t-col t-col_2 t-prefix_5">
-                                        <div class="t032__line" style=""></div>
-                                    </div>
-                                </div>
-                                <div class="t-row">
-                                    <div class="t-col t-col_10 t-prefix_1">
-                                        <div class="t032__descr t-descr t-descr_lg" style="" field="descr">
-                                            {{ _('Bevbox is a
-                                            marvelous mood for the evening at the expense of good whiskey, cigar and
-                                            entertaining reading by subscription.') }}
-                                        </div>
-                                    </div>
-                                </div>
-                                <span class="space"></span>
-                            </div>
-                        </div>
-                    </div>
+      </div>
+      <div
+        id="nav77476753"
+        class="t461 t461__hidden t461__positionabsolute "
+        style="background-color: rgba(20,20,20,0.0); "
+        data-bgcolor-hex="#141414"
+        data-bgcolor-rgba="rgba(20,20,20,0.0)"
+        data-navmarker="nav77476753marker"
+        data-appearoffset=""
+        data-bgopacity-two="100"
+        data-menushadow="0"
+        data-bgopacity="0.0"
+        data-bgcolor-rgba-afterscroll="rgba(20,20,20,1)"
+        data-menu-items-align="center"
+        data-menu="yes"
+      >
+        <div class="t461__maincontainer ">
+          <div class="t461__topwrapper" style="height:130px;">
+            <div class="t461__logowrapper">
+              <div class="t461__logowrapper2">
+                <div style="display: block;">
+                  <img
+                    src="{{ url_for('static', filename='images/icon.svg') }}"
+                    class="t461__imglogo t461__imglogomobile"
+                    imgfield="img"
+                    style="max-width: 150px; width: 150px;"
+                    alt="Bevbox"
+                  />
                 </div>
+              </div>
             </div>
-        </div>
-        <div id="rec81503375" class="r t-rec" style=" " data-record-type="215"><a name="howto" style="font-size:0;"></a></div>
-        <div id="rec81502210" class="r t-rec t-rec_pt_150 t-rec_pb_150" style="padding-top:150px;padding-bottom:150px; "
-            data-record-type="565">
-            <!-- T565 -->
-            <div class="t565">
-                <div class="t-section__container t-container">
-                    <div class="t-col t-col_12">
-                        <div class="t-section__topwrapper t-align_center">
-                            <div class="t-section__title t-title t-title_xs t-animate" data-animate-style="fadein"
-                                data-animate-group="yes" field="btitle">How it works</div>
-                        </div>
+            <div class="t461__listwrapper t461__mobilelist">
+              <ul class="t461__list">
+                <li class="t461__list_item">
+                  <a
+                    class="t-menu__link-item"
+                    href="#howto"
+                    style="color:#ffffff;font-size:20px;font-weight:600;"
+                    data-menu-item-number="1"
+                    >{{ _("How it works") }}</a
+                  >
+                </li>
+                <li class="t461__list_item">
+                  <a
+                    class="t-menu__link-item"
+                    href="#features"
+                    style="color:#ffffff;font-size:20px;font-weight:600;"
+                    data-menu-item-number="2"
+                    >{{ _("Features") }}</a
+                  >
+                </li>
+                <li class="t461__list_item">
+                  <a
+                    class="t-menu__link-item"
+                    href="#subscriptions"
+                    style="color:#ffffff;font-size:20px;font-weight:600;"
+                    data-menu-item-number="3"
+                    >{{ _("Subscriptions") }}</a
+                  >
+                </li>
+                <li class="t461__list_item">
+                  <a
+                    class="t-menu__link-item"
+                    href="#about"
+                    style="color:#ffffff;font-size:20px;font-weight:600;"
+                    data-menu-item-number="4"
+                    >{{ _("About us") }}</a
+                  >
+                </li>
+                <li class="t461__list_item">
+                  <a
+                    class="t-menu__link-item"
+                    href="#contacts"
+                    style="color:#ffffff;font-size:20px;font-weight:600;"
+                    data-menu-item-number="5"
+                    >{{ _("Contacts") }}</a
+                  >
+                </li>
+              </ul>
+            </div>
+            <div class="t461__alladditional">
+              <div class="t461__leftwrapper" style=" padding-right:125px;">
+                <div class="t461__additionalwrapper"></div>
+              </div>
+              <div class="t461__rightwrapper" style=" padding-left:125px;">
+                <div class="t461__additionalwrapper">
+                  <div class="t461__additional_langs t461__additionalitem">
+                    <div class="t461__additional_buttons_wrap">
+                      <div class="t461__additional_langs_lang">
+                        <a
+                          style="color:#ffffff;font-size:20px;font-weight:600;"
+                          href="{{ url_for('app.home', lang='uk') }}"
+                          >Uk</a
+                        >
+                      </div>
+                      <div class="t461__additional_langs_lang">
+                        <a
+                          style="color:#ffffff;font-size:20px;font-weight:600;"
+                          href="{{ url_for('app.home', lang='en') }}"
+                          >En</a
+                        >
+                      </div>
+                      <div class="t461__additional_langs_lang">
+                        <a
+                          style="color:#ffffff;font-size:20px;font-weight:600;"
+                          href="{{ url_for('app.home', lang='ru') }}"
+                          >Ru</a
+                        >
+                      </div>
                     </div>
+                  </div>
                 </div>
-                <div class="t-container t565__container">
-                    <div class="t565__item">
-                        <div class="t-width t-width_8 t565__mainblock">
-                            <div class="t565__col">
-                                <div class="t565__linewrapper t-animate" data-animate-style="fadein" data-animate-group="yes"
-                                    data-animate-order="1">
-                                    <div class="t565__line" style="width: 2px;"></div>
-                                    <div class="t565__circle" style=" border-width: 2px; ">
-                                        <div class="t565__number t-name t-name_md" style="">1</div>
-                                    </div>
-                                </div>
-                                <div class="t565__block t-animate" data-animate-style="fadeinup" data-animate-chain="yes">
-                                    <div class="t565__title t-name t-name_lg" field="li_title__1479137044697" style=""><a
-                                            href="#subscriptions" style="">Subscribe</a></div>
-                                    <div class="t565__descr t-text t-text_xs" field="li_descr__1479137044697" style="">
-                                        <div style="font-size:18px;" data-customstyle="yes">Take a look at our <a href="#features"
-                                                style="">features</a>, choose the most appropriate subscription type
-                                            for yourself and pay it.</div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+              </div>
+            </div>
+          </div>
+          <div class="t461__middlelinewrapper">
+            <div class="t461__linewrapper">
+              <hr
+                class="t461__horizontalline"
+                style=" background-color:#ffffff; "
+              />
+            </div>
+          </div>
+          <div class="t461__bottomwrapper t461__menualign_center" style=" ">
+            <div class="t461__listwrapper t461__desktoplist">
+              <ul class="t461__list">
+                <li class="t461__list_item">
+                  <a
+                    class="t-menu__link-item"
+                    href="#howto"
+                    style="color:#ffffff;font-size:20px;font-weight:600;"
+                    data-menu-item-number="1"
+                    >{{ _("How it works") }}</a
+                  >
+                </li>
+                <li class="t461__list_item">
+                  <a
+                    class="t-menu__link-item"
+                    href="#features"
+                    style="color:#ffffff;font-size:20px;font-weight:600;"
+                    data-menu-item-number="2"
+                    >{{ _("Features") }}</a
+                  >
+                </li>
+                <li class="t461__list_item">
+                  <a
+                    class="t-menu__link-item"
+                    href="#subscriptions"
+                    style="color:#ffffff;font-size:20px;font-weight:600;"
+                    data-menu-item-number="3"
+                    >{{ _("Subscriptions") }}</a
+                  >
+                </li>
+                <li class="t461__list_item">
+                  <a
+                    class="t-menu__link-item"
+                    href="#about"
+                    style="color:#ffffff;font-size:20px;font-weight:600;"
+                    data-menu-item-number="4"
+                    >{{ _("About us") }}</a
+                  >
+                </li>
+                <li class="t461__list_item">
+                  <a
+                    class="t-menu__link-item"
+                    href="#contacts"
+                    style="color:#ffffff;font-size:20px;font-weight:600;"
+                    data-menu-item-number="5"
+                    >{{ _("Contacts") }}</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <style>
+        @media screen and (max-width: 980px) {
+          #rec77476753 .t461__leftcontainer {
+            padding: 20px;
+          }
+        }
+        @media screen and (max-width: 980px) {
+          #rec77476753 .t461__imglogo {
+            padding: 20px 0;
+          }
+        }
+      </style>
+      <script type="text/javascript">
+        $(document).ready(function() {
+          t461_highlight();
+        });
+        $(window).resize(function() {
+          t461_setBg("77476753");
+        });
+        $(document).ready(function() {
+          t461_setBg("77476753");
+        });
+      </script>
+      <script type="text/javascript">
+        $(document).ready(function() {
+          t461_createMobileMenu("77476753");
+        });
+      </script>
+      <style>
+        #rec77476753 .t-menu__link-item {
+          -webkit-transition: color 0.3s ease-in-out, opacity 0.3s ease-in-out;
+          transition: color 0.3s ease-in-out, opacity 0.3s ease-in-out;
+        }
+        #rec77476753 .t-menu__link-item.t-active {
+          color: #b87528 !important;
+          opacity: 1 !important;
+        }
+        @supports (overflow: -webkit-marquee) and (justify-content: inherit) {
+          #rec77476753 .t-menu__link-item,
+          #rec77476753 .t-menu__link-item.t-active {
+            opacity: 1 !important;
+          }
+        }
+      </style>
+      <!--[if IE 8]>
+        <style>
+          #rec77476753 .t461 {
+            filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#D9141414', endColorstr='#D9141414');
+          }
+        </style>
+      <![endif]-->
+    </div>
+    <div
+      id="rec77476754"
+      class="r t-rec"
+      style=" "
+      data-animationappear="off"
+      data-record-type="46"
+    >
+      <!-- cover -->
+      <div
+        class="t-cover"
+        id="recorddiv77476754"
+        bgimgfield="img"
+        style="height:100vh; background-image:url('{{ url_for('static', filename='images/tild6466-3931-4433-b337-613634623735__-__resize__20x__adam-jaime-119551-un.jpg') }}');"
+      >
+        <div
+          class="t-cover__carrier"
+          id="coverCarry77476754"
+          data-content-cover-id="77476754"
+          data-content-cover-bg="{{ url_for('static', filename='images/tild6466-3931-4433-b337-613634623735__adam-jaime-119551-un.jpg') }}"
+          data-content-cover-height="100vh"
+          data-content-cover-parallax="fixed"
+          style="height:100vh; "
+        ></div>
+        <div
+          class="t-cover__filter"
+          style="height:100vh;background-image: -moz-linear-gradient(top, rgba(0,0,0,0.70), rgba(0,0,0,0.70));background-image: -webkit-linear-gradient(top, rgba(0,0,0,0.70), rgba(0,0,0,0.70));background-image: -o-linear-gradient(top, rgba(0,0,0,0.70), rgba(0,0,0,0.70));background-image: -ms-linear-gradient(top, rgba(0,0,0,0.70), rgba(0,0,0,0.70));background-image: linear-gradient(top, rgba(0,0,0,0.70), rgba(0,0,0,0.70));filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#4c000000', endColorstr='#4c000000');"
+        ></div>
+        <div class="t-container">
+          <div class="t-cover__wrapper t-valign_middle" style="height:100vh;">
+            <div class="t032">
+              <div class="t032__wrapper" data-hook-content="covercontent">
+                <h1
+                  class="t032__title t-title t-title_md"
+                  style=""
+                  field="title"
+                >
+                  {{ _("Try to experience incredible taste & flavor") }}
+                </h1>
+                <div class="t-row">
+                  <div class="t-col t-col_2 t-prefix_5">
+                    <div class="t032__line" style=""></div>
+                  </div>
+                </div>
+                <div class="t-row">
+                  <div class="t-col t-col_10 t-prefix_1">
+                    <div
+                      class="t032__descr t-descr t-descr_lg"
+                      style=""
+                      field="descr"
+                    >
+                      {{
+                        _(
+                          "Bevbox is a marvelous mood for the evening at the expense of good whiskey, cigar and
+                           entertaining reading by subscription."
+                        )
+                      }}
                     </div>
-                    <div class="t565__item">
-                        <div class="t-width t-width_8 t565__mainblock">
-                            <div class="t565__col t565__flipped">
-                                <div class="t565__linewrapper t-animate" data-animate-style="fadein" data-animate-group="yes"
-                                    data-animate-order="1">
-                                    <div class="t565__line" style="width: 2px;"></div>
-                                    <div class="t565__circle" style=" border-width: 2px; ">
-                                        <div class="t565__number t-name t-name_md" style="">2</div>
-                                    </div>
-                                </div>
-                                <div class="t565__block-flipped t-animate" data-animate-style="fadeinup"
-                                    data-animate-chain="yes">
-                                    <div class="t565__title t-name t-name_lg" field="li_title__1479137356907" style="">Packing
-                                        &amp; sending</div>
-                                    <div class="t565__descr t-text t-text_xs" field="li_descr__1479137356907" style="">
-                                        <div style="font-size:18px;" data-customstyle="yes">After we receive a
+                  </div>
+                </div>
+                <span class="space"></span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="rec81503375" class="r t-rec" style=" " data-record-type="215">
+      <a name="howto" style="font-size:0;"></a>
+    </div>
+    <div
+      id="rec81502210"
+      class="r t-rec t-rec_pt_150 t-rec_pb_150"
+      style="padding-top:150px;padding-bottom:150px; "
+      data-record-type="565"
+    >
+      <!-- T565 -->
+      <div class="t565">
+        <div class="t-section__container t-container">
+          <div class="t-col t-col_12">
+            <div class="t-section__topwrapper t-align_center">
+              <div
+                class="t-section__title t-title t-title_xs t-animate"
+                data-animate-style="fadein"
+                data-animate-group="yes"
+                field="btitle"
+              >
+                {{ _("How it works") }}
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="t-container t565__container">
+          <div class="t565__item">
+            <div class="t-width t-width_8 t565__mainblock">
+              <div class="t565__col">
+                <div
+                  class="t565__linewrapper t-animate"
+                  data-animate-style="fadein"
+                  data-animate-group="yes"
+                  data-animate-order="1"
+                >
+                  <div class="t565__line" style="width: 2px;"></div>
+                  <div class="t565__circle" style=" border-width: 2px; ">
+                    <div class="t565__number t-name t-name_md" style="">1</div>
+                  </div>
+                </div>
+                <div
+                  class="t565__block t-animate"
+                  data-animate-style="fadeinup"
+                  data-animate-chain="yes"
+                >
+                  <div
+                    class="t565__title t-name t-name_lg"
+                    field="li_title__1479137044697"
+                    style=""
+                  >
+                    <a href="#subscriptions" style="">{{ _("Subscribe") }}</a>
+                  </div>
+                  <div
+                    class="t565__descr t-text t-text_xs"
+                    field="li_descr__1479137044697"
+                    style=""
+                  >
+                    <div style="font-size:18px;" data-customstyle="yes">
+                      {{ _("Take a look at our") }}
+                      <a href="#features" style="">{{ _("features") }}</a
+                      >,
+                      {{
+                        _(
+                          "choose the most appropriate subscription type for yourself and pay it."
+                        )
+                      }}
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="t565__item">
+            <div class="t-width t-width_8 t565__mainblock">
+              <div class="t565__col t565__flipped">
+                <div
+                  class="t565__linewrapper t-animate"
+                  data-animate-style="fadein"
+                  data-animate-group="yes"
+                  data-animate-order="1"
+                >
+                  <div class="t565__line" style="width: 2px;"></div>
+                  <div class="t565__circle" style=" border-width: 2px; ">
+                    <div class="t565__number t-name t-name_md" style="">2</div>
+                  </div>
+                </div>
+                <div
+                  class="t565__block-flipped t-animate"
+                  data-animate-style="fadeinup"
+                  data-animate-chain="yes"
+                >
+                  <div
+                    class="t565__title t-name t-name_lg"
+                    field="li_title__1479137356907"
+                    style=""
+                  >
+                    {{ _("Packing &amp; sending") }}
+                  </div>
+                  <div
+                    class="t565__descr t-text t-text_xs"
+                    field="li_descr__1479137356907"
+                    style=""
+                  >
+                    <div style="font-size:18px;" data-customstyle="yes">
+                      {{
+                        _(
+                          "After we receive a
                                             successful confirmation of the subscription payment, we are going to pack a
                                             box of whiskey, a cigar, and a magazine according to your preferences.
                                             Nonetheless, it'll be sent on the next month. E.g.: if you subscribed in
-                                            January, we'll be sent a box on the first dates of February.</div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                                            January, we'll be sent a box on the first dates of February."
+                        )
+                      }}
                     </div>
-                    <div class="t565__item">
-                        <div class="t-width t-width_8 t565__mainblock">
-                            <div class="t565__col">
-                                <div class="t565__linewrapper t-animate" data-animate-style="fadein" data-animate-group="yes"
-                                    data-animate-order="1">
-                                    <div class="t565__line" style="width: 2px;"></div>
-                                    <div class="t565__circle" style=" border-width: 2px; ">
-                                        <div class="t565__number t-name t-name_md" style="">3</div>
-                                    </div>
-                                </div>
-                                <div class="t565__block t-animate" data-animate-style="fadeinup" data-animate-chain="yes">
-                                    <div class="t565__title t-name t-name_lg" field="li_title__1479137790652" style="">Receiving</div>
-                                    <div class="t565__descr t-text t-text_xs" field="li_descr__1479137790652" style="">
-                                        <div style="font-size:18px;" data-customstyle="yes">We send you a New Post
-                                            declaration number, you receive it. Moreover, shipping is free. That's it.</div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                  </div>
                 </div>
+              </div>
             </div>
-        </div>
-        <div id="rec80722124" class="r t-rec" style=" " data-record-type="215"><a name="features" style="font-size:0;"></a></div>
-        <div id="rec80722183" class="r t-rec t-rec_pt_150 t-rec_pb_150" style="padding-top:150px;padding-bottom:150px; "
-            data-record-type="510">
-            <!-- t510 -->
-            <div class="t510">
-                <div class="t-section__container t-container">
-                    <div class="t-col t-col_12">
-                        <div class="t-section__topwrapper t-align_center">
-                            <div class="t-section__title t-title t-title_xs t-animate" data-animate-style="fadein"
-                                data-animate-group="yes" field="btitle">Explore our features</div>
-                        </div>
-                    </div>
+          </div>
+          <div class="t565__item">
+            <div class="t-width t-width_8 t565__mainblock">
+              <div class="t565__col">
+                <div
+                  class="t565__linewrapper t-animate"
+                  data-animate-style="fadein"
+                  data-animate-group="yes"
+                  data-animate-order="1"
+                >
+                  <div class="t565__line" style="width: 2px;"></div>
+                  <div class="t565__circle" style=" border-width: 2px; ">
+                    <div class="t565__number t-name t-name_md" style="">3</div>
+                  </div>
                 </div>
-                <div class="t-container">
-                    <div class="t-col t-col_8 t-prefix_2 t-item t-animate" data-animate-style="fadeinup"
-                        data-animate-chain="yes">
-                        <div class="t-cell t-valign_top">
-                            <div class="t510__circle t-heading t-valign_top" style=" color:#202124;; border: 2px solid #5b5d63; ">1</div>
-                        </div>
-                        <div class="t510__textwrapper t-cell t-valign_top" style="">
-                            <div class="t-name t-name_md t510__bottommargin" style="" field="li_title__1476966581869">Uniqueness</div>
-                            <div class="t-descr t-descr_sm" style="" field="li_descr__1476966581869">Each time you
+                <div
+                  class="t565__block t-animate"
+                  data-animate-style="fadeinup"
+                  data-animate-chain="yes"
+                >
+                  <div
+                    class="t565__title t-name t-name_lg"
+                    field="li_title__1479137790652"
+                    style=""
+                  >
+                    {{ _("Receiving") }}
+                  </div>
+                  <div
+                    class="t565__descr t-text t-text_xs"
+                    field="li_descr__1479137790652"
+                    style=""
+                  >
+                    <div style="font-size:18px;" data-customstyle="yes">
+                      {{
+                        _(
+                          "We send you a New Post
+                                            declaration number, you receive it. Moreover, shipping is free. That's it"
+                        )
+                      }}.
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="rec80722124" class="r t-rec" style=" " data-record-type="215">
+      <a name="features" style="font-size:0;"></a>
+    </div>
+    <div
+      id="rec80722183"
+      class="r t-rec t-rec_pt_150 t-rec_pb_150"
+      style="padding-top:150px;padding-bottom:150px; "
+      data-record-type="510"
+    >
+      <!-- t510 -->
+      <div class="t510">
+        <div class="t-section__container t-container">
+          <div class="t-col t-col_12">
+            <div class="t-section__topwrapper t-align_center">
+              <div
+                class="t-section__title t-title t-title_xs t-animate"
+                data-animate-style="fadein"
+                data-animate-group="yes"
+                field="btitle"
+              >
+                {{ _("Explore our features") }}
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="t-container">
+          <div
+            class="t-col t-col_8 t-prefix_2 t-item t-animate"
+            data-animate-style="fadeinup"
+            data-animate-chain="yes"
+          >
+            <div class="t-cell t-valign_top">
+              <div
+                class="t510__circle t-heading t-valign_top"
+                style=" color:#202124;; border: 2px solid #5b5d63; "
+              >
+                1
+              </div>
+            </div>
+            <div class="t510__textwrapper t-cell t-valign_top" style="">
+              <div
+                class="t-name t-name_md t510__bottommargin"
+                style=""
+                field="li_title__1476966581869"
+              >
+                {{ _("Uniqueness") }}
+              </div>
+              <div
+                class="t-descr t-descr_sm"
+                style=""
+                field="li_descr__1476966581869"
+              >
+                {{
+                  _(
+                    "Each time you
                                 receive our box, you get a unique set of whiskey, cigar, and magazine that is not
-                                duplicated for the best your mood and leisure.</div>
-                        </div>
-                    </div>
-                    <div class="t-clear t510__separator" style=""></div>
-                    <div class="t-col t-col_8 t-prefix_2 t-item t-animate" data-animate-style="fadeinup"
-                        data-animate-chain="yes">
-                        <div class="t-cell t-valign_top">
-                            <div class="t510__circle t-heading t-valign_top" style=" color:#202124;; border: 2px solid #5b5d63; ">2</div>
-                        </div>
-                        <div class="t510__textwrapper t-cell t-valign_top" style="">
-                            <div class="t-name t-name_md t510__bottommargin" style="" field="li_title__1476966593578">High
-                                quality for the reasonable price</div>
-                            <div class="t-descr t-descr_sm" style="" field="li_descr__1476966593578">We provide you
-                                with best available on market whiskey, cigar and magazine for the reasonable price.</div>
-                        </div>
-                    </div>
-                    <div class="t-clear t510__separator" style=""></div>
-                    <div class="t-col t-col_8 t-prefix_2 t-item t-animate" data-animate-style="fadeinup"
-                        data-animate-chain="yes">
-                        <div class="t-cell t-valign_top">
-                            <div class="t510__circle t-heading t-valign_top" style=" color:#202124;; border: 2px solid #5b5d63; ">3</div>
-                        </div>
-                        <div class="t510__textwrapper t-cell t-valign_top" style="">
-                            <div class="t-name t-name_md t510__bottommargin" style="" field="li_title__1476966597622">Individual
-                                Approach</div>
-                            <div class="t-descr t-descr_sm" style="" field="li_descr__1476966597622">The best thing is
-                                to see you happy, so we'll count all your wishes to pack the best Bevbox for you.</div>
-                        </div>
-                    </div>
-                    <div class="t-clear t510__separator" style=""></div>
-                    <div class="t-col t-col_8 t-prefix_2 t-item t-animate" data-animate-style="fadeinup"
-                        data-animate-chain="yes">
-                        <div class="t-cell t-valign_top">
-                            <div class="t510__circle t-heading t-valign_top" style=" color:#202124;; border: 2px solid #5b5d63; ">4</div>
-                        </div>
-                        <div class="t510__textwrapper t-cell t-valign_top" style="">
-                            <div class="t-name t-name_md t510__bottommargin" style="" field="li_title__1545601120873">Surprise
-                                effect</div>
-                            <div class="t-descr t-descr_sm" style="" field="li_descr__1545601120873">You won't be known
-                                what will be inside until you receive it.</div>
-                        </div>
-                    </div>
-                </div>
+                                duplicated for the best your mood and leisure."
+                  )
+                }}
+              </div>
             </div>
-        </div>
-        <div id="rec77476756" class="r t-rec" style=" " data-record-type="215"><a name="subscriptions" style="font-size:0;"></a></div>
-        <div id="rec77476757" class="r t-rec t-rec_pt_150 t-rec_pb_150" style="padding-top:150px;padding-bottom:150px; "
-            data-animationappear="off" data-record-type="608">
-            <!-- T608 -->
-            <div class="t608">
-                <div class="t-section__container t-container">
-                    <div class="t-col t-col_12">
-                        <div class="t-section__topwrapper t-align_center">
-                            <div class="t-section__title t-title t-title_xs t-animate" data-animate-style="fadein"
-                                data-animate-group="yes" field="btitle">Our subscriptions</div>
-                            <div class="t-section__descr t-descr t-descr_xl t-margin_auto t-animate" data-animate-style="fadein"
-                                data-animate-group="yes" field="bdescr">Here's list of our available subscriptions
-                                plans.</div>
-                        </div>
-                    </div>
-                </div>
-                <div class="t-container">
-                    <div class="t608__col t-col t-col_4 t-animate" data-animate-style="fadeinup" data-animate-chain="yes">
-                        <div class="t608__bgimg t-margin_auto t-bgimg" data-image-width="360" data-image-height="240"
-                            bgimgfield="img" data-original="{{ url_for('static', filename='images/tild6635-3936-4261-b561-363665653737__matthias-jordan-3299.jpg') }}"
-                            style="background-image: url('{{ url_for('static', filename='images/tild6635-3936-4261-b561-363665653737__-__resizeb__20x__matthias-jordan-3299.jpg') }}');"></div>
-                        <div class="t608__textwrapper t-align_left">
-                            <div class="t608__title t-heading t-heading_xs" style="" field="title">{{ _('Junior') }}</div>
-                            <div class="t608__price t-name t-name_md" style="" field="price">₴ 1373</div>
-                            <div class="t608__descr t-descr t-descr_xs" style="" field="descr">
-                                <div style="font-size:18px;" data-customstyle="yes">
-                                    {{ _('You will receive one time a box
-                                    fulfilled with whiskey, cigar, and magazine.') }}<br /><br /></div>
-                            </div>
-                            <a href="{{ url_for('app.subscription', type=1) }}" target="" class="t608__btn t-btn t-btn_sm" style="color:#222222;border:1px solid #222222;border-radius:3px; -moz-border-radius:3px; -webkit-border-radius:3px;">
-                                <table style="width:100%; height:100%;">
-                                    <tr>
-                                        <td>Subscribe</td>
-                                    </tr>
-                                </table>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="t608__col t-col t-col_4 t-animate" data-animate-style="fadeinup" data-animate-chain="yes">
-                        <div class="t608__bgimg t-margin_auto t-bgimg" data-image-width="360" data-image-height="240"
-                            bgimgfield="img2" data-original="{{ url_for('static', filename='images/tild3336-3930-4761-a333-373234343733__almos-bechtold-58214.jpg') }}"
-                            style="background-image: url('{{ url_for('static', filename='images/tild3336-3930-4761-a333-373234343733__-__resizeb__20x__almos-bechtold-58214.jpg') }}');"></div>
-                        <div class="t608__textwrapper t-align_left">
-                            <div class="t608__title t-heading t-heading_xs" style="" field="title2">Middle</div>
-                            <div class="t608__price t-name t-name_md" style="" field="price2">₴ 2608 (you save 5%)</div>
-                            <div class="t608__descr t-descr t-descr_xs" style="" field="descr2">
-                                <div style="font-size:18px;" data-customstyle="yes">In this case, you'll receive unique
-                                    two boxes for two months fulfilled with whiskey, cigar, and magazine.<br /></div>
-                            </div>
-                            <a href="{{ url_for('app.subscription', type=2) }}" target="" class="t608__btn t-btn t-btn_sm" style="color:#222222;border:1px solid #222222;border-radius:3px; -moz-border-radius:3px; -webkit-border-radius:3px;">
-                                <table style="width:100%; height:100%;">
-                                    <tr>
-                                        <td>Subscribe</td>
-                                    </tr>
-                                </table>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="t608__col t-col t-col_4 t-animate" data-animate-style="fadeinup" data-animate-chain="yes">
-                        <div class="t608__bgimg t-margin_auto t-bgimg" data-image-width="360" data-image-height="240"
-                            bgimgfield="img3" data-original="{{ url_for('static', filename='images/tild6630-3134-4661-b730-653734376139__andrea-tummons-46211.jpg') }}"
-                            style="background-image: url('{{ url_for('static', filename='images/tild6630-3134-4661-b730-653734376139__-__resizeb__20x__andrea-tummons-46211.jpg') }}');"></div>
-                        <div class="t608__textwrapper t-align_left">
-                            <div class="t608__title t-heading t-heading_xs" style="" field="title3">Senior<br /></div>
-                            <div class="t608__price t-name t-name_md" style="" field="price3">₴ 3707 (you save 10%)</div>
-                            <div class="t608__descr t-descr t-descr_xs" style="" field="descr3">
-                                <div style="font-size:18px;" data-customstyle="yes">In this case, you'll receive unique
-                                    three boxes for three months fulfilled with whiskey, cigar, and magazine.</div>
-                            </div>
-                            <a href="{{ url_for('app.subscription', type=3) }}" target="" class="t608__btn t-btn t-btn_sm" style="color:#222222;border:1px solid #222222;border-radius:3px; -moz-border-radius:3px; -webkit-border-radius:3px;">
-                                <table style="width:100%; height:100%;">
-                                    <tr>
-                                        <td>Subscribe</td>
-                                    </tr>
-                                </table>
-                            </a>
-                        </div>
-                    </div>
-                </div>
+          </div>
+          <div class="t-clear t510__separator" style=""></div>
+          <div
+            class="t-col t-col_8 t-prefix_2 t-item t-animate"
+            data-animate-style="fadeinup"
+            data-animate-chain="yes"
+          >
+            <div class="t-cell t-valign_top">
+              <div
+                class="t510__circle t-heading t-valign_top"
+                style=" color:#202124;; border: 2px solid #5b5d63; "
+              >
+                2
+              </div>
             </div>
-            <script type="text/javascript"> $(document).ready(function () { t608_setHeight('77476757'); });</script>
-        </div>
-        <div id="rec77476758" class="r t-rec" style=" " data-record-type="215"><a name="about" style="font-size:0;"></a></div>
-        <div id="rec77476762" class="r t-rec t-rec_pt_150 t-rec_pb_150" style="padding-top:150px;padding-bottom:150px;background-color:#fcfbf7; "
-            data-record-type="478" data-bg-color="#fcfbf7">
-            <!-- T478 -->
-            <div style="width: 0; height: 0; overflow: hidden;">
-                <div class="t478__sizer t-col t-col_6" data-auto-correct-mobile-width="false" style="height:560px;"></div>
+            <div class="t510__textwrapper t-cell t-valign_top" style="">
+              <div
+                class="t-name t-name_md t510__bottommargin"
+                style=""
+                field="li_title__1476966593578"
+              >
+                {{ _("High quality for the reasonable price") }}
+              </div>
+              <div
+                class="t-descr t-descr_sm"
+                style=""
+                field="li_descr__1476966593578"
+              >
+                {{
+                  _(
+                    "We provide you
+                                with best available on market whiskey, cigar and magazine for the reasonable price."
+                  )
+                }}
+              </div>
             </div>
-            <div class="t478">
-                <div class="t-container">
-                    <div class="t478__top t-col t-col_6 ">
-                        <div class="t478__textwrapper t-align_left" style="height:560px;">
-                            <div class="t478__content t-valign_middle">
-                                <div class="t478__box">
-                                    <div class="t478__title t-title t-title_xs t-animate" data-animate-style="fadein"
-                                        data-animate-group="yes" data-animate-order="1" field="title" style="">A word
-                                        about us</div>
-                                    <div class="t478__descr t-descr t-descr_md t-animate" data-animate-style="fadein"
-                                        data-animate-group="yes" data-animate-order="2" data-animate-delay="0.3" field="descr"
-                                        style="max-width:500px;">We are a young, hard-working team of 2 people who
-                                        provide a subscription service for whiskey, cigars, and magazines.</div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="t-col t-col_6 ">
-                        <div class="t478__blockimg t-bgimg" data-original="{{ url_for('static', filename='images/tild3737-6334-4164-a635-373661616130__camylla-battani-7809.jpg') }}"
-                            bgimgfield="img" style="background-image:url('{{ url_for('static', filename='images/tild3737-6334-4164-a635-373661616130__-__resizeb__20x__camylla-battani-7809.jpg') }}'); height:560px;"></div>
-                    </div>
+          </div>
+          <div class="t-clear t510__separator" style=""></div>
+          <div
+            class="t-col t-col_8 t-prefix_2 t-item t-animate"
+            data-animate-style="fadeinup"
+            data-animate-chain="yes"
+          >
+            <div class="t-cell t-valign_top">
+              <div
+                class="t510__circle t-heading t-valign_top"
+                style=" color:#202124;; border: 2px solid #5b5d63; "
+              >
+                3
+              </div>
+            </div>
+            <div class="t510__textwrapper t-cell t-valign_top" style="">
+              <div
+                class="t-name t-name_md t510__bottommargin"
+                style=""
+                field="li_title__1476966597622"
+              >
+                {{ _("Individual Approach") }}
+              </div>
+              <div
+                class="t-descr t-descr_sm"
+                style=""
+                field="li_descr__1476966597622"
+              >
+                {{
+                  _(
+                    "The best thing is
+                                to see you happy, so we'll count all your wishes to pack the best Bevbox for you."
+                  )
+                }}
+              </div>
+            </div>
+          </div>
+          <div class="t-clear t510__separator" style=""></div>
+          <div
+            class="t-col t-col_8 t-prefix_2 t-item t-animate"
+            data-animate-style="fadeinup"
+            data-animate-chain="yes"
+          >
+            <div class="t-cell t-valign_top">
+              <div
+                class="t510__circle t-heading t-valign_top"
+                style=" color:#202124;; border: 2px solid #5b5d63; "
+              >
+                4
+              </div>
+            </div>
+            <div class="t510__textwrapper t-cell t-valign_top" style="">
+              <div
+                class="t-name t-name_md t510__bottommargin"
+                style=""
+                field="li_title__1545601120873"
+              >
+                {{ _("Surprise effect") }}
+              </div>
+              <div
+                class="t-descr t-descr_sm"
+                style=""
+                field="li_descr__1545601120873"
+              >
+                {{
+                  _(
+                    "You won't be known
+                                what will be inside until you receive it."
+                  )
+                }}
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="rec77476756" class="r t-rec" style=" " data-record-type="215">
+      <a name="subscriptions" style="font-size:0;"></a>
+    </div>
+    <div
+      id="rec77476757"
+      class="r t-rec t-rec_pt_150 t-rec_pb_150"
+      style="padding-top:150px;padding-bottom:150px; "
+      data-animationappear="off"
+      data-record-type="608"
+    >
+      <!-- T608 -->
+      <div class="t608">
+        <div class="t-section__container t-container">
+          <div class="t-col t-col_12">
+            <div class="t-section__topwrapper t-align_center">
+              <div
+                class="t-section__title t-title t-title_xs t-animate"
+                data-animate-style="fadein"
+                data-animate-group="yes"
+                field="btitle"
+              >
+                {{ _("Our subscriptions") }}
+              </div>
+              <div
+                class="t-section__descr t-descr t-descr_xl t-margin_auto t-animate"
+                data-animate-style="fadein"
+                data-animate-group="yes"
+                field="bdescr"
+              >
+                {{ _("Here's list of our available subscriptions plans.") }}
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="t-container">
+          <div
+            class="t608__col t-col t-col_4 t-animate"
+            data-animate-style="fadeinup"
+            data-animate-chain="yes"
+          >
+            <div
+              class="t608__bgimg t-margin_auto t-bgimg"
+              data-image-width="360"
+              data-image-height="240"
+              bgimgfield="img"
+              data-original="{{ url_for('static', filename='images/tild6635-3936-4261-b561-363665653737__matthias-jordan-3299.jpg') }}"
+              style="background-image: url('{{ url_for('static', filename='images/tild6635-3936-4261-b561-363665653737__-__resizeb__20x__matthias-jordan-3299.jpg') }}');"
+            ></div>
+            <div class="t608__textwrapper t-align_left">
+              <div
+                class="t608__title t-heading t-heading_xs"
+                style=""
+                field="title"
+              >
+                {{ _("Junior") }}
+              </div>
+              <div class="t608__price t-name t-name_md" style="" field="price">
+                ₴ 1373
+              </div>
+              <div
+                class="t608__descr t-descr t-descr_xs"
+                style=""
+                field="descr"
+              >
+                <div style="font-size:18px;" data-customstyle="yes">
+                  {{
+                    _(
+                      "You will receive one time a box
+                                    fulfilled with whiskey, cigar, and magazine."
+                    )
+                  }}<br /><br />
                 </div>
+              </div>
+              <a
+                href="{{ url_for('app.subscription', type=1) }}"
+                target=""
+                class="t608__btn t-btn t-btn_sm"
+                style="color:#222222;border:1px solid #222222;border-radius:3px; -moz-border-radius:3px; -webkit-border-radius:3px;"
+              >
+                <table style="width:100%; height:100%;">
+                  <tr>
+                    <td>{{ _("Subscribe") }}</td>
+                  </tr>
+                </table>
+              </a>
             </div>
-            <script type="text/javascript"> $(window).resize(function () { if (typeof window.noAdaptive != "undefined" && window.noAdaptive == true && $isMobile) { return; } t478_setHeight('77476762'); }); $(document).ready(function () { t478_setHeight('77476762'); }); $('.t478').bind('displayChanged', function () { t478_setHeight('77476762'); });</script>
-        </div>
-        <div id="rec77476760" class="r t-rec" style=" " data-record-type="160">
-            <!-- T148 -->
-            <!-- cover -->
-            <div class="t-cover" id="recorddiv77476760" bgimgfield="img" style="height:80vh; background-image:url('{{ url_for('static', filename='images/tild3562-3639-4665-a466-356465663163__-__resize__20x__ibrahim-boran-567898.jpg') }}');">
-                <div class="t-cover__carrier" id="coverCarry77476760" data-content-cover-id="77476760"
-                    data-content-cover-bg="{{ url_for('static', filename='images/tild3562-3639-4665-a466-356465663163__ibrahim-boran-567898.jpg') }}"
-                    data-content-cover-height="80vh" data-content-cover-parallax="" style="height:80vh;background-attachment:scroll; "></div>
-                <div class="t-cover__filter" style="height:80vh;background-image: -moz-linear-gradient(top, rgba(0,0,0,0.0), rgba(0,0,0,0.0));background-image: -webkit-linear-gradient(top, rgba(0,0,0,0.0), rgba(0,0,0,0.0));background-image: -o-linear-gradient(top, rgba(0,0,0,0.0), rgba(0,0,0,0.0));background-image: -ms-linear-gradient(top, rgba(0,0,0,0.0), rgba(0,0,0,0.0));background-image: linear-gradient(top, rgba(0,0,0,0.0), rgba(0,0,0,0.0));filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#fe000000', endColorstr='#fe000000');"></div>
-                <div class="t148">
-                    <div class="t-container_100">
-                        <div class="t-cover__wrapper t-valign_bottom" style="height:80vh;"> </div>
-                    </div>
+          </div>
+          <div
+            class="t608__col t-col t-col_4 t-animate"
+            data-animate-style="fadeinup"
+            data-animate-chain="yes"
+          >
+            <div
+              class="t608__bgimg t-margin_auto t-bgimg"
+              data-image-width="360"
+              data-image-height="240"
+              bgimgfield="img2"
+              data-original="{{ url_for('static', filename='images/tild3336-3930-4761-a333-373234343733__almos-bechtold-58214.jpg') }}"
+              style="background-image: url('{{ url_for('static', filename='images/tild3336-3930-4761-a333-373234343733__-__resizeb__20x__almos-bechtold-58214.jpg') }}');"
+            ></div>
+            <div class="t608__textwrapper t-align_left">
+              <div
+                class="t608__title t-heading t-heading_xs"
+                style=""
+                field="title2"
+              >
+                {{ _("Middle") }}
+              </div>
+              <div class="t608__price t-name t-name_md" style="" field="price2">
+                ₴ 2608 ({{ _("you save 5%(percent)s", percent="%") }})
+              </div>
+              <div
+                class="t608__descr t-descr t-descr_xs"
+                style=""
+                field="descr2"
+              >
+                <div style="font-size:18px;" data-customstyle="yes">
+                  {{
+                    _(
+                      "In this case, you'll receive unique
+                                    two boxes for two months fulfilled with whiskey, cigar, and magazine."
+                    )
+                  }}
+                  <br />
                 </div>
+              </div>
+              <a
+                href="{{ url_for('app.subscription', type=2) }}"
+                target=""
+                class="t608__btn t-btn t-btn_sm"
+                style="color:#222222;border:1px solid #222222;border-radius:3px; -moz-border-radius:3px; -webkit-border-radius:3px;"
+              >
+                <table style="width:100%; height:100%;">
+                  <tr>
+                    <td>{{ _("Subscribe") }}</td>
+                  </tr>
+                </table>
+              </a>
             </div>
-        </div>
-        <div id="rec77476764" class="r t-rec" style=" " data-record-type="215"><a name="contacts" style="font-size:0;"></a></div>
-        <div id="rec77476765" class="r t-rec t-rec_pt_150 t-rec_pb_150" style="padding-top:150px;padding-bottom:150px;background-color:#141414; "
-            data-record-type="551" data-bg-color="#141414">
-            <!-- t551-->
-            <div class="t551">
-                <div class="t-container">
-                    <div class="t-col t-col_6 t-prefix_3 t-align_center">
-                        <div class="t551__title t-name t-name_xs" style="color:#ffffff;" field="title"
-                            data-animate-order="1">Kyiv, Heroiv Dnipra, 65</div>
-                        <div class="t551__contacts t-title t-title_xxs" style="color:#ffffff;" field="text"
-                            data-animate-order="2" data-animate-delay="0.3">+38 (066) 655-90-92<br /></div>
-                        <div class="t551__address t-text t-text_sm" style="color:#ffffff;" field="text2"
-                            data-animate-order="3" data-animate-delay="0.3">
-                            {{ _('Any questions left? Drop us a message by
-                            means of') }} <a href="{{ url_for('app.contacts') }}" style="">{{ _('contact form') }}</a>.
-                        </div>
-                        <div class="t-sociallinks">
-                            <div class="t-sociallinks__wrapper">
-                                <div class="t-sociallinks__item">
-                                    <a href="https://fb.com/bevbox.com.ua" target="_blank">
-                                        <svg class="t-sociallinks__svg" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
-                                            xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="25px"
-                                            height="25px" viewBox="0 0 48 48" enable-background="new 0 0 48 48"
-                                            xml:space="preserve">
-                                            <desc>Facebook</desc>
-                                            <path style="fill:#ffffff;" d="M21.1 7.8C22.5 6.5 24.5 6 26.4 6h6v6.3h-3.9c-.8-.1-1.6.6-1.8 1.4v4.2h5.7c-.1 2-.4 4.1-.7 6.1h-5v18h-7.4V24h-3.6v-6h3.6v-5.9c.1-1.7.7-3.3 1.8-4.3z" />
-                                        </svg>
-                                    </a>
-                                </div>
-                                <div class="t-sociallinks__item">
-                                    <a href="https://instagram.com/bevbox.com.ua" target="_blank">
-                                        <svg class="t-sociallinks__svg" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
-                                            xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="25px"
-                                            height="25px" viewBox="0 0 25 25" enable-background="new 0 0 25 25"
-                                            xml:space="preserve">
-                                            <desc>Instagram</desc>
-                                            <path style="fill:#ffffff;" d="M16.396,3.312H8.604c-2.921,0-5.292,2.371-5.292,5.273v7.846c0,2.886,2.371,5.256,5.292,5.256h7.791c2.922,0,5.292-2.37,5.292-5.274V8.586C21.688,5.683,19.317,3.312,16.396,3.312L16.396,3.312z M7.722,12.5c0-2.64,2.142-4.778,4.778-4.778c2.636,0,4.777,2.138,4.777,4.778s-2.142,4.777-4.777,4.777C9.864,17.277,7.722,15.14,7.722,12.5zM17.756,8.182c-0.615,0-1.104-0.487-1.104-1.102s0.488-1.103,1.104-1.103c0.614,0,1.102,0.488,1.102,1.103S18.37,8.182,17.756,8.182L17.756,8.182z" />
-                                            <path style="fill:#ffffff;" d="M12.5,9.376c-1.731,0-3.124,1.398-3.124,3.124c0,1.725,1.393,3.124,3.124,3.124c1.732,0,3.124-1.399,3.124-3.124C15.624,10.775,14.211,9.376,12.5,9.376L12.5,9.376z" />
-                                        </svg>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+          </div>
+          <div
+            class="t608__col t-col t-col_4 t-animate"
+            data-animate-style="fadeinup"
+            data-animate-chain="yes"
+          >
+            <div
+              class="t608__bgimg t-margin_auto t-bgimg"
+              data-image-width="360"
+              data-image-height="240"
+              bgimgfield="img3"
+              data-original="{{ url_for('static', filename='images/tild6630-3134-4661-b730-653734376139__andrea-tummons-46211.jpg') }}"
+              style="background-image: url('{{ url_for('static', filename='images/tild6630-3134-4661-b730-653734376139__-__resizeb__20x__andrea-tummons-46211.jpg') }}');"
+            ></div>
+            <div class="t608__textwrapper t-align_left">
+              <div
+                class="t608__title t-heading t-heading_xs"
+                style=""
+                field="title3"
+              >
+                {{ _("Senior") }}<br />
+              </div>
+              <div class="t608__price t-name t-name_md" style="" field="price3">
+                ₴ 3707 ({{ _("you save 10%(percent)s", percent="%") }})
+              </div>
+              <div
+                class="t608__descr t-descr t-descr_xs"
+                style=""
+                field="descr3"
+              >
+                <div style="font-size:18px;" data-customstyle="yes">
+                  {{
+                    _(
+                      "In this case, you'll receive unique
+                                    three boxes for three months fulfilled with whiskey, cigar, and magazine."
+                    )
+                  }}
                 </div>
+              </div>
+              <a
+                href="{{ url_for('app.subscription', type=3) }}"
+                target=""
+                class="t608__btn t-btn t-btn_sm"
+                style="color:#222222;border:1px solid #222222;border-radius:3px; -moz-border-radius:3px; -webkit-border-radius:3px;"
+              >
+                <table style="width:100%; height:100%;">
+                  <tr>
+                    <td>{{ _("Subscribe") }}</td>
+                  </tr>
+                </table>
+              </a>
             </div>
+          </div>
         </div>
-        {% include 'footer.html' %}
+      </div>
+      <script type="text/javascript">
+        $(document).ready(function() {
+          t608_setHeight("77476757");
+        });
+      </script>
+    </div>
+    <div id="rec77476758" class="r t-rec" style=" " data-record-type="215">
+      <a name="about" style="font-size:0;"></a>
+    </div>
+    <div
+      id="rec77476762"
+      class="r t-rec t-rec_pt_150 t-rec_pb_150"
+      style="padding-top:150px;padding-bottom:150px;background-color:#fcfbf7; "
+      data-record-type="478"
+      data-bg-color="#fcfbf7"
+    >
+      <!-- T478 -->
+      <div style="width: 0; height: 0; overflow: hidden;">
+        <div
+          class="t478__sizer t-col t-col_6"
+          data-auto-correct-mobile-width="false"
+          style="height:560px;"
+        ></div>
+      </div>
+      <div class="t478">
+        <div class="t-container">
+          <div class="t478__top t-col t-col_6 ">
+            <div class="t478__textwrapper t-align_left" style="height:560px;">
+              <div class="t478__content t-valign_middle">
+                <div class="t478__box">
+                  <div
+                    class="t478__title t-title t-title_xs t-animate"
+                    data-animate-style="fadein"
+                    data-animate-group="yes"
+                    data-animate-order="1"
+                    field="title"
+                    style=""
+                  >
+                    {{ _("A word about us") }}
+                  </div>
+                  <div
+                    class="t478__descr t-descr t-descr_md t-animate"
+                    data-animate-style="fadein"
+                    data-animate-group="yes"
+                    data-animate-order="2"
+                    data-animate-delay="0.3"
+                    field="descr"
+                    style="max-width:500px;"
+                  >
+                    {{
+                      _(
+                        "We are a young, hard-working team of 2 people who
+                                        provide a subscription service for whiskey, cigars, and magazines."
+                      )
+                    }}
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="t-col t-col_6 ">
+            <div
+              class="t478__blockimg t-bgimg"
+              data-original="{{ url_for('static', filename='images/tild3737-6334-4164-a635-373661616130__camylla-battani-7809.jpg') }}"
+              bgimgfield="img"
+              style="background-image:url('{{ url_for('static', filename='images/tild3737-6334-4164-a635-373661616130__-__resizeb__20x__camylla-battani-7809.jpg') }}'); height:560px;"
+            ></div>
+          </div>
         </div>
+      </div>
+      <script type="text/javascript">
+        $(window).resize(function() {
+          if (
+            typeof window.noAdaptive != "undefined" &&
+            window.noAdaptive == true &&
+            $isMobile
+          ) {
+            return;
+          }
+          t478_setHeight("77476762");
+        });
+        $(document).ready(function() {
+          t478_setHeight("77476762");
+        });
+        $(".t478").bind("displayChanged", function() {
+          t478_setHeight("77476762");
+        });
+      </script>
+    </div>
+    <div id="rec77476760" class="r t-rec" style=" " data-record-type="160">
+      <!-- T148 -->
+      <!-- cover -->
+      <div
+        class="t-cover"
+        id="recorddiv77476760"
+        bgimgfield="img"
+        style="height:80vh; background-image:url('{{ url_for('static', filename='images/tild3562-3639-4665-a466-356465663163__-__resize__20x__ibrahim-boran-567898.jpg') }}');"
+      >
+        <div
+          class="t-cover__carrier"
+          id="coverCarry77476760"
+          data-content-cover-id="77476760"
+          data-content-cover-bg="{{ url_for('static', filename='images/tild3562-3639-4665-a466-356465663163__ibrahim-boran-567898.jpg') }}"
+          data-content-cover-height="80vh"
+          data-content-cover-parallax=""
+          style="height:80vh;background-attachment:scroll; "
+        ></div>
+        <div
+          class="t-cover__filter"
+          style="height:80vh;background-image: -moz-linear-gradient(top, rgba(0,0,0,0.0), rgba(0,0,0,0.0));background-image: -webkit-linear-gradient(top, rgba(0,0,0,0.0), rgba(0,0,0,0.0));background-image: -o-linear-gradient(top, rgba(0,0,0,0.0), rgba(0,0,0,0.0));background-image: -ms-linear-gradient(top, rgba(0,0,0,0.0), rgba(0,0,0,0.0));background-image: linear-gradient(top, rgba(0,0,0,0.0), rgba(0,0,0,0.0));filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#fe000000', endColorstr='#fe000000');"
+        ></div>
+        <div class="t148">
+          <div class="t-container_100">
+            <div
+              class="t-cover__wrapper t-valign_bottom"
+              style="height:80vh;"
+            ></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="rec77476764" class="r t-rec" style=" " data-record-type="215">
+      <a name="contacts" style="font-size:0;"></a>
+    </div>
+    <div
+      id="rec77476765"
+      class="r t-rec t-rec_pt_150 t-rec_pb_150"
+      style="padding-top:150px;padding-bottom:150px;background-color:#141414; "
+      data-record-type="551"
+      data-bg-color="#141414"
+    >
+      <!-- t551-->
+      <div class="t551">
+        <div class="t-container">
+          <div class="t-col t-col_6 t-prefix_3 t-align_center">
+            <div
+              class="t551__title t-name t-name_xs"
+              style="color:#ffffff;"
+              field="title"
+              data-animate-order="1"
+            >
+              {{ _("Kyiv, Heroiv Dnipra, 65") }}
+            </div>
+            <div
+              class="t551__contacts t-title t-title_xxs"
+              style="color:#ffffff;"
+              field="text"
+              data-animate-order="2"
+              data-animate-delay="0.3"
+            >
+              +38 (066) 655-90-92<br />
+            </div>
+            <div
+              class="t551__address t-text t-text_sm"
+              style="color:#ffffff;"
+              field="text2"
+              data-animate-order="3"
+              data-animate-delay="0.3"
+            >
+              {{
+                _(
+                  "Any questions left? Drop us a message by
+                            means of"
+                )
+              }}
+              <a href="{{ url_for('app.contacts') }}" style="">{{
+                _("contact form")
+              }}</a
+              >.
+            </div>
+            <div class="t-sociallinks">
+              <div class="t-sociallinks__wrapper">
+                <div class="t-sociallinks__item">
+                  <a href="https://fb.com/bevbox.com.ua" target="_blank">
+                    <svg
+                      class="t-sociallinks__svg"
+                      version="1.1"
+                      id="Layer_1"
+                      xmlns="http://www.w3.org/2000/svg"
+                      xmlns:xlink="http://www.w3.org/1999/xlink"
+                      x="0px"
+                      y="0px"
+                      width="25px"
+                      height="25px"
+                      viewBox="0 0 48 48"
+                      enable-background="new 0 0 48 48"
+                      xml:space="preserve"
+                    >
+                      <desc>Facebook</desc>
+                      <path
+                        style="fill:#ffffff;"
+                        d="M21.1 7.8C22.5 6.5 24.5 6 26.4 6h6v6.3h-3.9c-.8-.1-1.6.6-1.8 1.4v4.2h5.7c-.1 2-.4 4.1-.7 6.1h-5v18h-7.4V24h-3.6v-6h3.6v-5.9c.1-1.7.7-3.3 1.8-4.3z"
+                      />
+                    </svg>
+                  </a>
+                </div>
+                <div class="t-sociallinks__item">
+                  <a href="https://instagram.com/bevbox.com.ua" target="_blank">
+                    <svg
+                      class="t-sociallinks__svg"
+                      version="1.1"
+                      id="Layer_1"
+                      xmlns="http://www.w3.org/2000/svg"
+                      xmlns:xlink="http://www.w3.org/1999/xlink"
+                      x="0px"
+                      y="0px"
+                      width="25px"
+                      height="25px"
+                      viewBox="0 0 25 25"
+                      enable-background="new 0 0 25 25"
+                      xml:space="preserve"
+                    >
+                      <desc>Instagram</desc>
+                      <path
+                        style="fill:#ffffff;"
+                        d="M16.396,3.312H8.604c-2.921,0-5.292,2.371-5.292,5.273v7.846c0,2.886,2.371,5.256,5.292,5.256h7.791c2.922,0,5.292-2.37,5.292-5.274V8.586C21.688,5.683,19.317,3.312,16.396,3.312L16.396,3.312z M7.722,12.5c0-2.64,2.142-4.778,4.778-4.778c2.636,0,4.777,2.138,4.777,4.778s-2.142,4.777-4.777,4.777C9.864,17.277,7.722,15.14,7.722,12.5zM17.756,8.182c-0.615,0-1.104-0.487-1.104-1.102s0.488-1.103,1.104-1.103c0.614,0,1.102,0.488,1.102,1.103S18.37,8.182,17.756,8.182L17.756,8.182z"
+                      />
+                      <path
+                        style="fill:#ffffff;"
+                        d="M12.5,9.376c-1.731,0-3.124,1.398-3.124,3.124c0,1.725,1.393,3.124,3.124,3.124c1.732,0,3.124-1.399,3.124-3.124C15.624,10.775,14.211,9.376,12.5,9.376L12.5,9.376z"
+                      />
+                    </svg>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    {% include 'footer.html' %}
+  </div>
 </body>
 {% endblock %}
