@@ -1,0 +1,1457 @@
+# Ukrainian translations for Bevbox.
+# Copyright (C) 2019 Vladyslav Krylasov <vladyslav.krylasov@gmail.com>
+# This file is distributed under the same license as the Bevbox project.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Bevbox 1.0.0\n"
+"Report-Msgid-Bugs-To: vladyslav.krylasov@gmail.com\n"
+"POT-Creation-Date: 2019-01-20 18:37+0200\n"
+"PO-Revision-Date: 2019-01-20 17:42+0200\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: uk\n"
+"Language-Team: uk <LL@li.org>\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
+"n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: templates/404.html:3
+msgid "Page not found"
+msgstr "Сторінка не найдена"
+
+#: templates/404.html:53
+msgid "404 error"
+msgstr "404 помилка"
+
+#: templates/404.html:60
+msgid "Page not found."
+msgstr "Сторінка не найдена."
+
+#: templates/app/privacy-policy.html:181 templates/footer.html:31
+msgid "Terms of Use"
+msgstr "Умови використання"
+
+#: templates/app/subscription.html:515 templates/app/terms-of-use.html:173
+#: templates/app/terms-of-use.html:206 templates/footer.html:40
+msgid "Privacy Policy"
+msgstr "Політика конфіденційності"
+
+#: templates/footer.html:49
+msgid "Refund Policy"
+msgstr "Політика відшкодування"
+
+#: templates/footer.html:71
+msgid "Back to top"
+msgstr "Повернутися до початку"
+
+#: templates/app/contacts.html:3 templates/app/contacts.html:5
+msgid "Bevbox Contacts"
+msgstr "Bevbox контакти"
+
+#: templates/app/contacts.html:6
+msgid "Get in touch with us."
+msgstr "Зв'яжіться з нами."
+
+#: templates/app/contacts.html:146
+msgid "CONTACTS"
+msgstr "КОНТАКТИ"
+
+#: templates/app/contacts.html:173
+msgid "Get in touch with us with any convenient way:"
+msgstr "Зв'яжіться з нами будь-яким зручним способом:"
+
+#: templates/app/contacts.html:180
+msgid "We can answer your questions by phone:"
+msgstr "Ми можемо відповісти на ваші запитання по телефону:"
+
+#: templates/app/contacts.html:188
+msgid "By e-mail:"
+msgstr "По e-mail:"
+
+#: templates/app/contacts.html:192
+msgid "Or just fill up our contact form."
+msgstr "Або просто заповніть нашу контактну форму."
+
+#: templates/app/contacts.html:239 templates/app/subscription.html:214
+msgid "E-mail"
+msgstr "Електронна пошта"
+
+#: templates/app/contacts.html:265 templates/app/subscription.html:188
+msgid "Name"
+msgstr "Ім'я"
+
+#: templates/app/contacts.html:291
+msgid "Message"
+msgstr "Повідомлення"
+
+#: templates/app/contacts.html:338
+msgid "Send"
+msgstr "Відправити"
+
+#: templates/app/contacts.html:440
+msgid "Our location:"
+msgstr "Наше місцезнаходження:"
+
+#: templates/app/contacts.html:447
+msgid "Address: Heroiv Dnipra, 65"
+msgstr "Адреса: Героїв Дніпра, 65"
+
+#: templates/app/error.html:49
+msgid "error"
+msgstr "помилка"
+
+#: templates/app/error.html:57
+msgid "Something went wrong. Your payment is not successful."
+msgstr "Щось пішло не так. Не вдалося успішно здійснити вашу оплату."
+
+#: templates/app/home.html:3 templates/app/home.html:5
+msgid "Bevbox - a home of taste & flavor"
+msgstr "Bevbox - дім смаку та аромату"
+
+#: templates/app/home.html:7
+msgid ""
+"Bevbox is a marvelous mood for the evening at the expense of good "
+"whiskey, cigar and entertaining reading by subscription."
+msgstr ""
+"Bevbox - це неймовірний настрій на вечір за рахунок доброго віскі, сигари"
+" і цікавого читання за передоплатою."
+
+#: templates/app/home.html:79 templates/app/home.html:172
+#: templates/app/home.html:354
+msgid "How it works"
+msgstr "Як це працює"
+
+#: templates/app/home.html:88 templates/app/home.html:181
+msgid "Features"
+msgstr "Особливості"
+
+#: templates/app/home.html:97 templates/app/home.html:190
+msgid "Subscriptions"
+msgstr "Передоплати"
+
+#: templates/app/home.html:106 templates/app/home.html:199
+msgid "About us"
+msgstr "Про нас"
+
+#: templates/app/home.html:115 templates/app/home.html:208
+msgid "Contacts"
+msgstr "Контакти"
+
+#: templates/app/home.html:304
+msgid "Try to experience incredible taste & flavor"
+msgstr "Спробуйте відчути неймовірний смак та аромат"
+
+#: templates/app/home.html:319
+msgid ""
+"Bevbox is a marvelous mood for the evening at the expense of good "
+"whiskey, cigar and\n"
+"                           entertaining reading by subscription."
+msgstr ""
+"Bevbox - це неймовірний настрій на вечір за рахунок доброго віскі, сигари"
+" і цікавого читання за передоплатою."
+
+#: templates/app/home.html:384 templates/app/home.html:754
+#: templates/app/home.html:807 templates/app/home.html:859
+msgid "Subscribe"
+msgstr "Підписатися"
+
+#: templates/app/home.html:392
+msgid "Take a look at our"
+msgstr "Подивіться на наші"
+
+#: templates/app/home.html:393
+msgid "features"
+msgstr "особливості"
+
+#: templates/app/home.html:396
+msgid "choose the most appropriate subscription type for yourself and pay it."
+msgstr "оберіть найбільш підходящий тип передоплати для себе і оплатіть її."
+
+#: templates/app/home.html:430
+msgid "Packing &amp; sending"
+msgstr "Пакування та відправка"
+
+#: templates/app/home.html:439
+msgid ""
+"After we receive a\n"
+"                                            successful confirmation of "
+"the subscription payment, we are going to pack a\n"
+"                                            box of whiskey, a cigar, and "
+"a magazine according to your preferences.\n"
+"                                            Nonetheless, it'll be sent on"
+" the next month. E.g.: if you subscribed in\n"
+"                                            January, we'll be sent a box "
+"on the first dates of February."
+msgstr ""
+"Після того, як ми отримаємо успішне підтвердження передоплати, ми "
+"розпочнемо упакувати у коробку віскі, сигару і журнал відповідно до ваших"
+" уподобань. Тим не менш, коробка буде відправленна на наступний місяць. "
+"Наприклад: якщо ви підписалися в січні, ми надішлемо коробку в перші дні "
+"лютого."
+
+#: templates/app/home.html:477
+msgid "Receiving"
+msgstr "Отримання"
+
+#: templates/app/home.html:486
+msgid ""
+"We send you a New Post\n"
+"                                            declaration number, you "
+"receive it. Moreover, shipping is free. That's it"
+msgstr ""
+"Ми надсилаємо вам номер декларації Нової Пошти, ви отримуєте коробку. "
+"Крім того, доставка безкоштовна. Ось і все"
+
+#: templates/app/home.html:520
+msgid "Explore our features"
+msgstr "Погляньте на наші особливості"
+
+#: templates/app/home.html:545
+msgid "Uniqueness"
+msgstr "Унікальність"
+
+#: templates/app/home.html:553
+msgid ""
+"Each time you\n"
+"                                receive our box, you get a unique set of "
+"whiskey, cigar, and magazine that is not\n"
+"                                duplicated for the best your mood and "
+"leisure."
+msgstr ""
+"Кожного разу, коли Ви отримуєте нашу коробку, Ви отримуєте унікальний "
+"набір віскі, сигари і журналу, які не дублюються для кращого вашого "
+"настрою і дозвілля."
+
+#: templates/app/home.html:582
+msgid "High quality for the reasonable price"
+msgstr "Висока якість за розумну ціну"
+
+#: templates/app/home.html:590
+msgid ""
+"We provide you\n"
+"                                with best available on market whiskey, "
+"cigar and magazine for the reasonable price."
+msgstr ""
+"Ми пропонуємо Вам найкращі доступний на ринку віскі, сигари та журнали за "
+"розумною ціною."
+
+#: templates/app/home.html:618
+msgid "Individual Approach"
+msgstr "Індивідуальний підхід"
+
+#: templates/app/home.html:626
+msgid ""
+"The best thing is\n"
+"                                to see you happy, so we'll count all your"
+" wishes to pack the best Bevbox for you."
+msgstr ""
+"Накраща річ для нас бачити Вас щасливими, тому ми враховуємо всі Ваші "
+"побажання, щоб запакувати кращий Bevbox для Вас."
+
+#: templates/app/home.html:654
+msgid "Surprise effect"
+msgstr "Ефект сюрпризу"
+
+#: templates/app/home.html:662
+msgid ""
+"You won't be known\n"
+"                                what will be inside until you receive it."
+msgstr "Ви не будете знати, що буде всередині, поки не отримаєте коробку."
+
+#: templates/app/home.html:694
+msgid "Our subscriptions"
+msgstr "Наші передоплати"
+
+#: templates/app/home.html:702
+msgid "Here's list of our available subscriptions plans."
+msgstr "Ось список наших доступних передоплат."
+
+#: templates/app/home.html:727
+msgid "Junior"
+msgstr "Хорунжий"
+
+#: templates/app/home.html:739
+msgid ""
+"You will receive one time a box\n"
+"                                    fulfilled with whiskey, cigar, and "
+"magazine."
+msgstr "Ви отримаєте один раз коробку, наповнену з віскі, сигарою та журналом за цей тип передоплати."
+
+#: templates/app/home.html:779
+msgid "Middle"
+msgstr "Осавул"
+
+#: templates/app/home.html:782
+#, python-format
+msgid "you save 5%(percent)s"
+msgstr "ви збергігаєте 5%(percent)s"
+
+#: templates/app/home.html:791
+msgid ""
+"In this case, you'll receive unique\n"
+"                                    two boxes for two months fulfilled "
+"with whiskey, cigar, and magazine."
+msgstr ""
+"У цьому випадку ви отримаєте дві унікальні коробки протягом двох місяців,"
+" наповненними з віскі, сигарою і журналом."
+
+#: templates/app/home.html:832
+msgid "Senior"
+msgstr "Гетьман"
+
+#: templates/app/home.html:835
+#, python-format
+msgid "you save 10%(percent)s"
+msgstr "ви збергігаєте 10%(percent)s"
+
+#: templates/app/home.html:844
+msgid ""
+"In this case, you'll receive unique\n"
+"                                    three boxes for three months "
+"fulfilled with whiskey, cigar, and magazine."
+msgstr ""
+"У цьому випадку ви отримаєте три унікальні коробки протягом трьох "
+"місяців, наповненними з віскі, сигарою і журналом."
+
+#: templates/app/home.html:905
+msgid "A word about us"
+msgstr "Словенятко про нас"
+
+#: templates/app/home.html:917
+msgid ""
+"We are a young, hard-working team of 2 people who\n"
+"                                        provide a subscription service "
+"for whiskey, cigars, and magazines."
+msgstr ""
+"Ми молода, працьовита команда з 2-х людей, які надають послуги "
+"передоплати на віскі, сигари та журнали."
+
+#: templates/app/home.html:1008
+msgid "Kyiv, Heroiv Dnipra, 65"
+msgstr "Київ, Героїв Дніпра, 65"
+
+#: templates/app/home.html:1027
+msgid ""
+"Any questions left? Drop us a message by\n"
+"                            means of"
+msgstr "Залишилися питання? Напишіть нам повідомлення за допомогою"
+
+#: templates/app/home.html:1033 templates/app/refund-policy.html:163
+msgid "contact form"
+msgstr "контактної форми"
+
+#: templates/app/maintenance.html:46
+msgid "maintenance"
+msgstr "технічне обслуговування"
+
+#: templates/app/maintenance.html:54
+msgid "Sorry, we're currently working on improving of our system. Stay tuned."
+msgstr ""
+
+#: templates/app/privacy-policy.html:3 templates/app/privacy-policy.html:5
+msgid "Bevbox Privacy Policy"
+msgstr ""
+
+#: templates/app/privacy-policy.html:6
+msgid ""
+"Privacy Policy will help you understand what personal data we collect, "
+"why we collect it and what we do with it."
+msgstr ""
+
+#: templates/app/privacy-policy.html:138
+msgid "PRIVACY POLICY"
+msgstr ""
+
+#: templates/app/privacy-policy.html:159
+msgid "Effective date"
+msgstr ""
+
+#: templates/app/privacy-policy.html:160
+msgid "December 31, 2018"
+msgstr ""
+
+#: templates/app/privacy-policy.html:162
+msgid "(\"us\", \"we\", or \"our\") operates the"
+msgstr ""
+
+#: templates/app/privacy-policy.html:164
+msgid "website (the \"Service\")"
+msgstr ""
+
+#: templates/app/privacy-policy.html:166
+msgid ""
+"This page informs you of our policies regarding the\n"
+"                            collection, use, and disclosure of personal "
+"data when you use our Service and the choices\n"
+"                            you have associated with that data."
+msgstr ""
+
+#: templates/app/privacy-policy.html:173
+msgid ""
+"We use your data to provide and improve the\n"
+"                            Service. By using the Service, you agree to "
+"the collection and use of information in\n"
+"                            accordance with this policy. Unless otherwise"
+" defined in this Privacy Policy, terms used in\n"
+"                            this Privacy Policy have the same meanings as"
+" in our"
+msgstr ""
+
+#: templates/app/privacy-policy.html:185
+msgid ""
+"Information\n"
+"                                    Collection And Use"
+msgstr ""
+
+#: templates/app/privacy-policy.html:193
+msgid ""
+"We collect several different types\n"
+"                            of information for various purposes to "
+"provide and improve our Service to you"
+msgstr ""
+
+#: templates/app/privacy-policy.html:200
+msgid "Types of Data Collected"
+msgstr ""
+
+#: templates/app/privacy-policy.html:203
+msgid "Personal Data"
+msgstr ""
+
+#: templates/app/privacy-policy.html:205
+msgid ""
+"While using our Service, we may ask you to\n"
+"                            provide us with certain personally "
+"identifiable information that can be used to contact or\n"
+"                            identify you (\"Personal Data\"). Personally "
+"identifiable information may include, but is not\n"
+"                            limited to"
+msgstr ""
+
+#: templates/app/privacy-policy.html:213
+msgid "Email address"
+msgstr ""
+
+#: templates/app/privacy-policy.html:214
+msgid "First name and last name"
+msgstr ""
+
+#: templates/app/privacy-policy.html:215
+msgid "Phone number"
+msgstr ""
+
+#: templates/app/privacy-policy.html:217
+msgid "Address, State, Province, ZIP/Postal code, City"
+msgstr ""
+
+#: templates/app/privacy-policy.html:219
+msgid "Cookies and Usage Data"
+msgstr ""
+
+#: templates/app/privacy-policy.html:221
+msgid "Usage Data"
+msgstr ""
+
+#: templates/app/privacy-policy.html:223
+msgid ""
+"We may also collect information how the\n"
+"                            Service is accessed and used (\"Usage "
+"Data\"). This Usage Data may include information such\n"
+"                            as your computer's Internet Protocol address "
+"(e.g. IP address), browser type, browser\n"
+"                            version, the pages of our Service that you "
+"visit, the time and date of your visit, the time\n"
+"                            spent on those pages, unique device "
+"identifiers and other diagnostic data."
+msgstr ""
+
+#: templates/app/privacy-policy.html:231
+msgid "Tracking & Cookies Data"
+msgstr ""
+
+#: templates/app/privacy-policy.html:233
+msgid ""
+"We use cookies and similar tracking\n"
+"                            technologies to track the activity on our "
+"Service and hold certain information."
+msgstr ""
+
+#: templates/app/privacy-policy.html:239
+msgid ""
+"Cookies are files with small amount of data which may include an "
+"anonymous unique\n"
+"                            identifier. Cookies are sent to your browser "
+"from a website and stored on your device.\n"
+"                            Tracking technologies also used are beacons, "
+"tags, and scripts to collect and track\n"
+"                            information and to improve and analyze our "
+"Service."
+msgstr ""
+
+#: templates/app/privacy-policy.html:247
+msgid ""
+"You can instruct your\n"
+"                            browser to refuse all cookies or to indicate "
+"when a cookie is being sent. However, if you\n"
+"                            do not accept cookies, you may not be able to"
+" use some portions of our Service."
+msgstr ""
+
+#: templates/app/privacy-policy.html:253
+msgid "Examples of Cookies we use:"
+msgstr ""
+
+#: templates/app/privacy-policy.html:256
+msgid "Session Cookies."
+msgstr ""
+
+#: templates/app/privacy-policy.html:257
+msgid "We use Session Cookies to operate our Service."
+msgstr ""
+
+#: templates/app/privacy-policy.html:260
+msgid "Preference Cookies."
+msgstr ""
+
+#: templates/app/privacy-policy.html:262
+msgid ""
+"We use Preference Cookies to remember your\n"
+"                                    preferences and various settings."
+msgstr ""
+
+#: templates/app/privacy-policy.html:269
+msgid "Security Cookies."
+msgstr ""
+
+#: templates/app/privacy-policy.html:270
+msgid "We use Security Cookies for security purposes"
+msgstr ""
+
+#: templates/app/privacy-policy.html:275
+msgid "Use of Data"
+msgstr ""
+
+#: templates/app/privacy-policy.html:280
+msgid "Bevbox uses the collected data for various purposes:"
+msgstr ""
+
+#: templates/app/privacy-policy.html:283
+msgid "To provide and maintain the Service"
+msgstr ""
+
+#: templates/app/privacy-policy.html:284
+msgid "To notify you about changes to our Service"
+msgstr ""
+
+#: templates/app/privacy-policy.html:287
+msgid ""
+"To allow you to participate in interactive features of our Service when "
+"you choose\n"
+"                                    to do so"
+msgstr ""
+
+#: templates/app/privacy-policy.html:293
+msgid "To provide customer care and support"
+msgstr ""
+
+#: templates/app/privacy-policy.html:296
+msgid ""
+"To provide analysis or valuable information so that we can improve the "
+"Service"
+msgstr ""
+
+#: templates/app/privacy-policy.html:301
+msgid "To monitor the usage of the Service"
+msgstr ""
+
+#: templates/app/privacy-policy.html:303
+msgid "To detect, prevent and address technical issues"
+msgstr ""
+
+#: templates/app/privacy-policy.html:309
+msgid "Transfer Of Data"
+msgstr ""
+
+#: templates/app/privacy-policy.html:313
+msgid ""
+"Your information, including Personal Data, may be transferred to — and "
+"maintained on —\n"
+"                            computers located outside of your state, "
+"province, country or other governmental\n"
+"                            jurisdiction where the data protection laws "
+"may differ than those from your jurisdiction."
+msgstr ""
+
+#: templates/app/privacy-policy.html:320
+msgid ""
+"If you are located outside Ukraine and choose to provide information to "
+"us, please note\n"
+"                            that we transfer the data, including Personal"
+" Data, to Ukraine and process it there."
+msgstr ""
+
+#: templates/app/privacy-policy.html:326
+msgid ""
+"Your consent to this Privacy Policy followed by your submission of such "
+"information\n"
+"                            represents your agreement to that transfer."
+msgstr ""
+
+#: templates/app/privacy-policy.html:331
+msgid ""
+"Bevbox will take all steps\n"
+"                            reasonably necessary to ensure that your data"
+" is treated securely and in accordance with\n"
+"                            this Privacy Policy and no transfer of your "
+"Personal Data will take place to an\n"
+"                            organization or a country unless there are "
+"adequate controls in place including the\n"
+"                            security of your data and other personal "
+"information."
+msgstr ""
+
+#: templates/app/privacy-policy.html:340
+msgid "Disclosure Of Data"
+msgstr ""
+
+#: templates/app/privacy-policy.html:345
+msgid "Legal Requirements"
+msgstr ""
+
+#: templates/app/privacy-policy.html:349
+msgid ""
+"Bevbox may disclose your Personal Data in the good faith belief that such"
+" action is\n"
+"                            necessary to:"
+msgstr ""
+
+#: templates/app/privacy-policy.html:355
+msgid "To comply with a legal obligation"
+msgstr ""
+
+#: templates/app/privacy-policy.html:358
+msgid "To protect and defend the rights or property of Bevbox"
+msgstr ""
+
+#: templates/app/privacy-policy.html:363
+msgid ""
+"To prevent or investigate possible wrongdoing in connection with the "
+"Service"
+msgstr ""
+
+#: templates/app/privacy-policy.html:370
+msgid "To protect the personal safety of users of the Service or the public"
+msgstr ""
+
+#: templates/app/privacy-policy.html:375
+msgid "To protect against legal liabilit"
+msgstr ""
+
+#: templates/app/privacy-policy.html:379
+msgid "Security Of Data"
+msgstr ""
+
+#: templates/app/privacy-policy.html:384
+#, python-format
+msgid ""
+"The security of your data is important to us, but remember that no method"
+" of transmission\n"
+"                            over the Internet, or method of electronic "
+"storage is 100% secure. While we strive to use\n"
+"                            commercially acceptable means to protect your"
+" Personal Data, we cannot guarantee its\n"
+"                            absolute security."
+msgstr ""
+
+#: templates/app/privacy-policy.html:393
+msgid ""
+"Service\n"
+"                                    Providers"
+msgstr ""
+
+#: templates/app/privacy-policy.html:398
+msgid ""
+"We may employ third party companies and\n"
+"                            individuals to facilitate our Service "
+"(\"Service Providers\"), to provide the Service on our\n"
+"                            behalf, to perform Service-related services "
+"or to assist us in analyzing how our Service is\n"
+"                            used."
+msgstr ""
+
+#: templates/app/privacy-policy.html:405
+msgid ""
+"These third parties have access to your Personal Data only to perform\n"
+"                            these tasks on our behalf and are obligated "
+"not to disclose or use it for any other\n"
+"                            purpose."
+msgstr ""
+
+#: templates/app/privacy-policy.html:412
+msgid "Analytics"
+msgstr ""
+
+#: templates/app/privacy-policy.html:416
+msgid ""
+"We may use third-party Service Providers to monitor and analyze the use "
+"of our Service."
+msgstr ""
+
+#: templates/app/privacy-policy.html:422
+msgid "Google Analytics"
+msgstr ""
+
+#: templates/app/privacy-policy.html:424
+msgid ""
+"Google Analytics is a web analytics\n"
+"                                    service offered by Google that tracks"
+" and reports website traffic. Google uses the\n"
+"                                    data collected to track and monitor "
+"the use of our Service. This data is shared\n"
+"                                    with other Google services. Google "
+"may use the collected data to contextualize and\n"
+"                                    personalize the ads of its own "
+"advertising network."
+msgstr ""
+
+#: templates/app/privacy-policy.html:432
+msgid ""
+"You can opt-out of\n"
+"                                    having made your activity on the "
+"Service available to Google Analytics by\n"
+"                                    installing the Google Analytics opt-"
+"out browser add-on. The add-on prevents the\n"
+"                                    Google Analytics JavaScript (ga.js, "
+"analytics.js, and dc.js) from sharing\n"
+"                                    information with Google Analytics "
+"about visits activity."
+msgstr ""
+
+#: templates/app/privacy-policy.html:440
+msgid ""
+"For more\n"
+"                                    information on the privacy practices "
+"of Google, please visit the Google Privacy\n"
+"                                    &amp; Terms web page:"
+msgstr ""
+
+#: templates/app/privacy-policy.html:453
+msgid "Links To Other Sites"
+msgstr ""
+
+#: templates/app/privacy-policy.html:457
+msgid ""
+"Our Service may contain links to other sites that are not operated by us."
+" If you click on a\n"
+"                            third party link, you will be directed to "
+"that third party's site. We strongly advise you\n"
+"                            to review the Privacy Policy of every site "
+"you visit."
+msgstr ""
+
+#: templates/app/privacy-policy.html:463
+msgid ""
+"We have no control over\n"
+"                            and assume no responsibility for the content,"
+" privacy policies or practices of any third\n"
+"                            party sites or services."
+msgstr ""
+
+#: templates/app/privacy-policy.html:471
+msgid ""
+"Children's\n"
+"                                    Privacy"
+msgstr ""
+
+#: templates/app/privacy-policy.html:475
+msgid ""
+"Our Service does not address anyone under the\n"
+"                            age of 18 (\"Children\")."
+msgstr ""
+
+#: templates/app/privacy-policy.html:480
+msgid ""
+"We do not knowingly collect personally identifiable\n"
+"                            information from anyone under the age of 18. "
+"If you are a parent or guardian and you are\n"
+"                            aware that your Children has provided us with"
+" Personal Data, please contact us. If we\n"
+"                            become aware that we have collected Personal "
+"Data from children without verification of\n"
+"                            parental consent, we take steps to remove "
+"that information from our servers."
+msgstr ""
+
+#: templates/app/privacy-policy.html:490
+msgid ""
+"Changes To This Privacy\n"
+"                                    Policy"
+msgstr ""
+
+#: templates/app/privacy-policy.html:496
+msgid ""
+"We may update our Privacy Policy from time to\n"
+"                            time. We will notify you of any changes by "
+"posting the new Privacy Policy on this page."
+msgstr ""
+
+#: templates/app/privacy-policy.html:501
+msgid ""
+"We will let you know via email and/or a prominent notice on\n"
+"              our Service, prior to the change becoming effective and "
+"update the\n"
+"              \"effective date\" at the top of this Privacy Policy. <br "
+"/><br />\n"
+"              You are advised to review this Privacy Policy periodically "
+"for any\n"
+"              changes. Changes to this Privacy Policy are effective when "
+"they\n"
+"              are posted on this page."
+msgstr ""
+
+#: templates/app/privacy-policy.html:509 templates/app/terms-of-use.html:442
+msgid "Contact Us"
+msgstr ""
+
+#: templates/app/privacy-policy.html:513
+msgid "If you have any questions about this Privacy Policy, please contact us:"
+msgstr ""
+
+#: templates/app/privacy-policy.html:519 templates/app/terms-of-use.html:449
+msgid "By email:"
+msgstr ""
+
+#: templates/app/privacy-policy.html:523 templates/app/terms-of-use.html:452
+msgid "By visiting this page on our website:"
+msgstr ""
+
+#: templates/app/refund-policy.html:3 templates/app/refund-policy.html:5
+msgid "Bevbox Refund Policy"
+msgstr ""
+
+#: templates/app/refund-policy.html:6
+msgid ""
+"Refund Policy outline the main principles of the return process of a "
+"product."
+msgstr ""
+
+#: templates/app/refund-policy.html:138
+msgid "REFUND POLICY"
+msgstr ""
+
+#: templates/app/refund-policy.html:159
+msgid ""
+"Our refund policy is as simple as ABC. If you are not satisfied\n"
+"              with a delivered box and you didn't open a whiskey bottle, "
+"not\n"
+"              smoked cigar and saved the look of magazine and box, then "
+"just\n"
+"              request a refund by means of"
+msgstr ""
+
+#: templates/app/refund-policy.html:164
+msgid "or by"
+msgstr ""
+
+#: templates/app/refund-policy.html:164
+msgid ""
+"or just\n"
+"              say what should be replaced and we'll pack a new box for "
+"you. To\n"
+"              do so you need to provide us with such details by means of\n"
+"              mentioned above methods:"
+msgstr ""
+
+#: templates/app/refund-policy.html:169
+msgid "your phone number"
+msgstr ""
+
+#: templates/app/refund-policy.html:170
+msgid "first and Last name"
+msgstr ""
+
+#: templates/app/refund-policy.html:171
+msgid "subscription type"
+msgstr ""
+
+#: templates/app/refund-policy.html:172
+msgid "date of receving of a box"
+msgstr ""
+
+#: templates/app/refund-policy.html:174
+msgid "That's it."
+msgstr ""
+
+#: templates/app/subscription.html:3 templates/app/subscription.html:5
+#: templates/app/terms-of-use.html:3
+msgid "Bevbox Subscription"
+msgstr ""
+
+#: templates/app/subscription.html:6
+msgid "Bevbox subscription page."
+msgstr ""
+
+#: templates/app/subscription.html:139
+msgid "SUBSCRIPTION"
+msgstr ""
+
+#: templates/app/subscription.html:240
+msgid "Phone"
+msgstr ""
+
+#: templates/app/subscription.html:267
+msgid "Choose a subscription plan"
+msgstr ""
+
+#: templates/app/subscription.html:283
+msgid "Junior 1 month / ₴ 1373"
+msgstr ""
+
+#: templates/app/subscription.html:298
+#, python-format
+msgid "Middle 2 months / ₴ 2608 (you save 5%(percent)s)"
+msgstr ""
+
+#: templates/app/subscription.html:312
+#, python-format
+msgid "Senior 3 months / ₴ 3707 (you save 10%(percent)s)"
+msgstr ""
+
+#: templates/app/subscription.html:328
+msgid "City"
+msgstr ""
+
+#: templates/app/subscription.html:353
+msgid "Department of New Post (NovaPoshta)"
+msgstr ""
+
+#: templates/app/subscription.html:378
+msgid "Preferences"
+msgstr ""
+
+#: templates/app/subscription.html:442
+msgid "Subscribe now"
+msgstr ""
+
+#: templates/app/subscription.html:510
+msgid "By clicking the button you agree our"
+msgstr ""
+
+#: templates/app/subscription.html:522
+msgid "Terms of use"
+msgstr ""
+
+#: templates/app/success.html:3 templates/app/success.html:49
+msgid "Success"
+msgstr ""
+
+#: templates/app/success.html:56
+msgid ""
+"Thank you for choosing us, you successfully subscribed to\n"
+"                  Bevbox, we'll send you a message when we'll deliver "
+"your\n"
+"                  Bevbox to New Post."
+msgstr ""
+
+#: templates/app/terms-of-use.html:5
+msgid "Bevbox Terms of Use"
+msgstr ""
+
+#: templates/app/terms-of-use.html:6
+msgid ""
+"Terms of Use govern your use of our service and provide information about"
+" the Bevbox."
+msgstr ""
+
+#: templates/app/terms-of-use.html:139
+msgid "TERMS OF USE"
+msgstr ""
+
+#: templates/app/terms-of-use.html:163
+msgid ""
+"These Terms of Use outline the rules and regulations for the use\n"
+"              of Bevbox's Website.<br /><br />Bevbox is located at:<br />"
+"\n"
+"              <em>Heroiv Dnipra, 65 , Kyiv , Ukraine<br /></em><br />By\n"
+"              accessing this website we assume you accept these terms and"
+"\n"
+"              conditions in full. Do not continue to use Bevbox's website"
+" if you\n"
+"              do not accept all of the terms and conditions stated on "
+"this page."
+msgstr ""
+
+#: templates/app/terms-of-use.html:170
+msgid "The following terminology applies to these Terms of Use,"
+msgstr ""
+
+#: templates/app/terms-of-use.html:171
+msgid "Disclaimer Notice"
+msgstr ""
+
+#: templates/app/terms-of-use.html:175
+msgid ""
+"and any agreements: \"Client\", \"You\" and \"Your\" refers to you, the\n"
+"              person accessing this website and accepting the Company's "
+"terms\n"
+"              and conditions. \"The Company\", \"Ourselves\", \"We\", "
+"\"Our\" and \"Us\",\n"
+"              refers to our Company. \"Party\", \"Parties\", or \"Us\", "
+"refers to both\n"
+"              the Client and ourselves, or either the Client or "
+"ourselves. All\n"
+"              terms refer to the offer, acceptance and consideration of "
+"payment\n"
+"              necessary to undertake the process of our assistance to the"
+" Client\n"
+"              in the most appropriate manner, whether by formal meetings "
+"of a\n"
+"              fixed duration, or any other means, for the express purpose"
+" of\n"
+"              meeting the Client's needs in respect of provision of the\n"
+"              Company's stated services/products, in accordance with and "
+"subject\n"
+"              to, prevailing law of Ukraine. Any use of the above "
+"terminology or\n"
+"              other words in the singular, plural, capitalisation and/or "
+"he/she\n"
+"              or they, are taken as interchangeable and therefore as "
+"referring\n"
+"              to same."
+msgstr ""
+
+#: templates/app/terms-of-use.html:190
+msgid "Terms of service"
+msgstr ""
+
+#: templates/app/terms-of-use.html:191
+msgid ""
+"Service is a set of whiskey, cigar, magazine &amp; paper box,\n"
+"              hereinafter reffered to as the "
+msgstr ""
+
+#: templates/app/terms-of-use.html:192
+msgid "box"
+msgstr ""
+
+#: templates/app/terms-of-use.html:193
+msgid ""
+"We send you a box on the first dates of a next month after successful\n"
+"              payment. That means if you paid in January, the box will be"
+"\n"
+"              delivered to you on February. The same rule applied to "
+"2-months,\n"
+"              3-months subscriptions types, you will receive another box "
+"on\n"
+"              first dates of the month after the current month."
+msgstr ""
+
+#: templates/app/terms-of-use.html:199
+msgid "Cookies"
+msgstr ""
+
+#: templates/app/terms-of-use.html:203
+msgid ""
+"We employ the use of cookies. By using Bevbox's website you\n"
+"              consent to the use of cookies in accordance with Bevbox's"
+msgstr ""
+
+#: templates/app/terms-of-use.html:208
+msgid ""
+"Most of the modern day interactive web sites use cookies to enable\n"
+"              us to retrieve user details for each visit. Cookies are "
+"used in\n"
+"              some areas of our site to enable the functionality of this "
+"area\n"
+"              and ease of use for those people visiting. Some of our "
+"affiliate\n"
+"              /advertising partners may also use cookies."
+msgstr ""
+
+#: templates/app/terms-of-use.html:214
+msgid "License"
+msgstr ""
+
+#: templates/app/terms-of-use.html:217
+msgid ""
+"Unless otherwise stated, Bevbox and/or it's licensors own the\n"
+"              intellectual property rights for all material on Bevbox. "
+"All\n"
+"              intellectual property rights are reserved. You may view "
+"and/or\n"
+"              print pages from"
+msgstr ""
+
+#: templates/app/terms-of-use.html:222
+msgid ""
+"for your own personal use subject to restrictions set in these\n"
+"              terms and conditions."
+msgstr ""
+
+#: templates/app/terms-of-use.html:224
+msgid "You must not do without prior written approval:"
+msgstr ""
+
+#: templates/app/terms-of-use.html:227
+msgid "Republish material from"
+msgstr ""
+
+#: templates/app/terms-of-use.html:233
+msgid "Sell, rent or sub-license material from"
+msgstr ""
+
+#: templates/app/terms-of-use.html:239
+msgid "Reproduce, duplicate or copy material from"
+msgstr ""
+
+#: templates/app/terms-of-use.html:245
+msgid ""
+"Redistribute content from Bevbox (unless content is specifically\n"
+"              made for redistribution)."
+msgstr ""
+
+#: templates/app/terms-of-use.html:248
+msgid "Hyperlinking to our Content"
+msgstr ""
+
+#: templates/app/terms-of-use.html:253
+msgid ""
+"The following organizations may link to our Web site without\n"
+"                  prior written approval:"
+msgstr ""
+
+#: templates/app/terms-of-use.html:256
+msgid "Government agencies;"
+msgstr ""
+
+#: templates/app/terms-of-use.html:257
+msgid "Search engines;"
+msgstr ""
+
+#: templates/app/terms-of-use.html:258
+msgid "News organizations;"
+msgstr ""
+
+#: templates/app/terms-of-use.html:260
+msgid ""
+"Online directory distributors when they list us in the\n"
+"                      directory may link to our Web site in the same "
+"manner as\n"
+"                      they hyperlink to the Web sites of other listed\n"
+"                      businesses; and"
+msgstr ""
+
+#: templates/app/terms-of-use.html:266
+msgid ""
+"Systemwide Accredited Businesses except soliciting\n"
+"                      non-profit organizations, charity shopping malls, "
+"and\n"
+"                      charity fundraising groups which may not hyperlink "
+"to our\n"
+"                      Web site."
+msgstr ""
+
+#: templates/app/terms-of-use.html:276
+msgid ""
+"These organizations may link to our home page, to publications\n"
+"                  or to other Web site information so long as the link: "
+"(a) is\n"
+"                  not in any way misleading; (b) does not falsely imply\n"
+"                  sponsorship, endorsement or approval of the linking "
+"party and\n"
+"                  its products or services; and (c) fits within the "
+"context of\n"
+"                  the linking party's site."
+msgstr ""
+
+#: templates/app/terms-of-use.html:284
+msgid ""
+"We may consider and approve in our sole discretion other link\n"
+"                  requests from the following types of organizations:"
+msgstr ""
+
+#: templates/app/terms-of-use.html:288
+msgid ""
+"commonly-known consumer and/or business information\n"
+"                      sources such as Chambers of Commerce, American "
+"Automobile\n"
+"                      Association, AARP and Consumers Union;"
+msgstr ""
+
+#: templates/app/terms-of-use.html:292
+msgid "dot.com community sites;"
+msgstr ""
+
+#: templates/app/terms-of-use.html:294
+msgid ""
+"associations or other groups representing charities,\n"
+"                      including charity giving sites,"
+msgstr ""
+
+#: templates/app/terms-of-use.html:297
+msgid "online directory distributors;"
+msgstr ""
+
+#: templates/app/terms-of-use.html:298
+msgid "internet portals;"
+msgstr ""
+
+#: templates/app/terms-of-use.html:300
+msgid ""
+"accounting, law and consulting firms whose primary clients\n"
+"                      are businesses; and"
+msgstr ""
+
+#: templates/app/terms-of-use.html:303
+msgid "educational institutions and trade associations."
+msgstr ""
+
+#: templates/app/terms-of-use.html:307
+msgid ""
+"We will approve link requests from these organizations if we\n"
+"              determine that: (a) the link would not reflect unfavorably "
+"on us\n"
+"              or our accredited businesses (for example, trade "
+"associations or\n"
+"              other organizations representing inherently suspect types "
+"of\n"
+"              business, such as work-at-home opportunities, shall not be "
+"allowed\n"
+"              to link); (b)the organization does not have an "
+"unsatisfactory\n"
+"              record with us; (c) the benefit to us from the visibility\n"
+"              associated with the hyperlink outweighs the absence of ; "
+"and (d)\n"
+"              where the link is in the context of general resource "
+"information\n"
+"              or is otherwise consistent with editorial content in a "
+"newsletter\n"
+"              or similar product furthering the mission of the "
+"organization."
+msgstr ""
+
+#: templates/app/terms-of-use.html:319
+msgid ""
+"These organizations may link to our home page, to publications or\n"
+"              to other Web site information so long as the link: (a) is "
+"not in\n"
+"              any way misleading; (b) does not falsely imply sponsorship,"
+"\n"
+"              endorsement or approval of the linking party and it "
+"products or\n"
+"              services; and (c) fits within the context of the linking "
+"party's\n"
+"              site."
+msgstr ""
+
+#: templates/app/terms-of-use.html:325
+msgid ""
+"If you are among the organizations listed in paragraph 2 above and\n"
+"              are interested in linking to our website, you must notify "
+"us by\n"
+"              sending an e-mail to"
+msgstr ""
+
+#: templates/app/terms-of-use.html:328
+msgid ""
+"Please include\n"
+"              your name, your organization name, contact information "
+"(such as a\n"
+"              phone number and/or e-mail address) as well as the URL of "
+"your\n"
+"              site, a list of any URLs from which you intend to link to "
+"our Web\n"
+"              site, and a list of the URL(s) on our site to which you "
+"would like\n"
+"              to link. Allow 2-3 weeks for a response."
+msgstr ""
+
+#: templates/app/terms-of-use.html:335
+msgid "Approved organizations may hyperlink to our Web site as follows:"
+msgstr ""
+
+#: templates/app/terms-of-use.html:338
+msgid "By use of our corporate name; or"
+msgstr ""
+
+#: templates/app/terms-of-use.html:340
+msgid ""
+"By use of the uniform resource locator (Web address) being\n"
+"                  linked to; or"
+msgstr ""
+
+#: templates/app/terms-of-use.html:344
+msgid ""
+"By use of any other description of our Web site or material\n"
+"                  being linked to that makes sense within the context and"
+" format\n"
+"                  of content on the linking party's site."
+msgstr ""
+
+#: templates/app/terms-of-use.html:349
+msgid ""
+"No use of Bevbox's logo or other artwork will be allowed for\n"
+"              linking absent a trademark license agreement."
+msgstr ""
+
+#: templates/app/terms-of-use.html:353
+msgid "Iframes"
+msgstr ""
+
+#: templates/app/terms-of-use.html:356
+msgid ""
+"Without prior approval and express written permission, you may not\n"
+"              create frames around our Web pages or use other techniques "
+"that\n"
+"              alter in any way the visual presentation or appearance of "
+"our Web\n"
+"              site."
+msgstr ""
+
+#: templates/app/terms-of-use.html:362
+msgid "Reservation of Rights"
+msgstr ""
+
+#: templates/app/terms-of-use.html:364
+msgid ""
+"We reserve the right at any time and in its sole discretion to\n"
+"              request that you remove all links or any particular link to"
+" our\n"
+"              Web site. You agree to immediately remove all links to our "
+"Web\n"
+"              site upon such request. We also reserve the right to amend "
+"these\n"
+"              terms and conditions and its linking policy at any time. By"
+"\n"
+"              continuing to link to our Web site, you agree to be bound "
+"to and\n"
+"              abide by these linking terms and conditions."
+msgstr ""
+
+#: templates/app/terms-of-use.html:373
+msgid "Removal of links from our website"
+msgstr ""
+
+#: templates/app/terms-of-use.html:375
+msgid ""
+"If you find any link on our Web site or any linked web site\n"
+"              objectionable for any reason, you may contact us about "
+"this. We\n"
+"              will consider requests to remove links but will have no "
+"obligation\n"
+"              to do so or to respond directly to you."
+msgstr ""
+
+#: templates/app/terms-of-use.html:379
+msgid ""
+"Whilst we endeavour to ensure that the information on this website\n"
+"              is correct, we do not warrant its completeness or accuracy;"
+" nor do\n"
+"              we commit to ensuring that the website remains available or"
+" that\n"
+"              the material on the website is kept up to date."
+msgstr ""
+
+#: templates/app/terms-of-use.html:386
+msgid "Content Liability"
+msgstr ""
+
+#: templates/app/terms-of-use.html:388
+msgid ""
+"We shall have no responsibility or liability for any content\n"
+"              appearing on your Web site. You agree to indemnify and "
+"defend us\n"
+"              against all claims arising out of or based upon your "
+"Website. No\n"
+"              link(s) may appear on any page on your Web site or within "
+"any\n"
+"              context containing content or materials that may be "
+"interpreted as\n"
+"              libelous, obscene or criminal, or which infringes, "
+"otherwise\n"
+"              violates, or advocates the infringement or other violation "
+"of, any\n"
+"              third party rights."
+msgstr ""
+
+#: templates/app/terms-of-use.html:398
+msgid "Disclaimer"
+msgstr ""
+
+#: templates/app/terms-of-use.html:401
+msgid ""
+"To the maximum extent permitted by applicable law, we exclude all\n"
+"              representations, warranties and conditions relating to our "
+"website\n"
+"              and the use of this website (including, without limitation,"
+" any\n"
+"              warranties implied by law in respect of satisfactory "
+"quality,\n"
+"              fitness for purpose and/or the use of reasonable care and "
+"skill).\n"
+"              Nothing in this disclaimer will:"
+msgstr ""
+
+#: templates/app/terms-of-use.html:410
+msgid ""
+"limit or exclude our or your liability for death or personal\n"
+"                  injury resulting from negligence;"
+msgstr ""
+
+#: templates/app/terms-of-use.html:414
+msgid ""
+"limit or exclude our or your liability for fraud or fraudulent\n"
+"                  misrepresentation;"
+msgstr ""
+
+#: templates/app/terms-of-use.html:418
+msgid ""
+"limit any of our or your liabilities in any way that is not\n"
+"                  permitted under applicable law; or"
+msgstr ""
+
+#: templates/app/terms-of-use.html:422
+msgid ""
+"exclude any of our or your liabilities that may not be\n"
+"                  excluded under applicable law;"
+msgstr ""
+
+#: templates/app/terms-of-use.html:426
+msgid ""
+"we are not responsible for damages caused by the work of the\n"
+"                  third-party and force majeure circumstances against on "
+"a box."
+msgstr ""
+
+#: templates/app/terms-of-use.html:430
+msgid ""
+"The limitations and exclusions of liability set out in this\n"
+"              Section and elsewhere in this disclaimer: (a) are subject "
+"to the\n"
+"              preceding paragraph; and (b) govern all liabilities arising"
+" under\n"
+"              the disclaimer or in relation to the subject matter of this"
+"\n"
+"              disclaimer, including liabilities arising in contract, in "
+"tort\n"
+"              (including negligence) and for breach of statutory duty."
+msgstr ""
+
+#: templates/app/terms-of-use.html:437
+msgid ""
+"To the extent that the website and the information and services on\n"
+"              the website are provided free of charge, we will not be "
+"liable for\n"
+"              any loss or damage of any nature."
+msgstr ""
+
+#: templates/app/terms-of-use.html:445
+msgid ""
+"If you have any questions about this Terms of Use,\n"
+"              please contact us:"
+msgstr ""
+
