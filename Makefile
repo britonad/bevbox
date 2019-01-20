@@ -33,6 +33,7 @@ create-pot:
 	--copyright-holder="Vladyslav Krylasov <vladyslav.krylasov@gmail.com>" \
 	--project="Bevbox" --version="1.0.0"
 	-@pybabel init -i messages.pot -d translations -l uk
+	-@pybabel init -i messages.pot -d translations -l ru
 
 update-messages:
 	-@echo "Updating translation files."
