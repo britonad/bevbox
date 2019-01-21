@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Bevbox 1.0.0\n"
 "Report-Msgid-Bugs-To: vladyslav.krylasov@gmail.com\n"
-"POT-Creation-Date: 2019-01-20 18:37+0200\n"
+"POT-Creation-Date: 2019-01-21 23:17+0200\n"
 "PO-Revision-Date: 2019-01-20 17:42+0200\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: uk\n"
@@ -112,7 +112,7 @@ msgstr "Щось пішло не так. Не вдалося успішно зд
 msgid "Bevbox - a home of taste & flavor"
 msgstr "Bevbox - дім смаку та аромату"
 
-#: templates/app/home.html:7
+#: templates/app/home.html:6
 msgid ""
 "Bevbox is a marvelous mood for the evening at the expense of good "
 "whiskey, cigar and entertaining reading by subscription."
@@ -120,32 +120,32 @@ msgstr ""
 "Bevbox - це неймовірний настрій на вечір за рахунок доброго віскі, сигари"
 " і цікавого читання за передоплатою."
 
-#: templates/app/home.html:79 templates/app/home.html:172
-#: templates/app/home.html:354
+#: templates/app/home.html:77 templates/app/home.html:170
+#: templates/app/home.html:352
 msgid "How it works"
 msgstr "Як це працює"
 
-#: templates/app/home.html:88 templates/app/home.html:181
+#: templates/app/home.html:86 templates/app/home.html:179
 msgid "Features"
 msgstr "Особливості"
 
-#: templates/app/home.html:97 templates/app/home.html:190
+#: templates/app/home.html:95 templates/app/home.html:188
 msgid "Subscriptions"
 msgstr "Передоплати"
 
-#: templates/app/home.html:106 templates/app/home.html:199
+#: templates/app/home.html:104 templates/app/home.html:197
 msgid "About us"
 msgstr "Про нас"
 
-#: templates/app/home.html:115 templates/app/home.html:208
+#: templates/app/home.html:113 templates/app/home.html:206
 msgid "Contacts"
 msgstr "Контакти"
 
-#: templates/app/home.html:304
+#: templates/app/home.html:302
 msgid "Try to experience incredible taste & flavor"
 msgstr "Спробуйте відчути неймовірний смак та аромат"
 
-#: templates/app/home.html:319
+#: templates/app/home.html:317
 msgid ""
 "Bevbox is a marvelous mood for the evening at the expense of good "
 "whiskey, cigar and\n"
@@ -154,28 +154,28 @@ msgstr ""
 "Bevbox - це неймовірний настрій на вечір за рахунок доброго віскі, сигари"
 " і цікавого читання за передоплатою."
 
-#: templates/app/home.html:384 templates/app/home.html:754
-#: templates/app/home.html:807 templates/app/home.html:859
+#: templates/app/home.html:382 templates/app/home.html:752
+#: templates/app/home.html:805 templates/app/home.html:857
 msgid "Subscribe"
 msgstr "Підписатися"
 
-#: templates/app/home.html:392
+#: templates/app/home.html:390
 msgid "Take a look at our"
 msgstr "Подивіться на наші"
 
-#: templates/app/home.html:393
+#: templates/app/home.html:391
 msgid "features"
 msgstr "особливості"
 
-#: templates/app/home.html:396
+#: templates/app/home.html:394
 msgid "choose the most appropriate subscription type for yourself and pay it."
 msgstr "оберіть найбільш підходящий тип передоплати для себе і оплатіть її."
 
-#: templates/app/home.html:430
+#: templates/app/home.html:428
 msgid "Packing &amp; sending"
 msgstr "Пакування та відправка"
 
-#: templates/app/home.html:439
+#: templates/app/home.html:437
 msgid ""
 "After we receive a\n"
 "                                            successful confirmation of "
@@ -193,11 +193,11 @@ msgstr ""
 "Наприклад: якщо ви підписалися в січні, ми надішлемо коробку в перші дні "
 "лютого."
 
-#: templates/app/home.html:477
+#: templates/app/home.html:475
 msgid "Receiving"
 msgstr "Отримання"
 
-#: templates/app/home.html:486
+#: templates/app/home.html:484
 msgid ""
 "We send you a New Post\n"
 "                                            declaration number, you "
@@ -206,15 +206,15 @@ msgstr ""
 "Ми надсилаємо вам номер декларації Нової Пошти, ви отримуєте коробку. "
 "Крім того, доставка безкоштовна. Ось і все"
 
-#: templates/app/home.html:520
+#: templates/app/home.html:518
 msgid "Explore our features"
 msgstr "Погляньте на наші особливості"
 
-#: templates/app/home.html:545
+#: templates/app/home.html:543
 msgid "Uniqueness"
 msgstr "Унікальність"
 
-#: templates/app/home.html:553
+#: templates/app/home.html:551
 msgid ""
 "Each time you\n"
 "                                receive our box, you get a unique set of "
@@ -222,75 +222,77 @@ msgid ""
 "                                duplicated for the best your mood and "
 "leisure."
 msgstr ""
-"Кожного разу, коли Ви отримуєте нашу коробку, Ви отримуєте унікальний "
+"Кожного разу, коли ви отримуєте нашу коробку, ви отримуєте унікальний "
 "набір віскі, сигари і журналу, які не дублюються для кращого вашого "
 "настрою і дозвілля."
 
-#: templates/app/home.html:582
+#: templates/app/home.html:580
 msgid "High quality for the reasonable price"
 msgstr "Висока якість за розумну ціну"
 
-#: templates/app/home.html:590
+#: templates/app/home.html:588
 msgid ""
 "We provide you\n"
 "                                with best available on market whiskey, "
 "cigar and magazine for the reasonable price."
 msgstr ""
-"Ми пропонуємо Вам найкращі доступний на ринку віскі, сигари та журнали за "
-"розумною ціною."
+"Ми пропонуємо вам найкращий з доступних на ринку віскі, сигари та журнали"
+" за розумною ціною."
 
-#: templates/app/home.html:618
+#: templates/app/home.html:616
 msgid "Individual Approach"
 msgstr "Індивідуальний підхід"
 
-#: templates/app/home.html:626
+#: templates/app/home.html:624
 msgid ""
 "The best thing is\n"
 "                                to see you happy, so we'll count all your"
 " wishes to pack the best Bevbox for you."
 msgstr ""
-"Накраща річ для нас бачити Вас щасливими, тому ми враховуємо всі Ваші "
-"побажання, щоб запакувати кращий Bevbox для Вас."
+"Накраща річ для нас бачити вас щасливими, тому ми враховуємо всі ваші "
+"побажання, щоб запакувати кращий Bevbox для вас."
 
-#: templates/app/home.html:654
+#: templates/app/home.html:652
 msgid "Surprise effect"
 msgstr "Ефект сюрпризу"
 
-#: templates/app/home.html:662
+#: templates/app/home.html:660
 msgid ""
 "You won't be known\n"
 "                                what will be inside until you receive it."
 msgstr "Ви не будете знати, що буде всередині, поки не отримаєте коробку."
 
-#: templates/app/home.html:694
+#: templates/app/home.html:692
 msgid "Our subscriptions"
 msgstr "Наші передоплати"
 
-#: templates/app/home.html:702
+#: templates/app/home.html:700
 msgid "Here's list of our available subscriptions plans."
 msgstr "Ось список наших доступних передоплат."
 
-#: templates/app/home.html:727
+#: templates/app/home.html:725
 msgid "Junior"
 msgstr "Хорунжий"
 
-#: templates/app/home.html:739
+#: templates/app/home.html:737
 msgid ""
 "You will receive one time a box\n"
 "                                    fulfilled with whiskey, cigar, and "
 "magazine."
-msgstr "Ви отримаєте один раз коробку, наповнену з віскі, сигарою та журналом за цей тип передоплати."
+msgstr ""
+"Ви отримаєте один раз коробку, наповнену з віскі, сигарою та журналом за "
+"цей тип передоплати."
 
-#: templates/app/home.html:779
+#: templates/app/home.html:777
 msgid "Middle"
 msgstr "Осавул"
 
-#: templates/app/home.html:782
+#: templates/app/home.html:780
 #, python-format
 msgid "you save 5%(percent)s"
 msgstr "ви збергігаєте 5%(percent)s"
 
-#: templates/app/home.html:791
+#: templates/app/home.html:789
 msgid ""
 "In this case, you'll receive unique\n"
 "                                    two boxes for two months fulfilled "
@@ -299,16 +301,16 @@ msgstr ""
 "У цьому випадку ви отримаєте дві унікальні коробки протягом двох місяців,"
 " наповненними з віскі, сигарою і журналом."
 
-#: templates/app/home.html:832
+#: templates/app/home.html:830
 msgid "Senior"
 msgstr "Гетьман"
 
-#: templates/app/home.html:835
+#: templates/app/home.html:833
 #, python-format
 msgid "you save 10%(percent)s"
 msgstr "ви збергігаєте 10%(percent)s"
 
-#: templates/app/home.html:844
+#: templates/app/home.html:842
 msgid ""
 "In this case, you'll receive unique\n"
 "                                    three boxes for three months "
@@ -317,11 +319,11 @@ msgstr ""
 "У цьому випадку ви отримаєте три унікальні коробки протягом трьох "
 "місяців, наповненними з віскі, сигарою і журналом."
 
-#: templates/app/home.html:905
+#: templates/app/home.html:903
 msgid "A word about us"
-msgstr "Словенятко про нас"
+msgstr "Слово про нас"
 
-#: templates/app/home.html:917
+#: templates/app/home.html:915
 msgid ""
 "We are a young, hard-working team of 2 people who\n"
 "                                        provide a subscription service "
@@ -330,27 +332,29 @@ msgstr ""
 "Ми молода, працьовита команда з 2-х людей, які надають послуги "
 "передоплати на віскі, сигари та журнали."
 
-#: templates/app/home.html:1008
+#: templates/app/home.html:1006
 msgid "Kyiv, Heroiv Dnipra, 65"
 msgstr "Київ, Героїв Дніпра, 65"
 
-#: templates/app/home.html:1027
+#: templates/app/home.html:1025
 msgid ""
 "Any questions left? Drop us a message by\n"
 "                            means of"
 msgstr "Залишилися питання? Напишіть нам повідомлення за допомогою"
 
-#: templates/app/home.html:1033 templates/app/refund-policy.html:163
+#: templates/app/home.html:1031 templates/app/refund-policy.html:163
 msgid "contact form"
 msgstr "контактної форми"
 
-#: templates/app/maintenance.html:46
+#: templates/app/maintenance.html:49
 msgid "maintenance"
 msgstr "технічне обслуговування"
 
-#: templates/app/maintenance.html:54
+#: templates/app/maintenance.html:57
 msgid "Sorry, we're currently working on improving of our system. Stay tuned."
 msgstr ""
+"На жаль, ми зараз працюємо над удосконаленням нашої системи. Залишайтеся "
+"з нами."
 
 #: templates/app/privacy-policy.html:3 templates/app/privacy-policy.html:5
 msgid "Bevbox Privacy Policy"
@@ -831,17 +835,17 @@ msgstr ""
 
 #: templates/app/refund-policy.html:3 templates/app/refund-policy.html:5
 msgid "Bevbox Refund Policy"
-msgstr ""
+msgstr "Bevbox політика повернення коштів"
 
 #: templates/app/refund-policy.html:6
 msgid ""
 "Refund Policy outline the main principles of the return process of a "
 "product."
-msgstr ""
+msgstr "Політика повернення визначає основні принципи процесу повернення продукту."
 
 #: templates/app/refund-policy.html:138
 msgid "REFUND POLICY"
-msgstr ""
+msgstr "ПОЛІТИКА ВІДШКОДУВАННЯ"
 
 #: templates/app/refund-policy.html:159
 msgid ""
@@ -852,10 +856,14 @@ msgid ""
 "just\n"
 "              request a refund by means of"
 msgstr ""
+"Наша політика повернення коштів така проста, як ABC. Якщо ви не "
+"задоволені доставленою коробкою, і ви не відкрили пляшку віскі, не палили"
+" сигару і зберегли вигляд журналу та коробки, то просто запросіть "
+"повернення коштів за допомогою "
 
 #: templates/app/refund-policy.html:164
 msgid "or by"
-msgstr ""
+msgstr "або"
 
 #: templates/app/refund-policy.html:164
 msgid ""
@@ -865,89 +873,96 @@ msgid ""
 "              do so you need to provide us with such details by means of\n"
 "              mentioned above methods:"
 msgstr ""
+", або просто скажіть, що потрібно замінити, і ми запакуємо нову коробку для"
+" вас. Для цього вам необхідно надати нам такі деталі за допомогою "
+"згаданих вище методів:"
 
 #: templates/app/refund-policy.html:169
 msgid "your phone number"
-msgstr ""
+msgstr "номер телефону"
 
 #: templates/app/refund-policy.html:170
 msgid "first and Last name"
-msgstr ""
+msgstr "прізвище та ім'я"
 
 #: templates/app/refund-policy.html:171
 msgid "subscription type"
-msgstr ""
+msgstr "тип передоплати"
 
 #: templates/app/refund-policy.html:172
 msgid "date of receving of a box"
-msgstr ""
+msgstr "дата отримання коробки"
 
 #: templates/app/refund-policy.html:174
 msgid "That's it."
-msgstr ""
+msgstr "Ось і все."
 
 #: templates/app/subscription.html:3 templates/app/subscription.html:5
 #: templates/app/terms-of-use.html:3
 msgid "Bevbox Subscription"
-msgstr ""
+msgstr "Bevbox передоплата"
 
 #: templates/app/subscription.html:6
 msgid "Bevbox subscription page."
-msgstr ""
+msgstr "Bevbox сторінка передоплати."
 
 #: templates/app/subscription.html:139
 msgid "SUBSCRIPTION"
-msgstr ""
+msgstr "ПЕРЕДОПЛАТА"
 
 #: templates/app/subscription.html:240
 msgid "Phone"
-msgstr ""
+msgstr "Телефон"
 
 #: templates/app/subscription.html:267
 msgid "Choose a subscription plan"
-msgstr ""
+msgstr "Оберіть тип передоплати"
 
 #: templates/app/subscription.html:283
 msgid "Junior 1 month / ₴ 1373"
-msgstr ""
+msgstr "Хоружний 1 місяць / ₴ 1373"
 
 #: templates/app/subscription.html:298
 #, python-format
 msgid "Middle 2 months / ₴ 2608 (you save 5%(percent)s)"
-msgstr ""
+msgstr "Осавул 2 місяць / ₴ 2608 (ви збергігаєте 5%(percent)s)"
 
 #: templates/app/subscription.html:312
 #, python-format
 msgid "Senior 3 months / ₴ 3707 (you save 10%(percent)s)"
-msgstr ""
+msgstr "Гетьман 3 місяць / ₴ 3707 (ви збергігаєте 10%(percent)s)"
 
 #: templates/app/subscription.html:328
 msgid "City"
-msgstr ""
+msgstr "Місто"
 
 #: templates/app/subscription.html:353
 msgid "Department of New Post (NovaPoshta)"
-msgstr ""
+msgstr "Відділення Нової Пошти"
 
 #: templates/app/subscription.html:378
 msgid "Preferences"
-msgstr ""
+msgstr "Вподобання"
+
+#: templates/app/subscription.html:384
+msgid "I like a single malt whiskey etc. Leave blank if doesnt have one."
+msgstr "Мені подобається односолодовий віскі і т.д. Залиште порожнім, якщо у вас їх немає."
 
 #: templates/app/subscription.html:442
 msgid "Subscribe now"
-msgstr ""
+msgstr "Підписатися зараз"
 
 #: templates/app/subscription.html:510
 msgid "By clicking the button you agree our"
-msgstr ""
+msgstr "Натиснувши цю кнопку, ви погоджуєтесь з нашою"
 
 #: templates/app/subscription.html:522
 msgid "Terms of use"
-msgstr ""
+msgstr "Умовами використання"
 
 #: templates/app/success.html:3 templates/app/success.html:49
 msgid "Success"
-msgstr ""
+msgstr "Успіх"
 
 #: templates/app/success.html:56
 msgid ""

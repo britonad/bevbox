@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Bevbox 1.0.0\n"
 "Report-Msgid-Bugs-To: vladyslav.krylasov@gmail.com\n"
-"POT-Creation-Date: 2019-01-20 18:37+0200\n"
+"POT-Creation-Date: 2019-01-21 23:17+0200\n"
 "PO-Revision-Date: 2019-01-20 17:42+0200\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: ru\n"
@@ -112,66 +112,66 @@ msgstr ""
 msgid "Bevbox - a home of taste & flavor"
 msgstr ""
 
-#: templates/app/home.html:7
+#: templates/app/home.html:6
 msgid ""
 "Bevbox is a marvelous mood for the evening at the expense of good "
 "whiskey, cigar and entertaining reading by subscription."
 msgstr ""
 
-#: templates/app/home.html:79 templates/app/home.html:172
-#: templates/app/home.html:354
+#: templates/app/home.html:77 templates/app/home.html:170
+#: templates/app/home.html:352
 msgid "How it works"
 msgstr ""
 
-#: templates/app/home.html:88 templates/app/home.html:181
+#: templates/app/home.html:86 templates/app/home.html:179
 msgid "Features"
 msgstr ""
 
-#: templates/app/home.html:97 templates/app/home.html:190
+#: templates/app/home.html:95 templates/app/home.html:188
 msgid "Subscriptions"
 msgstr ""
 
-#: templates/app/home.html:106 templates/app/home.html:199
+#: templates/app/home.html:104 templates/app/home.html:197
 msgid "About us"
 msgstr ""
 
-#: templates/app/home.html:115 templates/app/home.html:208
+#: templates/app/home.html:113 templates/app/home.html:206
 msgid "Contacts"
 msgstr ""
 
-#: templates/app/home.html:304
+#: templates/app/home.html:302
 msgid "Try to experience incredible taste & flavor"
 msgstr ""
 
-#: templates/app/home.html:319
+#: templates/app/home.html:317
 msgid ""
 "Bevbox is a marvelous mood for the evening at the expense of good "
 "whiskey, cigar and\n"
 "                           entertaining reading by subscription."
 msgstr ""
 
-#: templates/app/home.html:384 templates/app/home.html:754
-#: templates/app/home.html:807 templates/app/home.html:859
+#: templates/app/home.html:382 templates/app/home.html:752
+#: templates/app/home.html:805 templates/app/home.html:857
 msgid "Subscribe"
 msgstr ""
 
-#: templates/app/home.html:392
+#: templates/app/home.html:390
 msgid "Take a look at our"
 msgstr ""
 
-#: templates/app/home.html:393
+#: templates/app/home.html:391
 msgid "features"
 msgstr ""
 
-#: templates/app/home.html:396
+#: templates/app/home.html:394
 msgid "choose the most appropriate subscription type for yourself and pay it."
 msgstr ""
 
-#: templates/app/home.html:430
+#: templates/app/home.html:428
 msgid "Packing &amp; sending"
 msgstr ""
 
-#: templates/app/home.html:439
+#: templates/app/home.html:437
 msgid ""
 "After we receive a\n"
 "                                            successful confirmation of "
@@ -184,26 +184,26 @@ msgid ""
 "on the first dates of February."
 msgstr ""
 
-#: templates/app/home.html:477
+#: templates/app/home.html:475
 msgid "Receiving"
 msgstr ""
 
-#: templates/app/home.html:486
+#: templates/app/home.html:484
 msgid ""
 "We send you a New Post\n"
 "                                            declaration number, you "
 "receive it. Moreover, shipping is free. That's it"
 msgstr ""
 
-#: templates/app/home.html:520
+#: templates/app/home.html:518
 msgid "Explore our features"
 msgstr ""
 
-#: templates/app/home.html:545
+#: templates/app/home.html:543
 msgid "Uniqueness"
 msgstr ""
 
-#: templates/app/home.html:553
+#: templates/app/home.html:551
 msgid ""
 "Each time you\n"
 "                                receive our box, you get a unique set of "
@@ -212,119 +212,119 @@ msgid ""
 "leisure."
 msgstr ""
 
-#: templates/app/home.html:582
+#: templates/app/home.html:580
 msgid "High quality for the reasonable price"
 msgstr ""
 
-#: templates/app/home.html:590
+#: templates/app/home.html:588
 msgid ""
 "We provide you\n"
 "                                with best available on market whiskey, "
 "cigar and magazine for the reasonable price."
 msgstr ""
 
-#: templates/app/home.html:618
+#: templates/app/home.html:616
 msgid "Individual Approach"
 msgstr ""
 
-#: templates/app/home.html:626
+#: templates/app/home.html:624
 msgid ""
 "The best thing is\n"
 "                                to see you happy, so we'll count all your"
 " wishes to pack the best Bevbox for you."
 msgstr ""
 
-#: templates/app/home.html:654
+#: templates/app/home.html:652
 msgid "Surprise effect"
 msgstr ""
 
-#: templates/app/home.html:662
+#: templates/app/home.html:660
 msgid ""
 "You won't be known\n"
 "                                what will be inside until you receive it."
 msgstr ""
 
-#: templates/app/home.html:694
+#: templates/app/home.html:692
 msgid "Our subscriptions"
 msgstr ""
 
-#: templates/app/home.html:702
+#: templates/app/home.html:700
 msgid "Here's list of our available subscriptions plans."
 msgstr ""
 
-#: templates/app/home.html:727
+#: templates/app/home.html:725
 msgid "Junior"
 msgstr ""
 
-#: templates/app/home.html:739
+#: templates/app/home.html:737
 msgid ""
 "You will receive one time a box\n"
 "                                    fulfilled with whiskey, cigar, and "
 "magazine."
 msgstr ""
 
-#: templates/app/home.html:779
+#: templates/app/home.html:777
 msgid "Middle"
 msgstr ""
 
-#: templates/app/home.html:782
+#: templates/app/home.html:780
 #, python-format
 msgid "you save 5%(percent)s"
 msgstr ""
 
-#: templates/app/home.html:791
+#: templates/app/home.html:789
 msgid ""
 "In this case, you'll receive unique\n"
 "                                    two boxes for two months fulfilled "
 "with whiskey, cigar, and magazine."
 msgstr ""
 
-#: templates/app/home.html:832
+#: templates/app/home.html:830
 msgid "Senior"
 msgstr ""
 
-#: templates/app/home.html:835
+#: templates/app/home.html:833
 #, python-format
 msgid "you save 10%(percent)s"
 msgstr ""
 
-#: templates/app/home.html:844
+#: templates/app/home.html:842
 msgid ""
 "In this case, you'll receive unique\n"
 "                                    three boxes for three months "
 "fulfilled with whiskey, cigar, and magazine."
 msgstr ""
 
-#: templates/app/home.html:905
+#: templates/app/home.html:903
 msgid "A word about us"
 msgstr ""
 
-#: templates/app/home.html:917
+#: templates/app/home.html:915
 msgid ""
 "We are a young, hard-working team of 2 people who\n"
 "                                        provide a subscription service "
 "for whiskey, cigars, and magazines."
 msgstr ""
 
-#: templates/app/home.html:1008
+#: templates/app/home.html:1006
 msgid "Kyiv, Heroiv Dnipra, 65"
 msgstr ""
 
-#: templates/app/home.html:1027
+#: templates/app/home.html:1025
 msgid ""
 "Any questions left? Drop us a message by\n"
 "                            means of"
 msgstr ""
 
-#: templates/app/home.html:1033 templates/app/refund-policy.html:163
+#: templates/app/home.html:1031 templates/app/refund-policy.html:163
 msgid "contact form"
 msgstr ""
 
-#: templates/app/maintenance.html:46
+#: templates/app/maintenance.html:49
 msgid "maintenance"
 msgstr ""
 
-#: templates/app/maintenance.html:54
+#: templates/app/maintenance.html:57
 msgid "Sorry, we're currently working on improving of our system. Stay tuned."
 msgstr ""
 
@@ -907,6 +907,10 @@ msgstr ""
 
 #: templates/app/subscription.html:378
 msgid "Preferences"
+msgstr ""
+
+#: templates/app/subscription.html:384
+msgid "I like a single malt whiskey etc. Leave blank if doesnt have one."
 msgstr ""
 
 #: templates/app/subscription.html:442
