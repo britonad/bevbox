@@ -1,4 +1,6 @@
-from flask import Blueprint, render_template
+from flask import Blueprint, render_template, request
+
+from app.forms import ContactForm, SubscriptionForm
 
 app_bp = Blueprint('app', __name__)
 
@@ -10,17 +12,42 @@ def home():
 
 @app_bp.route('/subscription/', methods=['GET', 'POST'])
 def subscription():
-    return render_template('app/subscription.html')
+    subscription_type = request.args.get('type', 2, type=int)
+    form = SubscriptionForm(request.form)
+    if form.is_submitted():
+        if form.validate():
+            print(form.data)
+        else:
+            print('error')
+            print(form.data)
+            print(form.errors)
+
+    return render_template(
+        'app/subscription.html',
+        form=form,
+        subscription_type=subscription_type
+    )
 
 
 @app_bp.route('/contacts/', methods=['GET', 'POST'])
 def contacts():
-    return render_template('app/contacts.html')
+    form = ContactForm(request.form)
+    if form.is_submitted():
+        if form.validate():
+            print('Validate on submit')
+            print(form.data)
+        else:
+            print('on error')
+            print(form.data)
+            print(form.errors)
+
+    return render_template('app/contacts.html', form=form)
 
 
 @app_bp.route('/success/')
 def success():
     return render_template('app/success.html')
+
 
 @app_bp.route('/error/')
 def error():
