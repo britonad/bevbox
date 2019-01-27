@@ -1,0 +1,100 @@
+{# A macro that renders all types of inputs besides RadioField, SelectField. #}
+{% macro render_field(field) %}
+  {# Renders an input with errors. #}
+  {% if field.errors %}
+    <div class="t-input-group t-input-group_nm">
+      <div
+          class="t-input-title t-descr t-descr_md"
+          data-redactor-toolbar="no"
+      >
+        {# Renders an error as a label. #}
+        {{ field.errors.0 }}
+      </div>
+      <div class="t-input-block">
+        {{
+            field(
+              class='t-input js-tilda-rule t-input_bbonly',
+              style='color:#000000; border:1px solid #b22222;',
+              **kwargs
+            )
+            }}
+      </div>
+    </div>
+  {# Renders a plain input. #}
+  {% else %}
+    <div class="t-input-group t-input-group_nm">
+      <div
+          class="t-input-title t-descr t-descr_md"
+          data-redactor-toolbar="no"
+      >
+        {{ field.label }}
+      </div>
+      <div class="t-input-block">
+        {{
+            field(
+              class='t-input js-tilda-rule t-input_bbonly',
+              style='color:#000000; border:1px solid #000000;',
+              **kwargs
+            )
+            }}
+      </div>
+    </div>
+  {% endif %}
+{% endmacro %}
+
+{# A macro that renders DOM tree for RadioField type. #}
+{% macro render_radio_input(field) %}
+  {# Renders radio buttons with errors. #}
+  {% if field.errors %}
+    <div class="t-input-group t-input-group_rd">
+      <div class="t-input-title t-descr t-descr_md" data-redactor-toolbar="no">
+        {{ field.errors.0 }}
+      </div>
+      <div class="t-input-block">
+        <div class="t-radio__wrapper">
+          {% for choice in field.choices %}
+            <label class="t-radio__control t-text t-text_xs">
+              <input
+                  type="radio"
+                  name="{{ field.name }}"
+                  class="t-radio js-tilda-rule"
+                  value="{{ choice.0 }}"
+                  {% if field.default == choice.0 %}
+                    checked="checked"
+                  {% endif %}
+              >
+              <div class="t-radio__indicator"></div>
+              {{ choice.1 }}
+            </label>
+          {% endfor %}
+        </div>
+      </div>
+    </div>
+  {# Renders radio buttons without an error message. #}
+  {% else %}
+    <div class="t-input-group t-input-group_rd">
+      <div class="t-input-title t-descr t-descr_md" data-redactor-toolbar="no">
+        {{ field.label }}
+      </div>
+      <div class="t-input-block">
+        <div class="t-radio__wrapper">
+          {% for choice in field.choices %}
+            <label class="t-radio__control t-text t-text_xs">
+              <input
+                  type="radio"
+                  name="{{ field.name }}"
+                  class="t-radio js-tilda-rule"
+                  value="{{ choice.0 }}"
+                  {% if field.default == choice.0 %}
+                    checked="checked"
+                  {% endif %}
+              >
+              <div class="t-radio__indicator"></div>
+              {{ choice.1 }}
+            </label>
+          {% endfor %}
+        </div>
+      </div>
+    </div>
+  {% endif %}
+{% endmacro %}
