@@ -1,4 +1,5 @@
 {% extends 'base.html' %}
+{% from 'macroses/__render_field.html' import render_field, render_radio_input %}
 
 {% block title %}{{ _("Bevbox Subscription") }}{% endblock %}
 {% block og_url %}https://bevbox.com.ua/subscription/{% endblock %}
@@ -159,236 +160,56 @@
           <div class="t-col t-col_6 t-prefix_3">
             <div>
               <form
-                id="form80724248"
-                name="form80724248"
-                role="form"
                 action=""
                 method="POST"
-                data-formactiontype="0"
-                data-inputbox=".t-input-group"
                 class="t-form js-form-proccess t-form_inputs-total_7 t-form_bbonly "
-                data-success-callback="t678_onSuccess"
               >
-                <!-- NO ONE SERVICES CONNECTED -->
-                <div
-                  class="js-successbox t-form__successbox t-text t-text_md"
-                  style="display:none;"
-                ></div>
+                <!-- form fields -->
                 <div class="t-form__inputsbox">
-                  <div
-                    class="t-input-group t-input-group_nm"
-                    data-input-lid="1494858943227"
-                  >
-                    <div
-                      class="t-input-title t-descr t-descr_md"
-                      data-redactor-toolbar="no"
-                      field="li_title__1494858943227"
-                      style=""
-                    >
-                      {{ _('Name') }}
-                    </div>
-                    <div class="t-input-block">
-                      <input
-                        type="text"
-                        name="Name"
-                        class="t-input js-tilda-rule t-input_bbonly"
-                        value=""
-                        placeholder="John Doe"
-                        data-tilda-req="1"
-                        data-tilda-rule="name"
-                        style="color:#000000; border:1px solid #000000; "
-                      />
-                      <div class="t-input-error"></div>
-                    </div>
-                  </div>
-                  <div
-                    class="t-input-group t-input-group_em"
-                    data-input-lid="1493283059688"
-                  >
-                    <div
-                      class="t-input-title t-descr t-descr_md"
-                      data-redactor-toolbar="no"
-                      field="li_title__1493283059688"
-                      style=""
-                    >
-                      {{ _('E-mail') }}
-                    </div>
-                    <div class="t-input-block">
-                      <input
-                        type="text"
-                        name="Email"
-                        class="t-input js-tilda-rule t-input_bbonly"
-                        value=""
-                        placeholder="root@urk.net"
-                        data-tilda-req="1"
-                        data-tilda-rule="email"
-                        style="color:#000000; border:1px solid #000000; "
-                      />
-                      <div class="t-input-error"></div>
-                    </div>
-                  </div>
-                  <div
-                    class="t-input-group t-input-group_ph"
-                    data-input-lid="1495040492013"
-                  >
-                    <div
-                      class="t-input-title t-descr t-descr_md"
-                      data-redactor-toolbar="no"
-                      field="li_title__1495040492013"
-                      style=""
-                    >
-                      {{ _('Phone') }}
-                    </div>
-                    <div class="t-input-block">
-                      <input
-                        type="tel"
-                        name="Phone"
-                        class="t-input js-tilda-rule t-input_bbonly"
-                        value=""
-                        placeholder="+380951234567"
-                        data-tilda-req="1"
-                        data-tilda-rule="phone"
-                        pattern="[0-9]*"
-                        style="color:#000000; border:1px solid #000000; "
-                      />
-                      <div class="t-input-error"></div>
-                    </div>
-                  </div>
-                  <div
-                    class="t-input-group t-input-group_rd"
-                    data-input-lid="1500392454224"
-                  >
-                    <div
-                      class="t-input-title t-descr t-descr_md"
-                      data-redactor-toolbar="no"
-                      field="li_title__1500392454224"
-                      style=""
-                    >
-                      {{ _('Choose a subscription plan') }}
-                    </div>
-                    <div class="t-input-block">
-                      <div class="t-radio__wrapper">
-                        <label
-                          class="t-radio__control t-text t-text_xs"
-                          style=""
-                        >
-                          <input
-                            type="radio"
-                            name="subscription"
-                            class="t-radio js-tilda-rule"
-                            data-tilda-req="1"
-                            value="1"
-                          />
-                          <div class="t-radio__indicator"></div>
-                          {{ _('Junior 1 month / ₴ 1373') }}
-                        </label>
-                        <label
-                          class="t-radio__control t-text t-text_xs"
-                          style=""
-                        >
-                          <input
-                            type="radio"
-                            name="subscription"
-                            checked="checked"
-                            class="t-radio js-tilda-rule"
-                            data-tilda-req="1"
-                            value="{{ subscription_type }} or 2"
-                          />
-                          <div class="t-radio__indicator"></div>
-                          {{ _('Middle 2 months / ₴ 2608 (you save 5%(percent)s)', percent='%') }}
-                        </label>
-                        <label
-                          class="t-radio__control t-text t-text_xs"
-                          style=""
-                        >
-                          <input
-                            type="radio"
-                            name="subscription"
-                            class="t-radio js-tilda-rule"
-                            data-tilda-req="1"
-                            value="3"
-                          />
-                          <div class="t-radio__indicator"></div>
-                          {{ _('Senior 3 months / ₴ 3707 (you save 10%(percent)s)', percent='%') }}
-                        </label>
-                      </div>
-                      <div class="t-input-error"></div>
-                    </div>
-                  </div>
-                  <div
-                    class="t-input-group t-input-group_in"
-                    data-input-lid="1545603428371"
-                  >
-                    <div
-                      class="t-input-title t-descr t-descr_md"
-                      data-redactor-toolbar="no"
-                      field="li_title__1545603428371"
-                      style=""
-                    >
-                      {{ _('City') }}
-                    </div>
-                    <div class="t-input-block">
-                      <input
-                        type="text"
-                        name="city"
-                        class="t-input js-tilda-rule t-input_bbonly"
-                        value=""
-                        placeholder="Kyiv"
-                        data-tilda-req="1"
-                        style="color:#000000; border:1px solid #000000; "
-                      />
-                      <div class="t-input-error"></div>
-                    </div>
-                  </div>
-                  <div
-                    class="t-input-group t-input-group_in"
-                    data-input-lid="1545603427044"
-                  >
-                    <div
-                      class="t-input-title t-descr t-descr_md"
-                      data-redactor-toolbar="no"
-                      field="li_title__1545603427044"
-                      style=""
-                    >
-                      {{ _('Department of New Post (NovaPoshta)') }}
-                    </div>
-                    <div class="t-input-block">
-                      <input
-                        type="text"
-                        name="department"
-                        class="t-input js-tilda-rule t-input_bbonly"
-                        value=""
-                        placeholder="1"
-                        data-tilda-req="1"
-                        style="color:#000000; border:1px solid #000000; "
-                      />
-                      <div class="t-input-error"></div>
-                    </div>
-                  </div>
-                  <div
-                    class="t-input-group t-input-group_ta"
-                    data-input-lid="1546171909958"
-                  >
-                    <div
-                      class="t-input-title t-descr t-descr_md"
-                      data-redactor-toolbar="no"
-                      field="li_title__1546171909958"
-                      style=""
-                    >
-                      {{ _('Preferences') }}
-                    </div>
-                    <div class="t-input-block">
-                      <textarea
-                        name="preferences"
-                        class="t-input js-tilda-rule t-input_bbonly"
-                        placeholder="{{ _('I like a single malt whiskey etc. Leave blank if doesnt have one.') }}"
-                        style="color:#000000; border:1px solid #000000; height:102px"
-                        rows="3"
-                      ></textarea>
-                      <div class="t-input-error"></div>
-                    </div>
-                  </div>
-                  <!--[if IE 8]>
+                  {{ form.csrf_token }}
+                  {{
+                      render_field(
+                        form.email,
+                        **form.email.render_kw
+                      )
+                  }}
+                  {{
+                      render_field(
+                        form.name,
+                        **form.name.render_kw
+                      )
+                  }}
+                  {{
+                      render_field(
+                        form.phone,
+                        **form.phone.render_kw
+                      )
+                  }}
+                  {{
+                      render_radio_input(
+                        form.subscription_type
+                      )
+                  }}
+                  {{
+                      render_field(
+                        form.city,
+                        **form.city.render_kw
+                      )
+                  }}
+                  {{
+                      render_field(
+                        form.department,
+                        **form.department.render_kw
+                      )
+                  }}
+                  {{
+                      render_field(
+                        form.preferences,
+                        style='color:#000000; border:1px solid #949494; height:102px',
+                        **form.preferences.render_kw
+                      )
+                  }}
+                 <!--[if IE 8]>
                     <style>
                       .t-checkbox__control .t-checkbox,
                       .t-radio__control .t-radio {
@@ -405,34 +226,7 @@
                       }
                     </style>
                   <![endif]-->
-                  <div class="t-form__errorbox-middle">
-                    <div
-                      class="js-errorbox-all t-form__errorbox-wrapper"
-                      style="display:none;"
-                    >
-                      <div class="t-form__errorbox-text t-text t-text_md">
-                        <p
-                          class="t-form__errorbox-item js-rule-error js-rule-error-all"
-                        ></p>
-                        <p
-                          class="t-form__errorbox-item js-rule-error js-rule-error-req"
-                        ></p>
-                        <p
-                          class="t-form__errorbox-item js-rule-error js-rule-error-email"
-                        ></p>
-                        <p
-                          class="t-form__errorbox-item js-rule-error js-rule-error-name"
-                        ></p>
-                        <p
-                          class="t-form__errorbox-item js-rule-error js-rule-error-phone"
-                        ></p>
-                        <p
-                          class="t-form__errorbox-item js-rule-error js-rule-error-string"
-                        ></p>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="t-form__submit">
+                 <div class="t-form__submit">
                     <button
                       type="submit"
                       class="t-submit"
@@ -443,34 +237,7 @@
                     </button>
                   </div>
                 </div>
-                <div class="t-form__errorbox-bottom">
-                  <div
-                    class="js-errorbox-all t-form__errorbox-wrapper"
-                    style="display:none;"
-                  >
-                    <div class="t-form__errorbox-text t-text t-text_md">
-                      <p
-                        class="t-form__errorbox-item js-rule-error js-rule-error-all"
-                      ></p>
-                      <p
-                        class="t-form__errorbox-item js-rule-error js-rule-error-req"
-                      ></p>
-                      <p
-                        class="t-form__errorbox-item js-rule-error js-rule-error-email"
-                      ></p>
-                      <p
-                        class="t-form__errorbox-item js-rule-error js-rule-error-name"
-                      ></p>
-                      <p
-                        class="t-form__errorbox-item js-rule-error js-rule-error-phone"
-                      ></p>
-                      <p
-                        class="t-form__errorbox-item js-rule-error js-rule-error-string"
-                      ></p>
-                    </div>
-                  </div>
-                </div>
-              </form>
+             </form>
               <style>
                 #rec80724248 input::-webkit-input-placeholder {
                   color: #000000;
