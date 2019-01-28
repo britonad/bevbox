@@ -12,7 +12,7 @@ def home():
 
 @app_bp.route('/subscription/', methods=['GET', 'POST'])
 def subscription():
-    subscription_type = request.args.get('type', 2, type=int)
+    subscription_type = request.args.get('type', 'middle')
     form = SubscriptionForm(request.form)
     if form.is_submitted():
         if form.validate():
