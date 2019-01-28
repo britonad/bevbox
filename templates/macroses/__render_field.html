@@ -47,7 +47,11 @@
   {# Renders radio buttons with errors. #}
   {% if field.errors %}
     <div class="t-input-group t-input-group_rd">
-      <div class="t-input-title t-descr t-descr_md" data-redactor-toolbar="no">
+      <div
+        class="t-input-title t-descr t-descr_md"
+        data-redactor-toolbar="no"
+        style="color: #F95D51"
+      >
         {{ field.errors.0 }}
       </div>
       <div class="t-input-block">
@@ -59,7 +63,9 @@
                   name="{{ field.name }}"
                   class="t-radio js-tilda-rule"
                   value="{{ choice.0 }}"
-                  {% if field.default == choice.0 %}
+                  {% if kwargs.checked_value and kwargs.checked_value == choice.0 %}
+                    checked="checked"
+                  {% elif not kwargs.checked_value and field.default == choice.0 %}
                     checked="checked"
                   {% endif %}
               >
@@ -70,7 +76,7 @@
         </div>
       </div>
     </div>
-  {# Renders radio buttons without an error message. #}
+    {# Renders radio buttons without an error message. #}
   {% else %}
     <div class="t-input-group t-input-group_rd">
       <div class="t-input-title t-descr t-descr_md" data-redactor-toolbar="no">
@@ -85,7 +91,10 @@
                   name="{{ field.name }}"
                   class="t-radio js-tilda-rule"
                   value="{{ choice.0 }}"
-                  {% if field.default == choice.0 %}
+                  {% if kwargs.checked_value and kwargs.checked_value == choice.0 %}
+                    checked="checked"
+                    {# If checked_value not provided, then set default value. #}
+                  {% elif not kwargs.checked_value and field.default == choice.0 %}
                     checked="checked"
                   {% endif %}
               >
