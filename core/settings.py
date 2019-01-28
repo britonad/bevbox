@@ -30,6 +30,8 @@ class Dev(Common):
 
     DEBUG = True
     TESTING = True
+    MERCHANT_LOGIN = 'test_merch_n1'
+    MERCHANT_SECRET_KEY = 'flk3409refn54t54t * FNJRET'
 
 
 class Prod(Common):
@@ -38,3 +40,5 @@ class Prod(Common):
     """
 
     DEBUG = False
+    MERCHANT_LOGIN = os.environ.get('MERCHANT_LOGIN')
+    MERCHANT_SECRET_KEY = os.environ.get('MERCHANT_SECRET_KEY')
