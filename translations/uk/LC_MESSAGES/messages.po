@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Bevbox 1.0.0\n"
 "Report-Msgid-Bugs-To: vladyslav.krylasov@gmail.com\n"
-"POT-Creation-Date: 2019-01-21 23:17+0200\n"
+"POT-Creation-Date: 2019-01-28 14:33+0200\n"
 "PO-Revision-Date: 2019-01-20 17:42+0200\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: uk\n"
@@ -19,15 +19,75 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 2.6.0\n"
 
+#: app/forms.py:13
+msgid "E-mail"
+msgstr "Електронна пошта"
+
+#: app/forms.py:18
+msgid "Name"
+msgstr "Ім'я"
+
+#: app/forms.py:20
+msgid "John Doe"
+msgstr "Михайло Грушевський"
+
+#: app/forms.py:30
+msgid "Message"
+msgstr "Повідомлення"
+
+#: app/forms.py:42
+msgid "Phone"
+msgstr "Телефон"
+
+#: app/forms.py:47
+msgid "Subscription type"
+msgstr "Тип передоплати"
+
+#: app/forms.py:50
+msgid "Junior 1 month / ₴ 1373"
+msgstr "Хоружний 1 місяць / ₴ 1373"
+
+#: app/forms.py:53
+#, python-format
+msgid "Middle 2 months / ₴ 2608 (you save 5%(percent)s)"
+msgstr "Осавул 2 місяць / ₴ 2608 (ви збергігаєте 5%(percent)s)"
+
+#: app/forms.py:60
+#, python-format
+msgid "Senior 3 months / ₴ 3707 (you save 10%(percent)s)"
+msgstr "Гетьман 3 місяць / ₴ 3707 (ви збергігаєте 10%(percent)s)"
+
+#: app/forms.py:68
+msgid "City"
+msgstr "Місто"
+
+#: app/forms.py:70
+msgid "Kyiv"
+msgstr "Київ"
+
+#: app/forms.py:73
+msgid "Department of New Post (NovaPoshta)"
+msgstr "Відділення Нової Пошти"
+
+#: app/forms.py:78
+msgid "Preferences"
+msgstr "Вподобання"
+
+#: app/forms.py:81
+msgid "I like a single malt whiskey etc. Leave blank if doesnt have one."
+msgstr ""
+"Мені подобається односолодовий віскі і т.д. Залиште порожнім, якщо у вас "
+"їх немає."
+
 #: templates/404.html:3
 msgid "Page not found"
 msgstr "Сторінка не найдена"
 
-#: templates/404.html:53
+#: templates/404.html:49
 msgid "404 error"
 msgstr "404 помилка"
 
-#: templates/404.html:60
+#: templates/404.html:56
 msgid "Page not found."
 msgstr "Сторінка не найдена."
 
@@ -35,7 +95,7 @@ msgstr "Сторінка не найдена."
 msgid "Terms of Use"
 msgstr "Умови використання"
 
-#: templates/app/subscription.html:515 templates/app/terms-of-use.html:173
+#: templates/app/subscription.html:282 templates/app/terms-of-use.html:173
 #: templates/app/terms-of-use.html:206 templates/footer.html:40
 msgid "Privacy Policy"
 msgstr "Політика конфіденційності"
@@ -48,55 +108,43 @@ msgstr "Політика відшкодування"
 msgid "Back to top"
 msgstr "Повернутися до початку"
 
-#: templates/app/contacts.html:3 templates/app/contacts.html:5
+#: templates/app/contacts.html:4 templates/app/contacts.html:6
 msgid "Bevbox Contacts"
 msgstr "Bevbox контакти"
 
-#: templates/app/contacts.html:6
+#: templates/app/contacts.html:7
 msgid "Get in touch with us."
 msgstr "Зв'яжіться з нами."
 
-#: templates/app/contacts.html:146
+#: templates/app/contacts.html:144
 msgid "CONTACTS"
 msgstr "КОНТАКТИ"
 
-#: templates/app/contacts.html:173
+#: templates/app/contacts.html:171
 msgid "Get in touch with us with any convenient way:"
 msgstr "Зв'яжіться з нами будь-яким зручним способом:"
 
-#: templates/app/contacts.html:180
+#: templates/app/contacts.html:178
 msgid "We can answer your questions by phone:"
 msgstr "Ми можемо відповісти на ваші запитання по телефону:"
 
-#: templates/app/contacts.html:188
+#: templates/app/contacts.html:186
 msgid "By e-mail:"
 msgstr "По e-mail:"
 
-#: templates/app/contacts.html:192
+#: templates/app/contacts.html:190
 msgid "Or just fill up our contact form."
 msgstr "Або просто заповніть нашу контактну форму."
 
-#: templates/app/contacts.html:239 templates/app/subscription.html:214
-msgid "E-mail"
-msgstr "Електронна пошта"
-
-#: templates/app/contacts.html:265 templates/app/subscription.html:188
-msgid "Name"
-msgstr "Ім'я"
-
-#: templates/app/contacts.html:291
-msgid "Message"
-msgstr "Повідомлення"
-
-#: templates/app/contacts.html:338
+#: templates/app/contacts.html:243
 msgid "Send"
 msgstr "Відправити"
 
-#: templates/app/contacts.html:440
+#: templates/app/contacts.html:318
 msgid "Our location:"
 msgstr "Наше місцезнаходження:"
 
-#: templates/app/contacts.html:447
+#: templates/app/contacts.html:325
 msgid "Address: Heroiv Dnipra, 65"
 msgstr "Адреса: Героїв Дніпра, 65"
 
@@ -873,8 +921,8 @@ msgid ""
 "              do so you need to provide us with such details by means of\n"
 "              mentioned above methods:"
 msgstr ""
-", або просто скажіть, що потрібно замінити, і ми запакуємо нову коробку для"
-" вас. Для цього вам необхідно надати нам такі деталі за допомогою "
+", або просто скажіть, що потрібно замінити, і ми запакуємо нову коробку "
+"для вас. Для цього вам необхідно надати нам такі деталі за допомогою "
 "згаданих вище методів:"
 
 #: templates/app/refund-policy.html:169
@@ -897,66 +945,28 @@ msgstr "дата отримання коробки"
 msgid "That's it."
 msgstr "Ось і все."
 
-#: templates/app/subscription.html:3 templates/app/subscription.html:5
+#: templates/app/subscription.html:4 templates/app/subscription.html:6
 #: templates/app/terms-of-use.html:3
 msgid "Bevbox Subscription"
 msgstr "Bevbox передоплата"
 
-#: templates/app/subscription.html:6
+#: templates/app/subscription.html:7
 msgid "Bevbox subscription page."
 msgstr "Bevbox сторінка передоплати."
 
-#: templates/app/subscription.html:139
+#: templates/app/subscription.html:140
 msgid "SUBSCRIPTION"
 msgstr "ПЕРЕДОПЛАТА"
 
-#: templates/app/subscription.html:240
-msgid "Phone"
-msgstr "Телефон"
-
-#: templates/app/subscription.html:267
-msgid "Choose a subscription plan"
-msgstr "Оберіть тип передоплати"
-
-#: templates/app/subscription.html:283
-msgid "Junior 1 month / ₴ 1373"
-msgstr "Хоружний 1 місяць / ₴ 1373"
-
-#: templates/app/subscription.html:298
-#, python-format
-msgid "Middle 2 months / ₴ 2608 (you save 5%(percent)s)"
-msgstr "Осавул 2 місяць / ₴ 2608 (ви збергігаєте 5%(percent)s)"
-
-#: templates/app/subscription.html:312
-#, python-format
-msgid "Senior 3 months / ₴ 3707 (you save 10%(percent)s)"
-msgstr "Гетьман 3 місяць / ₴ 3707 (ви збергігаєте 10%(percent)s)"
-
-#: templates/app/subscription.html:328
-msgid "City"
-msgstr "Місто"
-
-#: templates/app/subscription.html:353
-msgid "Department of New Post (NovaPoshta)"
-msgstr "Відділення Нової Пошти"
-
-#: templates/app/subscription.html:378
-msgid "Preferences"
-msgstr "Вподобання"
-
-#: templates/app/subscription.html:384
-msgid "I like a single malt whiskey etc. Leave blank if doesnt have one."
-msgstr "Мені подобається односолодовий віскі і т.д. Залиште порожнім, якщо у вас їх немає."
-
-#: templates/app/subscription.html:442
+#: templates/app/subscription.html:236
 msgid "Subscribe now"
 msgstr "Підписатися зараз"
 
-#: templates/app/subscription.html:510
+#: templates/app/subscription.html:277
 msgid "By clicking the button you agree our"
 msgstr "Натиснувши цю кнопку, ви погоджуєтесь з нашою"
 
-#: templates/app/subscription.html:522
+#: templates/app/subscription.html:289
 msgid "Terms of use"
 msgstr "Умовами використання"
 
@@ -971,6 +981,8 @@ msgid ""
 "your\n"
 "                  Bevbox to New Post."
 msgstr ""
+"Дякуємо, що обрали нас, ви успішно підписалися на Bevbox, ми надішлемо "
+"вам повідомлення, коли ми доставимо вашу коробу на Нову Пошту."
 
 #: templates/app/terms-of-use.html:5
 msgid "Bevbox Terms of Use"
@@ -1469,4 +1481,7 @@ msgid ""
 "If you have any questions about this Terms of Use,\n"
 "              please contact us:"
 msgstr ""
+
+#~ msgid "Choose a subscription plan"
+#~ msgstr "Оберіть тип передоплати"
 

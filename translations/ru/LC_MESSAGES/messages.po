@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Bevbox 1.0.0\n"
 "Report-Msgid-Bugs-To: vladyslav.krylasov@gmail.com\n"
-"POT-Creation-Date: 2019-01-21 23:17+0200\n"
+"POT-Creation-Date: 2019-01-28 14:33+0200\n"
 "PO-Revision-Date: 2019-01-20 17:42+0200\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: ru\n"
@@ -19,15 +19,73 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 2.6.0\n"
 
+#: app/forms.py:13
+msgid "E-mail"
+msgstr ""
+
+#: app/forms.py:18
+msgid "Name"
+msgstr ""
+
+#: app/forms.py:20
+msgid "John Doe"
+msgstr ""
+
+#: app/forms.py:30
+msgid "Message"
+msgstr ""
+
+#: app/forms.py:42
+msgid "Phone"
+msgstr ""
+
+#: app/forms.py:47
+msgid "Subscription type"
+msgstr ""
+
+#: app/forms.py:50
+msgid "Junior 1 month / ₴ 1373"
+msgstr ""
+
+#: app/forms.py:53
+#, python-format
+msgid "Middle 2 months / ₴ 2608 (you save 5%(percent)s)"
+msgstr ""
+
+#: app/forms.py:60
+#, python-format
+msgid "Senior 3 months / ₴ 3707 (you save 10%(percent)s)"
+msgstr ""
+
+#: app/forms.py:68
+msgid "City"
+msgstr ""
+
+#: app/forms.py:70
+msgid "Kyiv"
+msgstr ""
+
+#: app/forms.py:73
+msgid "Department of New Post (NovaPoshta)"
+msgstr ""
+
+#: app/forms.py:78
+msgid "Preferences"
+msgstr ""
+
+#: app/forms.py:81
+msgid "I like a single malt whiskey etc. Leave blank if doesnt have one."
+msgstr ""
+
 #: templates/404.html:3
 msgid "Page not found"
 msgstr ""
 
-#: templates/404.html:53
+#: templates/404.html:49
 msgid "404 error"
 msgstr ""
 
-#: templates/404.html:60
+#: templates/404.html:56
 msgid "Page not found."
 msgstr ""
 
@@ -35,7 +93,7 @@ msgstr ""
 msgid "Terms of Use"
 msgstr ""
 
-#: templates/app/subscription.html:515 templates/app/terms-of-use.html:173
+#: templates/app/subscription.html:282 templates/app/terms-of-use.html:173
 #: templates/app/terms-of-use.html:206 templates/footer.html:40
 msgid "Privacy Policy"
 msgstr ""
@@ -48,55 +106,43 @@ msgstr ""
 msgid "Back to top"
 msgstr ""
 
-#: templates/app/contacts.html:3 templates/app/contacts.html:5
+#: templates/app/contacts.html:4 templates/app/contacts.html:6
 msgid "Bevbox Contacts"
 msgstr ""
 
-#: templates/app/contacts.html:6
+#: templates/app/contacts.html:7
 msgid "Get in touch with us."
 msgstr ""
 
-#: templates/app/contacts.html:146
+#: templates/app/contacts.html:144
 msgid "CONTACTS"
 msgstr ""
 
-#: templates/app/contacts.html:173
+#: templates/app/contacts.html:171
 msgid "Get in touch with us with any convenient way:"
 msgstr ""
 
-#: templates/app/contacts.html:180
+#: templates/app/contacts.html:178
 msgid "We can answer your questions by phone:"
 msgstr ""
 
-#: templates/app/contacts.html:188
+#: templates/app/contacts.html:186
 msgid "By e-mail:"
 msgstr ""
 
-#: templates/app/contacts.html:192
+#: templates/app/contacts.html:190
 msgid "Or just fill up our contact form."
 msgstr ""
 
-#: templates/app/contacts.html:239 templates/app/subscription.html:214
-msgid "E-mail"
-msgstr ""
-
-#: templates/app/contacts.html:265 templates/app/subscription.html:188
-msgid "Name"
-msgstr ""
-
-#: templates/app/contacts.html:291
-msgid "Message"
-msgstr ""
-
-#: templates/app/contacts.html:338
+#: templates/app/contacts.html:243
 msgid "Send"
 msgstr ""
 
-#: templates/app/contacts.html:440
+#: templates/app/contacts.html:318
 msgid "Our location:"
 msgstr ""
 
-#: templates/app/contacts.html:447
+#: templates/app/contacts.html:325
 msgid "Address: Heroiv Dnipra, 65"
 msgstr ""
 
@@ -862,66 +908,28 @@ msgstr ""
 msgid "That's it."
 msgstr ""
 
-#: templates/app/subscription.html:3 templates/app/subscription.html:5
+#: templates/app/subscription.html:4 templates/app/subscription.html:6
 #: templates/app/terms-of-use.html:3
 msgid "Bevbox Subscription"
 msgstr ""
 
-#: templates/app/subscription.html:6
+#: templates/app/subscription.html:7
 msgid "Bevbox subscription page."
 msgstr ""
 
-#: templates/app/subscription.html:139
+#: templates/app/subscription.html:140
 msgid "SUBSCRIPTION"
 msgstr ""
 
-#: templates/app/subscription.html:240
-msgid "Phone"
-msgstr ""
-
-#: templates/app/subscription.html:267
-msgid "Choose a subscription plan"
-msgstr ""
-
-#: templates/app/subscription.html:283
-msgid "Junior 1 month / ₴ 1373"
-msgstr ""
-
-#: templates/app/subscription.html:298
-#, python-format
-msgid "Middle 2 months / ₴ 2608 (you save 5%(percent)s)"
-msgstr ""
-
-#: templates/app/subscription.html:312
-#, python-format
-msgid "Senior 3 months / ₴ 3707 (you save 10%(percent)s)"
-msgstr ""
-
-#: templates/app/subscription.html:328
-msgid "City"
-msgstr ""
-
-#: templates/app/subscription.html:353
-msgid "Department of New Post (NovaPoshta)"
-msgstr ""
-
-#: templates/app/subscription.html:378
-msgid "Preferences"
-msgstr ""
-
-#: templates/app/subscription.html:384
-msgid "I like a single malt whiskey etc. Leave blank if doesnt have one."
-msgstr ""
-
-#: templates/app/subscription.html:442
+#: templates/app/subscription.html:236
 msgid "Subscribe now"
 msgstr ""
 
-#: templates/app/subscription.html:510
+#: templates/app/subscription.html:277
 msgid "By clicking the button you agree our"
 msgstr ""
 
-#: templates/app/subscription.html:522
+#: templates/app/subscription.html:289
 msgid "Terms of use"
 msgstr ""
 
@@ -1434,4 +1442,7 @@ msgid ""
 "If you have any questions about this Terms of Use,\n"
 "              please contact us:"
 msgstr ""
+
+#~ msgid "Choose a subscription plan"
+#~ msgstr ""
 
