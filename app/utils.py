@@ -1,6 +1,37 @@
 import hmac
 
-from flask import current_app
+from flask import current_app, g
+
+
+def get_price(value: str) -> str:
+    """
+    Gets a price from a map by provided value.
+    """
+
+    prices_map = {
+        'junior': '1373',
+        'middle': '2608',
+        'senior': '3707'
+    }
+
+    return prices_map[value]
+
+
+def get_wayforpay_lang_type() -> str:
+    """
+    Gets a language of a user session and picks from a map corresponding value
+    for WayForPay.
+    """
+
+    languages_map = {
+        'uk': 'UA',
+        'ru': 'RU',
+        'en': 'EN'
+    }
+    if g.lang:
+        return languages_map.get(g.lang, 'UA')
+    else:
+        return 'UA'
 
 
 def transform_to_flat_list(data: list) -> list:
@@ -15,9 +46,9 @@ def transform_to_flat_list(data: list) -> list:
     for index in data:
         if isinstance(index, list):
             for element in index:
-                new.append(element)
+                new.append(str(element))
         else:
-            new.append(index)
+            new.append(str(index))
 
     return new
 
