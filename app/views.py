@@ -1,8 +1,8 @@
+import time
 import secrets
-import requests
 from app.forms import ContactForm, SubscriptionForm
-from app.utils import generate_merchant_signature
-from flask import Blueprint, current_app, g, render_template, request, redirect, render_template_string
+from app.utils import generate_merchant_signature, get_wayforpay_lang_type
+from flask import Blueprint, current_app, render_template, request
 
 app_bp = Blueprint('app', __name__)
 
@@ -14,43 +14,49 @@ def home():
 
 @app_bp.route('/subscription/', methods=['GET', 'POST'])
 def subscription():
-    query_data = {
-        'merchantAccount': current_app.config['MERCHANT_LOGIN'],
-        'merchantDomainName': 'bevbox.com.ua',
-        'orderReference': secrets.token_hex(),
-        'orderDate': '1415379863',
-        'amount': '2',
-        'currency': 'UAH',
-        'productName': ['Bevbox'],
-        'productCount': ['1'],
-        'productPrice': ['2']
-    }
-    merchant_signiture = generate_merchant_signature(
-        list(query_data.values())
-    )
+    context = {}
+    subscription_type = request.args.get('type', 'middle')
 
-    query_data.update(
+    form = SubscriptionForm(request.form)
+
+    # Set subscriptions names & values map.
+    subscriptions_map = dict(form.subscription_type.choices)
+    price = '1' #get_price(form.subscription_type.default.strip())
+    context.update(
         {
-            'merchantTransactionSecureType': 'AUTO',
-            'merchantSignature': merchant_signiture,
-            'language': g.lang if g.lang else 'UA',
+            'merchantAccount': current_app.config['MERCHANT_LOGIN'],
+            'merchantDomainName': 'bevbox.com.ua',
+            'orderReference': secrets.token_hex(),
+            'orderDate': str(int(time.time())),
+            'amount': price,
+            'currency': 'UAH',
+            'productName': subscriptions_map[form.subscription_type.default],
+            'productCount': '1',
+            'productPrice': price
         }
     )
-    return render_template_string(requests.post(
-        'https://secure.wayforpay.com/pay',
-        data=query_data
-    ).text)
-    print(reponse)
-    prices = {
-        'junior': 1373,
-        'middle': 2608,
-        'senior': 3707
-    }
-    subscription_type = request.args.get('type', 'middle')
-    form = SubscriptionForm(request.form)
+
+    # Creates a merchant signature based on the context above.
+    context.update(
+        {
+            'merchantSignature': generate_merchant_signature(
+                list(context.values())
+            )
+        }
+    )
+
+    # Add additional fields that needed for WayForPay, but not include
+    # them into creation of a merchant signature.
+    context.update(
+        {
+            'merchantTransactionSecureType': 'AUTO',
+            'language': get_wayforpay_lang_type()
+        }
+    )
+
     if form.is_submitted():
         if form.validate():
-            print(form.data)
+            pass
         else:
             print('error')
             print(form.data)
@@ -59,6 +65,7 @@ def subscription():
     return render_template(
         'app/subscription.html',
         form=form,
+        context=context,
         subscription_type=subscription_type
     )
 
