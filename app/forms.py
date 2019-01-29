@@ -46,7 +46,7 @@ class SubscriptionForm(BaseForm):
     subscription_type = RadioField(
         label=_('Subscription type'),
         default='middle',
-        choices=[
+        choices=(
             ('junior', _('Junior 1 month / ₴ 1373')),
             (
                 'middle',
@@ -62,7 +62,7 @@ class SubscriptionForm(BaseForm):
                     percent='%'
                 )
             )
-        ]
+        )
     )
     city = StringField(
         label=_('City'),
