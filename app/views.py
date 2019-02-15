@@ -1,8 +1,10 @@
-import time
-import secrets
+from copy import deepcopy
+
+from flask import Blueprint, redirect, render_template, request, url_for
+
 from app.forms import ContactForm, SubscriptionForm
-from app.utils import generate_merchant_signature, get_wayforpay_lang_type
-from flask import Blueprint, current_app, render_template, request
+from app.models import Order
+from core import db
 
 app_bp = Blueprint('app', __name__)
 
@@ -19,48 +21,15 @@ def subscription():
 
     form = SubscriptionForm(request.form)
 
-    # Set subscriptions names & values map.
-    subscriptions_map = dict(form.subscription_type.choices)
-    price = '1' #get_price(form.subscription_type.default.strip())
-    context.update(
-        {
-            'merchantAccount': current_app.config['MERCHANT_LOGIN'],
-            'merchantDomainName': 'bevbox.com.ua',
-            'orderReference': secrets.token_hex(),
-            'orderDate': str(int(time.time())),
-            'amount': price,
-            'currency': 'UAH',
-            'productName': subscriptions_map[form.subscription_type.default],
-            'productCount': '1',
-            'productPrice': price
-        }
-    )
+    if form.validate_on_submit():
+        order_data = deepcopy(form.data)
+        order_data.pop('csrf_token')
 
-    # Creates a merchant signature based on the context above.
-    context.update(
-        {
-            'merchantSignature': generate_merchant_signature(
-                list(context.values())
-            )
-        }
-    )
+        order = Order(**order_data)
+        db.session.add(order)
+        db.session.commit()
 
-    # Add additional fields that needed for WayForPay, but not include
-    # them into creation of a merchant signature.
-    context.update(
-        {
-            'merchantTransactionSecureType': 'AUTO',
-            'language': get_wayforpay_lang_type()
-        }
-    )
-
-    if form.is_submitted():
-        if form.validate():
-            pass
-        else:
-            print('error')
-            print(form.data)
-            print(form.errors)
+        return redirect(url_for('app.success'))
 
     return render_template(
         'app/subscription.html',
