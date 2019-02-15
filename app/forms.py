@@ -1,7 +1,7 @@
 from flask_babel import lazy_gettext as _
 from flask_wtf import FlaskForm
-from wtforms.fields import RadioField, StringField, TextAreaField
-from wtforms.validators import Email, Length, DataRequired
+from wtforms.fields import IntegerField, RadioField, StringField, TextAreaField
+from wtforms.validators import DataRequired, Email, Length
 
 
 class BaseForm(FlaskForm):
@@ -69,9 +69,9 @@ class SubscriptionForm(BaseForm):
         validators=[DataRequired(), Length(max=256)],
         render_kw={'placeholder': _('Kyiv')}
     )
-    department = StringField(
+    department = IntegerField(
         label=_('Department of New Post (NovaPoshta)'),
-        validators=[DataRequired(), Length(max=5)],
+        validators=[DataRequired()],
         render_kw={'placeholder': 1}
     )
     preferences = TextAreaField(
