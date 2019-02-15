@@ -160,7 +160,7 @@
           <div class="t-col t-col_6 t-prefix_3">
             <div>
               <form
-                action="https://secure.wayforpay.com/pay"
+                action=""
                 method="POST"
                 class="t-form js-form-proccess t-form_inputs-total_7 t-form_bbonly "
               >
@@ -210,9 +210,6 @@
                         **form.preferences.render_kw
                       )
                   }}
-                  {% for key, value in context.items() %}
-                    <input name="{{ key }}" value="{{ value }}" type="hidden">
-                  {% endfor %}
                  <!--[if IE 8]>
                     <style>
                       .t-checkbox__control .t-checkbox,
