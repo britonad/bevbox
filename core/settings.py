@@ -30,8 +30,9 @@ class Dev(Common):
 
     DEBUG = True
     TESTING = True
-    MERCHANT_LOGIN = 'test_merch_n1'
-    MERCHANT_SECRET_KEY = 'flk3409refn54t54t*FNJRET'
+    SQLALCHEMY_DATABASE_URI = 'postgresql://root:root@localhost/bevbox'
+    SQLALCHEMY_TRACK_MODIFICATIONS = True
+    SQLALCHEMY_ECHO = True
 
 
 class Prod(Common):
@@ -40,5 +41,5 @@ class Prod(Common):
     """
 
     DEBUG = False
-    MERCHANT_LOGIN = os.environ.get('MERCHANT_LOGIN')
-    MERCHANT_SECRET_KEY = os.environ.get('MERCHANT_SECRET_KEY')
+    SQLALCHEMY_DATABASE_URI = os.environ.get('POSTGRESQL_URI')
+    SQLALCHEMY_TRACK_MODIFICATIONS = False
