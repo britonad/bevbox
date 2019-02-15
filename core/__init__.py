@@ -2,6 +2,8 @@ import os
 
 from flask import abort, Flask, g
 from flask_babel import Babel
+from flask_sqlalchemy import SQLAlchemy
+from flask_migrate import Migrate
 
 try:
     from core import local_settings as settings
@@ -12,6 +14,8 @@ __version__ = '1.0.0'
 
 
 babel = Babel()
+db = SQLAlchemy()
+migration = Migrate()
 
 
 def create_app() -> Flask:
@@ -25,6 +29,8 @@ def create_app() -> Flask:
         template_folder=settings.TEMPLATE_DIR,
         static_folder=settings.STATIC_DIR
     )
+
+    # Load configuration.
     environment = os.environ.get('APP_ENV', 'dev')
     environments = {
         'dev': settings.Dev,
@@ -35,7 +41,10 @@ def create_app() -> Flask:
     else:
         raise EnvironmentError('Application variable has not been specified.')
 
+    # Initialize third-party libs.
     babel.init_app(application)
+    db.init_app(application)
+    migration.init_app(application, db)
 
     @babel.localeselector
     def get_locale():
@@ -62,6 +71,7 @@ def create_app() -> Flask:
     # Register blueprints
     from admin.views import admin_bp
     from app.views import app_bp
+
     application.register_blueprint(admin_bp)
     application.register_blueprint(app_bp)
     application.register_blueprint(app_bp, url_prefix='/<lang>')
