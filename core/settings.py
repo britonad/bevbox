@@ -13,9 +13,11 @@ class Common:
     """
 
     DEBUG = False
+    SQLALCHEMY_TRACK_MODIFICATIONS = False
     SECRET_KEY = os.environ.get('SECRET_KEY')
     BABEL_TRANSLATION_DIRECTORIES = os.path.join(BASE_DIR, 'translations')
     BABEL_DEFAULT_LOCALE = 'uk'
+    TELEGRAM_API_URL = 'https://api.telegram.org'
     LANGUAGES = {
         'en': 'En',
         'uk': 'Uk',
@@ -33,6 +35,8 @@ class Dev(Common):
     SQLALCHEMY_DATABASE_URI = 'postgresql://root:root@localhost/bevbox'
     SQLALCHEMY_TRACK_MODIFICATIONS = True
     SQLALCHEMY_ECHO = True
+    CHANNEL_ID = ''
+    BOT_TOKEN = ''
 
 
 class Prod(Common):
@@ -42,4 +46,5 @@ class Prod(Common):
 
     DEBUG = False
     SQLALCHEMY_DATABASE_URI = os.environ.get('POSTGRESQL_URI')
-    SQLALCHEMY_TRACK_MODIFICATIONS = False
+    CHANNEL_ID = os.environ.get('CHANNEL_ID')
+    BOT_TOKEN = os.environ.get('BOT_TOKEN')
