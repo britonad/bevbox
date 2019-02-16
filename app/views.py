@@ -1,11 +1,18 @@
 from copy import deepcopy
 
-from flask import Blueprint, redirect, render_template, request, url_for, current_app
+from flask import (
+    Blueprint,
+    current_app,
+    redirect,
+    render_template,
+    request,
+    url_for
+)
 from jinja2.filters import escape
 
 from app.forms import ContactForm, SubscriptionForm
 from app.models import Order
-from app.utils import send_message_to_channel
+from app.utils import send_email, send_message_to_channel
 from core import db
 
 app_bp = Blueprint('app', __name__)
@@ -40,13 +47,13 @@ def subscription():
             'Побажання: <b>{}</b>'
         ).format(
             order.id,
-            str(escape(order_data['name'])),
-            str(escape(order_data['city'])),
-            str(escape(order_data['subscription_type'])),
-            str(escape(order_data['department'])),
-            str(escape(order_data.get('preferences', 'Немає'))),
-            email=str(escape(order_data['email'])),
-            tel=str(escape(order_data['phone']))
+            str(escape(order_data['name'].strip())),
+            str(escape(order_data['city'].strip())),
+            str(escape(order_data['subscription_type'].strip())),
+            str(escape(order_data['department'].strip())),
+            str(escape(order_data.get('preferences', 'Немає').strip())),
+            email=str(escape(order_data['email'].strip())),
+            tel=str(escape(order_data['phone'].strip()))
         )
         send_message_to_channel(
             current_app.config['CHANNEL_ID'],
@@ -66,14 +73,16 @@ def subscription():
 @app_bp.route('/contacts/', methods=['GET', 'POST'])
 def contacts():
     form = ContactForm(request.form)
-    if form.is_submitted():
-        if form.validate():
-            print('Validate on submit')
-            print(form.data)
-        else:
-            print('on error')
-            print(form.data)
-            print(form.errors)
+
+    if form.validate_on_submit():
+        send_email(
+            str(escape(form.name.data.strip())),
+            str(escape(form.email.data.strip())),
+            str(escape(form.subject.data.strip())),
+            str(escape(form.message.data.strip()))
+        )
+
+        return redirect(url_for('app.email_success'))
 
     return render_template('app/contacts.html', form=form)
 
