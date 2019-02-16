@@ -92,9 +92,9 @@ def success():
     return render_template('app/success.html')
 
 
-@app_bp.route('/error/')
-def error():
-    return render_template('app/error.html')
+@app_bp.route('/email-success/')
+def email_success():
+    return render_template('app/email_success.html')
 
 
 @app_bp.route('/404/')

@@ -1,6 +1,6 @@
 {% extends 'base.html' %}
 
-{% block title %}Oops{% endblock %}
+{% block title %}{{ _('E-mail successfully sent') }}{% endblock %}
 
 {% block body %}
 <body class="t-body" style="margin:0;">
@@ -46,7 +46,7 @@
                   style="text-transform:uppercase;"
                   field="title"
                 >
-                  {{ _("error") }}
+                  {{ _("success") }}
                 </div>
                 <div
                   class="t102__descr t-descr t-descr_md"
@@ -54,7 +54,7 @@
                   field="descr"
                 >
                   {{
-                    _("Something went wrong. Your payment is not successful.")
+                    _("Your e-mail successfully delivered to us.")
                   }}
                 </div>
                 <span class="space"></span>
