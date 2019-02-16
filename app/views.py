@@ -50,7 +50,7 @@ def subscription():
             str(escape(order_data['name'].strip())),
             str(escape(order_data['city'].strip())),
             str(escape(order_data['subscription_type'].strip())),
-            str(escape(order_data['department'].strip())),
+            str(escape(order_data['department'])),
             str(escape(order_data.get('preferences', 'Немає').strip())),
             email=str(escape(order_data['email'].strip())),
             tel=str(escape(order_data['phone'].strip()))
