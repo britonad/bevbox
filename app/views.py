@@ -1,9 +1,11 @@
 from copy import deepcopy
 
-from flask import Blueprint, redirect, render_template, request, url_for
+from flask import Blueprint, redirect, render_template, request, url_for, current_app
+from jinja2.filters import escape
 
 from app.forms import ContactForm, SubscriptionForm
 from app.models import Order
+from app.utils import send_message_to_channel
 from core import db
 
 app_bp = Blueprint('app', __name__)
@@ -28,6 +30,28 @@ def subscription():
         order = Order(**order_data)
         db.session.add(order)
         db.session.commit()
+
+        msg = (
+            'Замовлення <b>№{}</b>.\n'
+            'Клієнт <b>{}</b> з міста <b>{}</b> замовив підписку <b>{}</b> '
+            'у відділення "Нової Пошти" <b>{}</b>.\n'
+            'Email: <a href="mailto:{email}">{email}</a>\n'
+            'Телефон: <a href="tel:{tel}">{tel}</a>\n'
+            'Побажання: <b>{}</b>'
+        ).format(
+            order.id,
+            str(escape(order_data['name'])),
+            str(escape(order_data['city'])),
+            str(escape(order_data['subscription_type'])),
+            str(escape(order_data['department'])),
+            str(escape(order_data.get('preferences', 'Немає'))),
+            email=str(escape(order_data['email'])),
+            tel=str(escape(order_data['phone']))
+        )
+        send_message_to_channel(
+            current_app.config['CHANNEL_ID'],
+            msg
+        )
 
         return redirect(url_for('app.success'))
 
