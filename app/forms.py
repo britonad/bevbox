@@ -26,6 +26,11 @@ class ContactForm(BaseForm):
     A representation of a contact form.
     """
 
+    subject = StringField(
+        label=_('Subject'),
+        validators=[DataRequired(), Length(min=4, max=256)],
+        render_kw={'placeholder': _('A subject.')}
+    )
     message = TextAreaField(
         label=_('Message'),
         validators=[DataRequired(), Length(max=4096)],
