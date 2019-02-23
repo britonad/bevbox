@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Bevbox 1.0.0\n"
 "Report-Msgid-Bugs-To: vladyslav.krylasov@gmail.com\n"
-"POT-Creation-Date: 2019-01-28 14:33+0200\n"
+"POT-Creation-Date: 2019-02-23 16:49+0200\n"
 "PO-Revision-Date: 2019-01-20 17:42+0200\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: uk\n"
@@ -32,48 +32,56 @@ msgid "John Doe"
 msgstr "Михайло Грушевський"
 
 #: app/forms.py:30
+msgid "Subject"
+msgstr "Тема"
+
+#: app/forms.py:32
+msgid "A subject."
+msgstr "Тема листа."
+
+#: app/forms.py:35
 msgid "Message"
 msgstr "Повідомлення"
 
-#: app/forms.py:42
+#: app/forms.py:47
 msgid "Phone"
 msgstr "Телефон"
 
-#: app/forms.py:47
+#: app/forms.py:52
 msgid "Subscription type"
 msgstr "Тип передоплати"
 
-#: app/forms.py:50
+#: app/forms.py:55
 msgid "Junior 1 month / ₴ 1373"
 msgstr "Хоружний 1 місяць / ₴ 1373"
 
-#: app/forms.py:53
+#: app/forms.py:58
 #, python-format
 msgid "Middle 2 months / ₴ 2608 (you save 5%(percent)s)"
 msgstr "Осавул 2 місяць / ₴ 2608 (ви збергігаєте 5%(percent)s)"
 
-#: app/forms.py:60
+#: app/forms.py:65
 #, python-format
 msgid "Senior 3 months / ₴ 3707 (you save 10%(percent)s)"
 msgstr "Гетьман 3 місяць / ₴ 3707 (ви збергігаєте 10%(percent)s)"
 
-#: app/forms.py:68
+#: app/forms.py:73
 msgid "City"
 msgstr "Місто"
 
-#: app/forms.py:70
+#: app/forms.py:75
 msgid "Kyiv"
 msgstr "Київ"
 
-#: app/forms.py:73
+#: app/forms.py:78
 msgid "Department of New Post (NovaPoshta)"
 msgstr "Відділення Нової Пошти"
 
-#: app/forms.py:78
+#: app/forms.py:83
 msgid "Preferences"
 msgstr "Вподобання"
 
-#: app/forms.py:81
+#: app/forms.py:86
 msgid "I like a single malt whiskey etc. Leave blank if doesnt have one."
 msgstr ""
 "Мені подобається односолодовий віскі і т.д. Залиште порожнім, якщо у вас "
@@ -95,7 +103,7 @@ msgstr "Сторінка не найдена."
 msgid "Terms of Use"
 msgstr "Умови використання"
 
-#: templates/app/subscription.html:282 templates/app/terms-of-use.html:173
+#: templates/app/subscription.html:283 templates/app/terms-of-use.html:173
 #: templates/app/terms-of-use.html:206 templates/footer.html:40
 msgid "Privacy Policy"
 msgstr "Політика конфіденційності"
@@ -136,25 +144,29 @@ msgstr "По e-mail:"
 msgid "Or just fill up our contact form."
 msgstr "Або просто заповніть нашу контактну форму."
 
-#: templates/app/contacts.html:243
+#: templates/app/contacts.html:249
 msgid "Send"
 msgstr "Відправити"
 
-#: templates/app/contacts.html:318
+#: templates/app/contacts.html:324
 msgid "Our location:"
 msgstr "Наше місцезнаходження:"
 
-#: templates/app/contacts.html:325
+#: templates/app/contacts.html:331
 msgid "Address: Heroiv Dnipra, 65"
 msgstr "Адреса: Героїв Дніпра, 65"
 
-#: templates/app/error.html:49
-msgid "error"
-msgstr "помилка"
+#: templates/app/email_success.html:3
+msgid "E-mail successfully sent"
+msgstr "E-mail успішно відправлено"
 
-#: templates/app/error.html:57
-msgid "Something went wrong. Your payment is not successful."
-msgstr "Щось пішло не так. Не вдалося успішно здійснити вашу оплату."
+#: templates/app/email_success.html:49
+msgid "success"
+msgstr "успіх"
+
+#: templates/app/email_success.html:57
+msgid "Your e-mail successfully delivered to us."
+msgstr "Ваш лист успішно доставлено до нас."
 
 #: templates/app/home.html:3 templates/app/home.html:5
 msgid "Bevbox - a home of taste & flavor"
@@ -958,15 +970,15 @@ msgstr "Bevbox сторінка передоплати."
 msgid "SUBSCRIPTION"
 msgstr "ПЕРЕДОПЛАТА"
 
-#: templates/app/subscription.html:236
+#: templates/app/subscription.html:237
 msgid "Subscribe now"
 msgstr "Підписатися зараз"
 
-#: templates/app/subscription.html:277
+#: templates/app/subscription.html:278
 msgid "By clicking the button you agree our"
 msgstr "Натиснувши цю кнопку, ви погоджуєтесь з нашою"
 
-#: templates/app/subscription.html:289
+#: templates/app/subscription.html:290
 msgid "Terms of use"
 msgstr "Умовами використання"
 
@@ -1484,4 +1496,10 @@ msgstr ""
 
 #~ msgid "Choose a subscription plan"
 #~ msgstr "Оберіть тип передоплати"
+
+#~ msgid "error"
+#~ msgstr "помилка"
+
+#~ msgid "Something went wrong. Your payment is not successful."
+#~ msgstr "Щось пішло не так. Не вдалося успішно здійснити вашу оплату."
 
