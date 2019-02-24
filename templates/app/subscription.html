@@ -1,5 +1,5 @@
 {% extends 'base.html' %}
-{% from 'macroses/__render_field.html' import render_field, render_radio_input %}
+{% from 'macroses/__render_field.html' import render_field, render_radio_input, render_checkbox_input %}
 
 {% block title %}{{ _("Bevbox Subscription") }}{% endblock %}
 {% block og_url %}https://bevbox.com.ua/subscription/{% endblock %}
@@ -201,6 +201,12 @@
                       render_field(
                         form.department,
                         **form.department.render_kw
+                      )
+                  }}
+                  {{
+                      render_checkbox_input(
+                        form.additions,
+                        **form.additions.render_kw
                       )
                   }}
                   {{
