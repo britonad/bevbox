@@ -18,7 +18,6 @@ class Common:
     BABEL_TRANSLATION_DIRECTORIES = os.path.join(BASE_DIR, 'translations')
     BABEL_DEFAULT_LOCALE = 'uk'
     TELEGRAM_API_URL = 'https://api.telegram.org'
-    MAILGUN_DOMAIN_NAME = 'mail.bevbox.com.ua'
     LANGUAGES = {
         'en': 'En',
         'uk': 'Uk',
@@ -40,6 +39,7 @@ class Dev(Common):
     BOT_TOKEN = ''
     MAILGUN_API_KEY = ''
     EMAIL_RECIPIENT = ''
+    MAILGUN_DOMAIN_NAME = ''
 
 
 class Prod(Common):
@@ -48,8 +48,9 @@ class Prod(Common):
     """
 
     DEBUG = False
-    SQLALCHEMY_DATABASE_URI = os.environ.get('POSTGRESQL_URI')
+    SQLALCHEMY_DATABASE_URI = os.environ.get('SQLALCHEMY_DATABASE_URI')
     CHANNEL_ID = os.environ.get('CHANNEL_ID')
     BOT_TOKEN = os.environ.get('BOT_TOKEN')
     MAILGUN_API_KEY = os.environ.get('MAILGUN_API_KEY')
-    EMAIL_RECIPIENT = os.environ.get('EMAIL_RECIPIENT ')
+    MAILGUN_DOMAIN_NAME = os.environ.get('MAILGUN_DOMAIN_NAME')
+    EMAIL_RECIPIENT = os.environ.get('EMAIL_RECIPIENT')
