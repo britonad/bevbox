@@ -17,7 +17,7 @@
               style='color:#000000; border:1px solid #b22222;',
               **kwargs
             )
-            }}
+        }}
       </div>
     </div>
   {# Renders a plain input. #}
@@ -36,7 +36,7 @@
               style='color:#000000; border:1px solid #000000;',
               **kwargs
             )
-            }}
+        }}
       </div>
     </div>
   {% endif %}
@@ -102,6 +102,59 @@
               {{ choice.1 }}
             </label>
           {% endfor %}
+        </div>
+      </div>
+    </div>
+  {% endif %}
+{% endmacro %}
+
+{# A macro that renders DOM tree for BooleanField type. #}
+{% macro render_checkbox_input(field) %}
+  {# Renders a checkbox button with errors. #}
+  {% if field.errors %}
+    <div class="t-input-group t-input-group_rd">
+      <div
+        class="t-input-title t-descr t-descr_md"
+        data-redactor-toolbar="no"
+        style="color: #F95D51"
+      >
+        {{ field.errors.0 }}
+      </div>
+      <div class="t-input-block">
+        <div class="t-checkbox__wrapper">
+            <label class="t-radio__control t-text t-text_xs">
+              {{
+                field(
+                  class='t-checkbox js-tilda-rule',
+                  style='color: #F95D51'
+                  **kwargs
+                )
+              }}
+             <div class="t-radio__indicator"></div>
+              {{ field.label }}
+            </label>
+        </div>
+      </div>
+    </div>
+    {# Renders a checkbox button without an error message. #}
+  {% else %}
+    <div class="t-input-group t-input-group_rd">
+      <div class="t-input-title t-descr t-descr_md" data-redactor-toolbar="no">
+        {{ field.label }}
+      </div>
+      <div class="t-input-block">
+        <div class="t-checkbox__wrapper">
+            <label class="t-checkbox__control t-text t-text_xs">
+              {{
+                field(
+                  class='t-checkbox js-tilda-rule',
+                  style='color: #F95D51',
+                  **kwargs
+                )
+              }}
+              <div class="t-checkbox__indicator"></div>
+                {{ field.description }}
+            </label>
         </div>
       </div>
     </div>
