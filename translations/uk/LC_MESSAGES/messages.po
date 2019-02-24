@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Bevbox 1.0.0\n"
 "Report-Msgid-Bugs-To: vladyslav.krylasov@gmail.com\n"
-"POT-Creation-Date: 2019-02-23 16:49+0200\n"
+"POT-Creation-Date: 2019-02-24 14:00+0200\n"
 "PO-Revision-Date: 2019-01-20 17:42+0200\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: uk\n"
@@ -19,69 +19,82 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 2.6.0\n"
 
-#: app/forms.py:13
+#: app/forms.py:19
 msgid "E-mail"
 msgstr "Електронна пошта"
 
-#: app/forms.py:18
+#: app/forms.py:24
 msgid "Name"
 msgstr "Ім'я"
 
-#: app/forms.py:20
+#: app/forms.py:26
 msgid "John Doe"
 msgstr "Михайло Грушевський"
 
-#: app/forms.py:30
+#: app/forms.py:36
 msgid "Subject"
 msgstr "Тема"
 
-#: app/forms.py:32
+#: app/forms.py:38
 msgid "A subject."
 msgstr "Тема листа."
 
-#: app/forms.py:35
+#: app/forms.py:41
 msgid "Message"
 msgstr "Повідомлення"
 
-#: app/forms.py:47
+#: app/forms.py:53
 msgid "Phone"
 msgstr "Телефон"
 
-#: app/forms.py:52
+#: app/forms.py:58
 msgid "Subscription type"
 msgstr "Тип передоплати"
 
-#: app/forms.py:55
+#: app/forms.py:61
 msgid "Junior 1 month / ₴ 1373"
 msgstr "Хоружний 1 місяць / ₴ 1373"
 
-#: app/forms.py:58
+#: app/forms.py:64
 #, python-format
 msgid "Middle 2 months / ₴ 2608 (you save 5%(percent)s)"
 msgstr "Осавул 2 місяць / ₴ 2608 (ви збергігаєте 5%(percent)s)"
 
-#: app/forms.py:65
+#: app/forms.py:71
 #, python-format
 msgid "Senior 3 months / ₴ 3707 (you save 10%(percent)s)"
 msgstr "Гетьман 3 місяць / ₴ 3707 (ви збергігаєте 10%(percent)s)"
 
-#: app/forms.py:73
+#: app/forms.py:79
 msgid "City"
 msgstr "Місто"
 
-#: app/forms.py:75
+#: app/forms.py:81 templates/app/home.html:1006
 msgid "Kyiv"
 msgstr "Київ"
 
-#: app/forms.py:78
+#: app/forms.py:84
 msgid "Department of New Post (NovaPoshta)"
 msgstr "Відділення Нової Пошти"
 
-#: app/forms.py:83
+#: app/forms.py:89
+msgid "Do you need guillotine & matches as well?"
+msgstr "Вам потрібна гільйотина та сірники?"
+
+#: app/forms.py:91
+msgid ""
+"Uncheck if you do not need it and yes, it reduces the cost of the box by "
+"120₴. E.g.: Junior will cost 1253₴, Middle 2366₴, Senior 3347₴."
+msgstr ""
+"Зніміть пташку, якщо вам не потрібно і так, це зменшує вартість коробки "
+"на 120₴. Тобто, Хоружний буде коштувати 1253₴, Осавул 2366₴, Гетьман "
+"3347₴."
+
+#: app/forms.py:98
 msgid "Preferences"
 msgstr "Вподобання"
 
-#: app/forms.py:86
+#: app/forms.py:101
 msgid "I like a single malt whiskey etc. Leave blank if doesnt have one."
 msgstr ""
 "Мені подобається односолодовий віскі і т.д. Залиште порожнім, якщо у вас "
@@ -103,8 +116,8 @@ msgstr "Сторінка не найдена."
 msgid "Terms of Use"
 msgstr "Умови використання"
 
-#: templates/app/subscription.html:283 templates/app/terms-of-use.html:173
-#: templates/app/terms-of-use.html:206 templates/footer.html:40
+#: templates/app/terms-of-use.html:173 templates/app/terms-of-use.html:206
+#: templates/footer.html:40
 msgid "Privacy Policy"
 msgstr "Політика конфіденційності"
 
@@ -153,8 +166,8 @@ msgid "Our location:"
 msgstr "Наше місцезнаходження:"
 
 #: templates/app/contacts.html:331
-msgid "Address: Heroiv Dnipra, 65"
-msgstr "Адреса: Героїв Дніпра, 65"
+msgid "Address: Kyiv, Ukraine"
+msgstr "Адреса: Київ, Україна"
 
 #: templates/app/email_success.html:3
 msgid "E-mail successfully sent"
@@ -391,10 +404,6 @@ msgid ""
 msgstr ""
 "Ми молода, працьовита команда з 2-х людей, які надають послуги "
 "передоплати на віскі, сигари та журнали."
-
-#: templates/app/home.html:1006
-msgid "Kyiv, Heroiv Dnipra, 65"
-msgstr "Київ, Героїв Дніпра, 65"
 
 #: templates/app/home.html:1025
 msgid ""
@@ -868,10 +877,12 @@ msgid ""
 "We will let you know via email and/or a prominent notice on\n"
 "              our Service, prior to the change becoming effective and "
 "update the\n"
-"              \"effective date\" at the top of this Privacy Policy. <br "
-"/><br />\n"
-"              You are advised to review this Privacy Policy periodically "
-"for any\n"
+"              \"effective date\" at the top of this Privacy Policy."
+msgstr ""
+
+#: templates/app/privacy-policy.html:504
+msgid ""
+"You are advised to review this Privacy Policy periodically for any\n"
 "              changes. Changes to this Privacy Policy are effective when "
 "they\n"
 "              are posted on this page."
@@ -970,17 +981,25 @@ msgstr "Bevbox сторінка передоплати."
 msgid "SUBSCRIPTION"
 msgstr "ПЕРЕДОПЛАТА"
 
-#: templates/app/subscription.html:237
+#: templates/app/subscription.html:243
 msgid "Subscribe now"
 msgstr "Підписатися зараз"
 
-#: templates/app/subscription.html:278
+#: templates/app/subscription.html:284
 msgid "By clicking the button you agree our"
 msgstr "Натиснувши цю кнопку, ви погоджуєтесь з нашою"
 
-#: templates/app/subscription.html:290
-msgid "Terms of use"
-msgstr "Умовами використання"
+#: templates/app/subscription.html:289
+msgid "privacy policy"
+msgstr "політикою конфіденційності"
+
+#: templates/app/subscription.html:296
+msgid "terms of use"
+msgstr "умовами використання"
+
+#: templates/app/subscription.html:303
+msgid "refund policy"
+msgstr "політикою повернення коштів"
 
 #: templates/app/success.html:3 templates/app/success.html:49
 msgid "Success"
@@ -1010,12 +1029,27 @@ msgstr ""
 msgid "TERMS OF USE"
 msgstr ""
 
+#: templates/app/terms-of-use.html:161
+msgid "Welcome to Bevbox"
+msgstr "Ласкаво просимо до Bevbox"
+
 #: templates/app/terms-of-use.html:163
 msgid ""
 "These Terms of Use outline the rules and regulations for the use\n"
-"              of Bevbox's Website.<br /><br />Bevbox is located at:<br />"
-"\n"
-"              <em>Heroiv Dnipra, 65 , Kyiv , Ukraine<br /></em><br />By\n"
+"              of Bevbox's Website."
+msgstr ""
+
+#: templates/app/terms-of-use.html:164
+msgid "Bevbox is located at:"
+msgstr ""
+
+#: templates/app/terms-of-use.html:165
+msgid "Kyiv, Ukraine"
+msgstr ""
+
+#: templates/app/terms-of-use.html:165
+msgid ""
+"By\n"
 "              accessing this website we assume you accept these terms and"
 "\n"
 "              conditions in full. Do not continue to use Bevbox's website"
@@ -1493,13 +1527,3 @@ msgid ""
 "If you have any questions about this Terms of Use,\n"
 "              please contact us:"
 msgstr ""
-
-#~ msgid "Choose a subscription plan"
-#~ msgstr "Оберіть тип передоплати"
-
-#~ msgid "error"
-#~ msgstr "помилка"
-
-#~ msgid "Something went wrong. Your payment is not successful."
-#~ msgstr "Щось пішло не так. Не вдалося успішно здійснити вашу оплату."
-
