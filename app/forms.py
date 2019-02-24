@@ -89,8 +89,8 @@ class SubscriptionForm(BaseForm):
         label=_('Do you need guillotine & matches as well?'),
         default=True,
         description=_(
-            'Uncheck if you do not need it and yes, it reduces 120₴ '
-            'from each box. E.g.: Junior will cost 1253₴, Middle 2366₴, '
+            'Uncheck if you do not need it and yes, it reduces the cost of '
+            'the box by 120₴. E.g.: Junior will cost 1253₴, Middle 2366₴, '
             'Senior 3347₴.'
         )
     )
