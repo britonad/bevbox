@@ -1,6 +1,12 @@
 from flask_babel import lazy_gettext as _
 from flask_wtf import FlaskForm
-from wtforms.fields import IntegerField, RadioField, StringField, TextAreaField
+from wtforms.fields import (
+    BooleanField,
+    IntegerField,
+    RadioField,
+    StringField,
+    TextAreaField
+)
 from wtforms.validators import DataRequired, Email, Length
 
 
@@ -79,6 +85,15 @@ class SubscriptionForm(BaseForm):
         validators=[DataRequired()],
         render_kw={'placeholder': 1}
     )
+    additions = BooleanField(
+        label=_('Do you need guillotine & matches as well?'),
+        default=True,
+        description=_(
+            'Uncheck if you do not need it and yes, it reduces 120₴ '
+            'from each box. E.g.: Junior will cost 1253₴, Middle 2366₴, '
+            'Senior 3347₴.'
+        )
+    )
     preferences = TextAreaField(
         label=_('Preferences'),
         validators=[Length(max=2048)],
@@ -89,3 +104,12 @@ class SubscriptionForm(BaseForm):
             )
         }
     )
+
+    def __init__(self, *args, **kwargs):
+        super().__init__(*args, **kwargs)
+
+        # Set checked attr..
+        if self.additions.data:
+            self.additions.render_kw = {'checked': 'checked'}
+        else:
+            self.additions.render_kw = {'checked': ''}
