@@ -14,6 +14,7 @@ class Order(db.Model):
     subscription_type = db.Column(db.String(10), nullable=False)
     city = db.Column(db.String(256), nullable=False)
     department = db.Column(db.Integer, nullable=False)
+    additions = db.Column(db.Boolean, nullable=False)
     preferences = db.Column(db.Text, nullable=True)
 
     def __repr__(self):
