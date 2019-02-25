@@ -58,18 +58,18 @@ class SubscriptionForm(BaseForm):
         label=_('Subscription type'),
         default='middle',
         choices=(
-            ('junior', _('Junior 1 month / ₴ 1373')),
+            ('junior', _('Junior 1 month / ₴ 1705')),
             (
                 'middle',
                 _(
-                    'Middle 2 months / ₴ 2608 (you save 5%(percent)s)',
+                    'Middle 2 months / ₴ 3239 (you save 5%(percent)s)',
                     percent='%'
                 )
             ),
             (
                 'senior',
                 _(
-                    'Senior 3 months / ₴ 3707 (you save 10%(percent)s)',
+                    'Senior 3 months / ₴ 4603 (you save 10%(percent)s)',
                     percent='%'
                 )
             )
