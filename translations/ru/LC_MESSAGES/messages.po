@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Bevbox 1.0.0\n"
 "Report-Msgid-Bugs-To: vladyslav.krylasov@gmail.com\n"
-"POT-Creation-Date: 2019-02-25 13:47+0200\n"
+"POT-Creation-Date: 2019-02-25 19:56+0200\n"
 "PO-Revision-Date: 2019-01-20 17:42+0200\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: ru\n"
@@ -69,7 +69,7 @@ msgstr "Тертый калач 3 месяца / ₴ 4603 (вы сэкономи
 msgid "City"
 msgstr "Город"
 
-#: app/forms.py:81 templates/app/home.html:1006
+#: app/forms.py:81 templates/app/home.html:1007
 msgid "Kyiv"
 msgstr "Киев"
 
@@ -110,11 +110,11 @@ msgstr "404 ошибка"
 msgid "Page not found."
 msgstr "Страница не найдена"
 
-#: templates/app/privacy-policy.html:181 templates/footer.html:31
+#: templates/app/privacy-policy.html:182 templates/footer.html:31
 msgid "Terms of Use"
 msgstr "Условия использования"
 
-#: templates/app/terms-of-use.html:173 templates/app/terms-of-use.html:206
+#: templates/app/terms-of-use.html:174 templates/app/terms-of-use.html:207
 #: templates/footer.html:40
 msgid "Privacy Policy"
 msgstr "Политика конфиденциальности"
@@ -131,39 +131,39 @@ msgstr "Вернуться к началу"
 msgid "Bevbox Contacts"
 msgstr "Bevbox контакты"
 
-#: templates/app/contacts.html:7
+#: templates/app/contacts.html:7 templates/app/contacts.html:8
 msgid "Get in touch with us."
 msgstr "Свяжитесь с нами."
 
-#: templates/app/contacts.html:144
+#: templates/app/contacts.html:145
 msgid "CONTACTS"
 msgstr "КОНТАКТЫ"
 
-#: templates/app/contacts.html:171
+#: templates/app/contacts.html:172
 msgid "Get in touch with us with any convenient way:"
 msgstr "Свяжитесь с нами любым удобным способом:"
 
-#: templates/app/contacts.html:178
+#: templates/app/contacts.html:179
 msgid "We can answer your questions by phone:"
 msgstr "Мы можем ответить на ваши вопросы по телефону:"
 
-#: templates/app/contacts.html:186
+#: templates/app/contacts.html:187
 msgid "By e-mail:"
 msgstr "По e-mail:"
 
-#: templates/app/contacts.html:190
+#: templates/app/contacts.html:191
 msgid "Or just fill up our contact form."
 msgstr "Или просто заполните нашу контактную форму."
 
-#: templates/app/contacts.html:249
+#: templates/app/contacts.html:250
 msgid "Send"
 msgstr "Отправить"
 
-#: templates/app/contacts.html:324
+#: templates/app/contacts.html:325
 msgid "Our location:"
 msgstr "Наше местонахождение:"
 
-#: templates/app/contacts.html:331
+#: templates/app/contacts.html:332
 msgid "Address: Kyiv, Ukraine"
 msgstr "Адрес: Киев, Украина"
 
@@ -183,7 +183,7 @@ msgstr "Ваша электронная почта успешно доставл
 msgid "Bevbox - a home of taste & flavor"
 msgstr "Bevbox - дом вкуса и аромата"
 
-#: templates/app/home.html:6
+#: templates/app/home.html:6 templates/app/home.html:7
 msgid ""
 "Bevbox is a marvelous mood for the evening at the expense of good "
 "whiskey, cigar and entertaining reading by subscription."
@@ -191,32 +191,32 @@ msgstr ""
 "Bevbox - это невероятное настроение на вечер за счет добротного виски, "
 "сигарыи интересного чтива по подписке."
 
-#: templates/app/home.html:77 templates/app/home.html:170
-#: templates/app/home.html:352
+#: templates/app/home.html:78 templates/app/home.html:171
+#: templates/app/home.html:353
 msgid "How it works"
 msgstr "Как это работает"
 
-#: templates/app/home.html:86 templates/app/home.html:179
+#: templates/app/home.html:87 templates/app/home.html:180
 msgid "Features"
 msgstr "Особенности"
 
-#: templates/app/home.html:95 templates/app/home.html:188
+#: templates/app/home.html:96 templates/app/home.html:189
 msgid "Subscriptions"
 msgstr "Подписки"
 
-#: templates/app/home.html:104 templates/app/home.html:197
+#: templates/app/home.html:105 templates/app/home.html:198
 msgid "About us"
 msgstr "О нас"
 
-#: templates/app/home.html:113 templates/app/home.html:206
+#: templates/app/home.html:114 templates/app/home.html:207
 msgid "Contacts"
 msgstr "Контакты"
 
-#: templates/app/home.html:302
+#: templates/app/home.html:303
 msgid "Try to experience incredible taste & flavor"
 msgstr "Попробуйте испытать невероятный вкус и аромат"
 
-#: templates/app/home.html:317
+#: templates/app/home.html:318
 msgid ""
 "Bevbox is a marvelous mood for the evening at the expense of good "
 "whiskey, cigar and\n"
@@ -225,28 +225,28 @@ msgstr ""
 "Bevbox - это невероятное настроение на вечер за счет добротного виски, "
 "сигары и интересного чтива по подписке."
 
-#: templates/app/home.html:382 templates/app/home.html:752
-#: templates/app/home.html:805 templates/app/home.html:857
+#: templates/app/home.html:383 templates/app/home.html:753
+#: templates/app/home.html:806 templates/app/home.html:858
 msgid "Subscribe"
 msgstr "Подписаться"
 
-#: templates/app/home.html:390
+#: templates/app/home.html:391
 msgid "Take a look at our"
 msgstr "Посмотрите на наши"
 
-#: templates/app/home.html:391
+#: templates/app/home.html:392
 msgid "features"
 msgstr "особенности"
 
-#: templates/app/home.html:394
+#: templates/app/home.html:395
 msgid "choose the most appropriate subscription type for yourself and pay it."
 msgstr "Выберите наиболее подходящий для вас тип подписки и оплатите её."
 
-#: templates/app/home.html:428
+#: templates/app/home.html:429
 msgid "Packing &amp; sending"
 msgstr "Упаковка и отправка"
 
-#: templates/app/home.html:437
+#: templates/app/home.html:438
 msgid ""
 "After we receive a\n"
 "                                            successful confirmation of "
@@ -264,11 +264,11 @@ msgstr ""
 "месяц. Например: если вы подписались в январе, мы вышлем коробку в первые"
 " дни февраля."
 
-#: templates/app/home.html:475
+#: templates/app/home.html:476
 msgid "Receiving"
 msgstr "Получение"
 
-#: templates/app/home.html:484
+#: templates/app/home.html:485
 msgid ""
 "We send you a New Post\n"
 "                                            declaration number, you "
@@ -277,15 +277,15 @@ msgstr ""
 "Мы посылаем вам номер декларации Новой Почты, вы получаете коробку. Кроме"
 " того, доставка бесплатная. Вот и все"
 
-#: templates/app/home.html:518
+#: templates/app/home.html:519
 msgid "Explore our features"
 msgstr "Посмотрите на наши особенности"
 
-#: templates/app/home.html:543
+#: templates/app/home.html:544
 msgid "Uniqueness"
 msgstr "Уникальность"
 
-#: templates/app/home.html:551
+#: templates/app/home.html:552
 msgid ""
 "Each time you\n"
 "                                receive our box, you get a unique set of "
@@ -297,11 +297,11 @@ msgstr ""
 "набор виски, сигары и журнала, которые не дублируются для лучшего вашего "
 "настроения и досуга."
 
-#: templates/app/home.html:580
+#: templates/app/home.html:581
 msgid "High quality for the reasonable price"
 msgstr "Высокое качество по разумной цене"
 
-#: templates/app/home.html:588
+#: templates/app/home.html:589
 msgid ""
 "We provide you\n"
 "                                with best available on market whiskey, "
@@ -310,11 +310,11 @@ msgstr ""
 "Мы предлагаем вам лучшие доступные на рынке виски, сигары и журналы "
 "поразумной цене."
 
-#: templates/app/home.html:616
+#: templates/app/home.html:617
 msgid "Individual Approach"
 msgstr "Индивидуальный подход"
 
-#: templates/app/home.html:624
+#: templates/app/home.html:625
 msgid ""
 "The best thing is\n"
 "                                to see you happy, so we'll count all your"
@@ -323,29 +323,29 @@ msgstr ""
 "Лучшее для нас - это видеть вас счастливыми, поэтому мы учитываем все "
 "ваши пожелания, чтобы запаковать лучший Bevbox для вас."
 
-#: templates/app/home.html:652
+#: templates/app/home.html:653
 msgid "Surprise effect"
 msgstr "Эффект сюрприза"
 
-#: templates/app/home.html:660
+#: templates/app/home.html:661
 msgid ""
 "You won't be known\n"
 "                                what will be inside until you receive it."
 msgstr "Вы не будете знать, что будет внутри, пока не получите коробку."
 
-#: templates/app/home.html:692
+#: templates/app/home.html:693
 msgid "Our subscriptions"
 msgstr "Наши подписки"
 
-#: templates/app/home.html:700
+#: templates/app/home.html:701
 msgid "Here's list of our available subscriptions plans."
 msgstr "Вот список наших доступных подписок."
 
-#: templates/app/home.html:725
+#: templates/app/home.html:726
 msgid "Junior"
 msgstr "Дебютант"
 
-#: templates/app/home.html:737
+#: templates/app/home.html:738
 msgid ""
 "You will receive one time a box\n"
 "                                    fulfilled with whiskey, cigar, and "
@@ -354,16 +354,16 @@ msgstr ""
 "По этой подписке, Вы получите один раз коробку, наполненную виски, "
 "сигарой и журналом."
 
-#: templates/app/home.html:777
+#: templates/app/home.html:778
 msgid "Middle"
 msgstr "Аматер"
 
-#: templates/app/home.html:780
+#: templates/app/home.html:781
 #, python-format
 msgid "you save 5%(percent)s"
 msgstr "Вы сэкономите 5%(percent)s"
 
-#: templates/app/home.html:789
+#: templates/app/home.html:790
 msgid ""
 "In this case, you'll receive unique\n"
 "                                    two boxes for two months fulfilled "
@@ -372,16 +372,16 @@ msgstr ""
 "В этом случае вы получите две уникальные коробки в течение двух месяцев, "
 "наполненые  виски, сигарой и журналом."
 
-#: templates/app/home.html:830
+#: templates/app/home.html:831
 msgid "Senior"
 msgstr "Тертый калач"
 
-#: templates/app/home.html:833
+#: templates/app/home.html:834
 #, python-format
 msgid "you save 10%(percent)s"
 msgstr "Вы сэкономите 10%(percent)s"
 
-#: templates/app/home.html:842
+#: templates/app/home.html:843
 msgid ""
 "In this case, you'll receive unique\n"
 "                                    three boxes for three months "
@@ -390,11 +390,11 @@ msgstr ""
 "В этом случае вы получите три уникальных коробки в течение трех месяцев, "
 "наполненые виски, сигарой и журналом."
 
-#: templates/app/home.html:903
+#: templates/app/home.html:904
 msgid "A word about us"
 msgstr "Слово о нас"
 
-#: templates/app/home.html:915
+#: templates/app/home.html:916
 msgid ""
 "We are a young, hard-working team of 2 people who\n"
 "                                        provide a subscription service "
@@ -403,13 +403,13 @@ msgstr ""
 "Мы молодая, трудолюбивая команда из 2 человек, которая предоставляет "
 "услуги подписки на виски, сигары и журналы."
 
-#: templates/app/home.html:1025
+#: templates/app/home.html:1026
 msgid ""
 "Any questions left? Drop us a message by\n"
 "                            means of"
 msgstr "Остались вопросы? Напишите нам сообщение с помощью"
 
-#: templates/app/home.html:1031 templates/app/refund-policy.html:163
+#: templates/app/home.html:1032 templates/app/refund-policy.html:164
 msgid "contact form"
 msgstr "контактной формы"
 
@@ -427,7 +427,7 @@ msgstr ""
 msgid "Bevbox Privacy Policy"
 msgstr "Bevbox политика конфиденциальности"
 
-#: templates/app/privacy-policy.html:6
+#: templates/app/privacy-policy.html:6 templates/app/privacy-policy.html:7
 msgid ""
 "Privacy Policy will help you understand what personal data we collect, "
 "why we collect it and what we do with it."
@@ -435,27 +435,27 @@ msgstr ""
 "Политика конфиденциальности поможет вам понять, какие персональные данные"
 " мы собираем, почему мы их собираем и что мы делаем с ними."
 
-#: templates/app/privacy-policy.html:138
+#: templates/app/privacy-policy.html:139
 msgid "PRIVACY POLICY"
 msgstr "ПОЛИТИКА КОНФИДЕНЦИАЛЬНОСТИ"
 
-#: templates/app/privacy-policy.html:159
+#: templates/app/privacy-policy.html:160
 msgid "Effective date"
 msgstr "Дата вступления в силу"
 
-#: templates/app/privacy-policy.html:160
+#: templates/app/privacy-policy.html:161
 msgid "December 31, 2018"
 msgstr "Декабрь 31, 2018"
 
-#: templates/app/privacy-policy.html:162
+#: templates/app/privacy-policy.html:163
 msgid "(\"us\", \"we\", or \"our\") operates the"
 msgstr "(\"нас\", \"мы\" или \"наш\") управляет"
 
-#: templates/app/privacy-policy.html:164
+#: templates/app/privacy-policy.html:165
 msgid "website (the \"Service\")"
 msgstr "сайт (\"Сервис\")"
 
-#: templates/app/privacy-policy.html:166
+#: templates/app/privacy-policy.html:167
 msgid ""
 "This page informs you of our policies regarding the\n"
 "                            collection, use, and disclosure of personal "
@@ -465,7 +465,7 @@ msgstr ""
 "Эта страница информирует вас о нашей политике в отношении сбора, "
 "использования и раскрытия личны"
 
-#: templates/app/privacy-policy.html:173
+#: templates/app/privacy-policy.html:174
 msgid ""
 "We use your data to provide and improve the\n"
 "                            Service. By using the Service, you agree to "
@@ -476,28 +476,28 @@ msgid ""
 " in our"
 msgstr "Мы используем ваши данные для предоставления и улучшени"
 
-#: templates/app/privacy-policy.html:185
+#: templates/app/privacy-policy.html:186
 msgid ""
 "Information\n"
 "                                    Collection And Use"
 msgstr "Сбор и использование информации"
 
-#: templates/app/privacy-policy.html:193
+#: templates/app/privacy-policy.html:194
 msgid ""
 "We collect several different types\n"
 "                            of information for various purposes to "
 "provide and improve our Service to you"
 msgstr "Мы собираем несколько различных типов информации для различных целей"
 
-#: templates/app/privacy-policy.html:200
+#: templates/app/privacy-policy.html:201
 msgid "Types of Data Collected"
 msgstr "Типы собранных данных"
 
-#: templates/app/privacy-policy.html:203
+#: templates/app/privacy-policy.html:204
 msgid "Personal Data"
 msgstr "Личные данные"
 
-#: templates/app/privacy-policy.html:205
+#: templates/app/privacy-policy.html:206
 msgid ""
 "While using our Service, we may ask you to\n"
 "                            provide us with certain personally "
@@ -507,31 +507,31 @@ msgid ""
 "                            limited to"
 msgstr "Используя наш Сервис, мы можем попросить ва"
 
-#: templates/app/privacy-policy.html:213
+#: templates/app/privacy-policy.html:214
 msgid "Email address"
 msgstr "Адрес электронной почты"
 
-#: templates/app/privacy-policy.html:214
+#: templates/app/privacy-policy.html:215
 msgid "First name and last name"
 msgstr "Имя и фамилия"
 
-#: templates/app/privacy-policy.html:215
+#: templates/app/privacy-policy.html:216
 msgid "Phone number"
 msgstr "Номер телефона"
 
-#: templates/app/privacy-policy.html:217
+#: templates/app/privacy-policy.html:218
 msgid "Address, State, Province, ZIP/Postal code, City"
 msgstr "Адрес, область, почтовый индекс, город"
 
-#: templates/app/privacy-policy.html:219
+#: templates/app/privacy-policy.html:220
 msgid "Cookies and Usage Data"
 msgstr "Файлы cookie и данные об использовании"
 
-#: templates/app/privacy-policy.html:221
+#: templates/app/privacy-policy.html:222
 msgid "Usage Data"
 msgstr "Данные об использовании"
 
-#: templates/app/privacy-policy.html:223
+#: templates/app/privacy-policy.html:224
 msgid ""
 "We may also collect information how the\n"
 "                            Service is accessed and used (\"Usage "
@@ -546,11 +546,11 @@ msgstr ""
 "Мы также можем собирать информацию о том, как к сервису получают доступ и"
 " используют данные об использовании"
 
-#: templates/app/privacy-policy.html:231
+#: templates/app/privacy-policy.html:232
 msgid "Tracking & Cookies Data"
 msgstr "Отслеживания и данные cookie"
 
-#: templates/app/privacy-policy.html:233
+#: templates/app/privacy-policy.html:234
 msgid ""
 "We use cookies and similar tracking\n"
 "                            technologies to track the activity on our "
@@ -560,7 +560,7 @@ msgstr ""
 "отслеживания активности в нашем сервисе и хранения определенной "
 "информации."
 
-#: templates/app/privacy-policy.html:239
+#: templates/app/privacy-policy.html:240
 msgid ""
 "Cookies are files with small amount of data which may include an "
 "anonymous unique\n"
@@ -575,7 +575,7 @@ msgstr ""
 "содержать анонимный, уникальный идентификатор. Cookies отправляются в ваш"
 " браузе"
 
-#: templates/app/privacy-policy.html:247
+#: templates/app/privacy-policy.html:248
 msgid ""
 "You can instruct your\n"
 "                            browser to refuse all cookies or to indicate "
@@ -586,23 +586,23 @@ msgstr ""
 "Вы можете указать браузеру отказаться от всех файлов cookie или указать, "
 "когда они отправляются. Однако, если вы не принимает"
 
-#: templates/app/privacy-policy.html:253
+#: templates/app/privacy-policy.html:254
 msgid "Examples of Cookies we use:"
 msgstr "Примеры файлов cookies, которые мы используем"
 
-#: templates/app/privacy-policy.html:256
+#: templates/app/privacy-policy.html:257
 msgid "Session Cookies."
 msgstr "Сессионные сookies "
 
-#: templates/app/privacy-policy.html:257
+#: templates/app/privacy-policy.html:258
 msgid "We use Session Cookies to operate our Service."
 msgstr "Мы используем сессионные cookies для работы нашего Сервиса"
 
-#: templates/app/privacy-policy.html:260
+#: templates/app/privacy-policy.html:261
 msgid "Preference Cookies."
 msgstr "Предпочтительные файлы cookies"
 
-#: templates/app/privacy-policy.html:262
+#: templates/app/privacy-policy.html:263
 msgid ""
 "We use Preference Cookies to remember your\n"
 "                                    preferences and various settings."
@@ -610,31 +610,31 @@ msgstr ""
 "Мы используем предпочтительные cookies, чтобы запомнить ваши предпочтения"
 " и различные настройки"
 
-#: templates/app/privacy-policy.html:269
+#: templates/app/privacy-policy.html:270
 msgid "Security Cookies."
 msgstr "Файлы cookies безопасности"
 
-#: templates/app/privacy-policy.html:270
+#: templates/app/privacy-policy.html:271
 msgid "We use Security Cookies for security purposes"
 msgstr "Мы используем файлы cookies безопасности в целях безопасности"
 
-#: templates/app/privacy-policy.html:275
+#: templates/app/privacy-policy.html:276
 msgid "Use of Data"
 msgstr "Использование данных"
 
-#: templates/app/privacy-policy.html:280
+#: templates/app/privacy-policy.html:281
 msgid "Bevbox uses the collected data for various purposes:"
 msgstr "Bevbox использует собранные данные для различных целей"
 
-#: templates/app/privacy-policy.html:283
+#: templates/app/privacy-policy.html:284
 msgid "To provide and maintain the Service"
 msgstr "Чтобы обеспечить и поддерживать Сервис"
 
-#: templates/app/privacy-policy.html:284
+#: templates/app/privacy-policy.html:285
 msgid "To notify you about changes to our Service"
 msgstr "Чтобы уведомить вас об изменениях в нашем Сервисе"
 
-#: templates/app/privacy-policy.html:287
+#: templates/app/privacy-policy.html:288
 msgid ""
 "To allow you to participate in interactive features of our Service when "
 "you choose\n"
@@ -643,11 +643,11 @@ msgstr ""
 "Чтобы позволить вам участвовать в интерактивных функциях нашего сервиса, "
 "когда вы решите это сделать."
 
-#: templates/app/privacy-policy.html:293
+#: templates/app/privacy-policy.html:294
 msgid "To provide customer care and support"
 msgstr "Чтобы обеспечить обслуживание и поддержку клиентов"
 
-#: templates/app/privacy-policy.html:296
+#: templates/app/privacy-policy.html:297
 msgid ""
 "To provide analysis or valuable information so that we can improve the "
 "Service"
@@ -655,19 +655,19 @@ msgstr ""
 "Чтобы предоставить анализ или ценную информацию, чтобы мы могли улучшить "
 "обслуживание"
 
-#: templates/app/privacy-policy.html:301
+#: templates/app/privacy-policy.html:302
 msgid "To monitor the usage of the Service"
 msgstr "Для мониторинга использования сервиса."
 
-#: templates/app/privacy-policy.html:303
+#: templates/app/privacy-policy.html:304
 msgid "To detect, prevent and address technical issues"
 msgstr "Чтобы обнаруживать, предотвращать и решать технические проблемы"
 
-#: templates/app/privacy-policy.html:309
+#: templates/app/privacy-policy.html:310
 msgid "Transfer Of Data"
 msgstr "Передача данных"
 
-#: templates/app/privacy-policy.html:313
+#: templates/app/privacy-policy.html:314
 msgid ""
 "Your information, including Personal Data, may be transferred to — and "
 "maintained on —\n"
@@ -679,7 +679,7 @@ msgstr ""
 "Ваша информация, включая Личные данные, может передаваться и храниться на"
 " компьютерах, расположенных за пределами вашего штата"
 
-#: templates/app/privacy-policy.html:320
+#: templates/app/privacy-policy.html:321
 msgid ""
 "If you are located outside Ukraine and choose to provide information to "
 "us, please note\n"
@@ -689,7 +689,7 @@ msgstr ""
 "Если вы находитесь за пределами Украины и решили предоставить нам "
 "информацию, обратите внимание, что мы передаем данные"
 
-#: templates/app/privacy-policy.html:326
+#: templates/app/privacy-policy.html:327
 msgid ""
 "Your consent to this Privacy Policy followed by your submission of such "
 "information\n"
@@ -699,7 +699,7 @@ msgstr ""
 "предоставлением вами такой информации, означает ваше согласие на такую "
 "передачу."
 
-#: templates/app/privacy-policy.html:331
+#: templates/app/privacy-policy.html:332
 msgid ""
 "Bevbox will take all steps\n"
 "                            reasonably necessary to ensure that your data"
@@ -715,15 +715,15 @@ msgstr ""
 "безопасное обращение с вашими данными в соответствии с настоящей "
 "политикой конфиденциальност"
 
-#: templates/app/privacy-policy.html:340
+#: templates/app/privacy-policy.html:341
 msgid "Disclosure Of Data"
 msgstr "Раскрытие данных"
 
-#: templates/app/privacy-policy.html:345
+#: templates/app/privacy-policy.html:346
 msgid "Legal Requirements"
 msgstr "Правовые требования"
 
-#: templates/app/privacy-policy.html:349
+#: templates/app/privacy-policy.html:350
 msgid ""
 "Bevbox may disclose your Personal Data in the good faith belief that such"
 " action is\n"
@@ -732,33 +732,33 @@ msgstr ""
 "Bevbox может раскрывать ваши личные данные, добросовестно полагая, что "
 "такие действия необходимы для"
 
-#: templates/app/privacy-policy.html:355
+#: templates/app/privacy-policy.html:356
 msgid "To comply with a legal obligation"
 msgstr "Выполнения юридического обязательства"
 
-#: templates/app/privacy-policy.html:358
+#: templates/app/privacy-policy.html:359
 msgid "To protect and defend the rights or property of Bevbox"
 msgstr "Защиты прав или собственности Bevbox."
 
-#: templates/app/privacy-policy.html:363
+#: templates/app/privacy-policy.html:364
 msgid ""
 "To prevent or investigate possible wrongdoing in connection with the "
 "Service"
 msgstr "Предотвращения или расследования возможных нарушений в связи с услугой."
 
-#: templates/app/privacy-policy.html:370
+#: templates/app/privacy-policy.html:371
 msgid "To protect the personal safety of users of the Service or the public"
 msgstr "Защиты личной безопасности пользователей сервиса или общественности."
 
-#: templates/app/privacy-policy.html:375
+#: templates/app/privacy-policy.html:376
 msgid "To protect against legal liabilit"
 msgstr "Защиты от юридической ответственности."
 
-#: templates/app/privacy-policy.html:379
+#: templates/app/privacy-policy.html:380
 msgid "Security Of Data"
 msgstr "Безопасность данных"
 
-#: templates/app/privacy-policy.html:384
+#: templates/app/privacy-policy.html:385
 #, python-format
 msgid ""
 "The security of your data is important to us, but remember that no method"
@@ -770,13 +770,13 @@ msgid ""
 "                            absolute security."
 msgstr ""
 
-#: templates/app/privacy-policy.html:393
+#: templates/app/privacy-policy.html:394
 msgid ""
 "Service\n"
 "                                    Providers"
 msgstr "Поставщики услуг"
 
-#: templates/app/privacy-policy.html:398
+#: templates/app/privacy-policy.html:399
 msgid ""
 "We may employ third party companies and\n"
 "                            individuals to facilitate our Service "
@@ -788,7 +788,7 @@ msgstr ""
 "Мы можем нанимать сторонние компании и частных лиц для оказания помощи "
 "нашему сервису (\"Поставщики услуг\"), для предоставлени"
 
-#: templates/app/privacy-policy.html:405
+#: templates/app/privacy-policy.html:406
 msgid ""
 "These third parties have access to your Personal Data only to perform\n"
 "                            these tasks on our behalf and are obligated "
@@ -799,11 +799,11 @@ msgstr ""
 "выполнения этих задач от нашего имени и обязаны не раскрывать и не "
 "использовать их для каких-либо других целей."
 
-#: templates/app/privacy-policy.html:412
+#: templates/app/privacy-policy.html:413
 msgid "Analytics"
 msgstr "Аналитика"
 
-#: templates/app/privacy-policy.html:416
+#: templates/app/privacy-policy.html:417
 msgid ""
 "We may use third-party Service Providers to monitor and analyze the use "
 "of our Service."
@@ -811,11 +811,11 @@ msgstr ""
 "Мы можем использовать сторонних поставщиков услуг для мониторинга и "
 "анализа использования наших услуг."
 
-#: templates/app/privacy-policy.html:422
+#: templates/app/privacy-policy.html:423
 msgid "Google Analytics"
 msgstr "Google аналитика"
 
-#: templates/app/privacy-policy.html:424
+#: templates/app/privacy-policy.html:425
 msgid ""
 "Google Analytics is a web analytics\n"
 "                                    service offered by Google that tracks"
@@ -830,7 +830,7 @@ msgstr ""
 "Google аналитика - это сервис веб-аналитики, предлагаемый Google, который"
 " отслеживает и сообщает о посещаемости сайта"
 
-#: templates/app/privacy-policy.html:432
+#: templates/app/privacy-policy.html:433
 msgid ""
 "You can opt-out of\n"
 "                                    having made your activity on the "
@@ -846,7 +846,7 @@ msgstr ""
 "доступной для Google аналитики, установив надстройку для браузера Google "
 "аналитика. Это дополнение не позволяет Google аналитик"
 
-#: templates/app/privacy-policy.html:440
+#: templates/app/privacy-policy.html:441
 msgid ""
 "For more\n"
 "                                    information on the privacy practices "
@@ -854,11 +854,11 @@ msgid ""
 "                                    &amp; Terms web page:"
 msgstr "Для получения дополнительной информации о правилах конфиденциальност"
 
-#: templates/app/privacy-policy.html:453
+#: templates/app/privacy-policy.html:454
 msgid "Links To Other Sites"
 msgstr "Ссылки на другие сайты"
 
-#: templates/app/privacy-policy.html:457
+#: templates/app/privacy-policy.html:458
 msgid ""
 "Our Service may contain links to other sites that are not operated by us."
 " If you click on a\n"
@@ -871,7 +871,7 @@ msgstr ""
 " нами. Если вы нажмете на ссылку третьей стороны, вы будете "
 "перенаправлены на сайт этой третьей стороны. Мы настоятельн"
 
-#: templates/app/privacy-policy.html:463
+#: templates/app/privacy-policy.html:464
 msgid ""
 "We have no control over\n"
 "                            and assume no responsibility for the content,"
@@ -881,19 +881,19 @@ msgstr ""
 "Мы не контролируем и не несем ответственности за содержание, политику "
 "конфиденциальности или действия любых сторонних сайтов или служб."
 
-#: templates/app/privacy-policy.html:471
+#: templates/app/privacy-policy.html:472
 msgid ""
 "Children's\n"
 "                                    Privacy"
 msgstr "Конфиденциальность детей"
 
-#: templates/app/privacy-policy.html:475
+#: templates/app/privacy-policy.html:476
 msgid ""
 "Our Service does not address anyone under the\n"
 "                            age of 18 (\"Children\")."
 msgstr "Наш сервис не адресован никому младше 18 лет (\"Дети\")."
 
-#: templates/app/privacy-policy.html:480
+#: templates/app/privacy-policy.html:481
 msgid ""
 "We do not knowingly collect personally identifiable\n"
 "                            information from anyone under the age of 18. "
@@ -909,13 +909,13 @@ msgstr ""
 " Если вы являетесь родителем или опекуном и знаете, что ваши дети "
 "предоставили нам личные данные, пожалуйста, свяжитесь с нами. Если м"
 
-#: templates/app/privacy-policy.html:490
+#: templates/app/privacy-policy.html:491
 msgid ""
 "Changes To This Privacy\n"
 "                                    Policy"
 msgstr "Изменения в настоящей политике конфиденциальности"
 
-#: templates/app/privacy-policy.html:496
+#: templates/app/privacy-policy.html:497
 msgid ""
 "We may update our Privacy Policy from time to\n"
 "                            time. We will notify you of any changes by "
@@ -924,7 +924,7 @@ msgstr ""
 "Мы можем обновлять нашу политику конфиденциальности время от времени. Мы "
 "сообщим вам о любых изменения"
 
-#: templates/app/privacy-policy.html:501
+#: templates/app/privacy-policy.html:502
 msgid ""
 "We will let you know via email and/or a prominent notice on\n"
 "              our Service, prior to the change becoming effective and "
@@ -932,7 +932,7 @@ msgid ""
 "              \"effective date\" at the top of this Privacy Policy."
 msgstr ""
 
-#: templates/app/privacy-policy.html:504
+#: templates/app/privacy-policy.html:505
 msgid ""
 "You are advised to review this Privacy Policy periodically for any\n"
 "              changes. Changes to this Privacy Policy are effective when "
@@ -940,21 +940,21 @@ msgid ""
 "              are posted on this page."
 msgstr ""
 
-#: templates/app/privacy-policy.html:509 templates/app/terms-of-use.html:442
+#: templates/app/privacy-policy.html:510 templates/app/terms-of-use.html:443
 msgid "Contact Us"
 msgstr "Свяжитесь с нами"
 
-#: templates/app/privacy-policy.html:513
+#: templates/app/privacy-policy.html:514
 msgid "If you have any questions about this Privacy Policy, please contact us:"
 msgstr ""
 "Если у вас есть какие-либо вопросы об этой политике конфиденциальности, "
 "пожалуйста, свяжитесь с нами."
 
-#: templates/app/privacy-policy.html:519 templates/app/terms-of-use.html:449
+#: templates/app/privacy-policy.html:520 templates/app/terms-of-use.html:450
 msgid "By email:"
 msgstr "По электронной почте:"
 
-#: templates/app/privacy-policy.html:523 templates/app/terms-of-use.html:452
+#: templates/app/privacy-policy.html:524 templates/app/terms-of-use.html:453
 msgid "By visiting this page on our website:"
 msgstr "Посетив эту страницу на нашем сайте:"
 
@@ -962,7 +962,7 @@ msgstr "Посетив эту страницу на нашем сайте:"
 msgid "Bevbox Refund Policy"
 msgstr "Bevbox политика возврата средств"
 
-#: templates/app/refund-policy.html:6
+#: templates/app/refund-policy.html:6 templates/app/refund-policy.html:7
 msgid ""
 "Refund Policy outline the main principles of the return process of a "
 "product."
@@ -970,11 +970,11 @@ msgstr ""
 "Политика возврата определяет основные принципы процесса возвращения "
 "продукта."
 
-#: templates/app/refund-policy.html:138
+#: templates/app/refund-policy.html:139
 msgid "REFUND POLICY"
 msgstr "ПОЛИТИКА ВОЗМЕЩЕНИЯ"
 
-#: templates/app/refund-policy.html:159
+#: templates/app/refund-policy.html:160
 msgid ""
 "Our refund policy is as simple as ABC. If you are not satisfied\n"
 "              with a delivered box and you didn't open a whiskey bottle, "
@@ -988,11 +988,11 @@ msgstr ""
 "курили сигару и сохранили вид журнала и коробки, просто запросите возврат"
 " средств с помощью"
 
-#: templates/app/refund-policy.html:164
+#: templates/app/refund-policy.html:165
 msgid "or by"
 msgstr "или"
 
-#: templates/app/refund-policy.html:164
+#: templates/app/refund-policy.html:165
 msgid ""
 "or just\n"
 "              say what should be replaced and we'll pack a new box for "
@@ -1004,23 +1004,23 @@ msgstr ""
 "вас. Для этого вам необходимо предоставить нам детали с помощью "
 "упомянутых выше методов:"
 
-#: templates/app/refund-policy.html:169
+#: templates/app/refund-policy.html:170
 msgid "your phone number"
 msgstr "номер телефона"
 
-#: templates/app/refund-policy.html:170
+#: templates/app/refund-policy.html:171
 msgid "first and Last name"
 msgstr "фамилия и имя"
 
-#: templates/app/refund-policy.html:171
+#: templates/app/refund-policy.html:172
 msgid "subscription type"
 msgstr "тип подписки"
 
-#: templates/app/refund-policy.html:172
+#: templates/app/refund-policy.html:173
 msgid "date of receving of a box"
 msgstr "дата получения коробки"
 
-#: templates/app/refund-policy.html:174
+#: templates/app/refund-policy.html:175
 msgid "That's it."
 msgstr "Вот и всё."
 
@@ -1029,31 +1029,31 @@ msgstr "Вот и всё."
 msgid "Bevbox Subscription"
 msgstr "Bevbox подписка"
 
-#: templates/app/subscription.html:7
+#: templates/app/subscription.html:7 templates/app/subscription.html:8
 msgid "Bevbox subscription page."
 msgstr "Bevbox cтраница подписки. "
 
-#: templates/app/subscription.html:140
+#: templates/app/subscription.html:141
 msgid "SUBSCRIPTION"
 msgstr "ПОДПИСКА"
 
-#: templates/app/subscription.html:243
+#: templates/app/subscription.html:244
 msgid "Subscribe now"
 msgstr "Подписаться сейчас"
 
-#: templates/app/subscription.html:284
+#: templates/app/subscription.html:285
 msgid "By clicking the button you agree our"
 msgstr "Нажимая кнопку, вы соглашаетесь с нашей"
 
-#: templates/app/subscription.html:289
+#: templates/app/subscription.html:290
 msgid "privacy policy"
 msgstr "политикой конфиденциальности"
 
-#: templates/app/subscription.html:296
+#: templates/app/subscription.html:297
 msgid "terms of use"
 msgstr "условиями использования"
 
-#: templates/app/subscription.html:303
+#: templates/app/subscription.html:304
 msgid "refund policy"
 msgstr "политикой возврата"
 
@@ -1075,7 +1075,7 @@ msgstr ""
 msgid "Bevbox Terms of Use"
 msgstr "Условиями использования"
 
-#: templates/app/terms-of-use.html:6
+#: templates/app/terms-of-use.html:6 templates/app/terms-of-use.html:7
 msgid ""
 "Terms of Use govern your use of our service and provide information about"
 " the Bevbox."
@@ -1083,15 +1083,15 @@ msgstr ""
 "Условия использования регулируют использование нашего сервиса и "
 "предоставляют информацию о Bevbox"
 
-#: templates/app/terms-of-use.html:139
+#: templates/app/terms-of-use.html:140
 msgid "TERMS OF USE"
 msgstr "УСЛОВИЯ ИСПОЛЬЗОВАНИЯ"
 
-#: templates/app/terms-of-use.html:161
+#: templates/app/terms-of-use.html:162
 msgid "Welcome to Bevbox"
 msgstr "Добро пожаловать в Bevbox"
 
-#: templates/app/terms-of-use.html:163
+#: templates/app/terms-of-use.html:164
 msgid ""
 "These Terms of Use outline the rules and regulations for the use\n"
 "              of Bevbox's Website."
@@ -1099,15 +1099,15 @@ msgstr ""
 "В настоящих условиях использования изложены правила и нормы использования"
 " веб-сайта Bevbox."
 
-#: templates/app/terms-of-use.html:164
+#: templates/app/terms-of-use.html:165
 msgid "Bevbox is located at:"
 msgstr "Bevbox находится по адресу:"
 
-#: templates/app/terms-of-use.html:165
+#: templates/app/terms-of-use.html:166
 msgid "Kyiv, Ukraine"
 msgstr "Киев, Украина"
 
-#: templates/app/terms-of-use.html:165
+#: templates/app/terms-of-use.html:166
 msgid ""
 "By\n"
 "              accessing this website we assume you accept these terms and"
@@ -1121,15 +1121,15 @@ msgstr ""
 "полном объеме. Не продолжайте использовать веб-сайт Bevbox, если вы не "
 "принимаете все условия, изложенные на этой странице."
 
-#: templates/app/terms-of-use.html:170
+#: templates/app/terms-of-use.html:171
 msgid "The following terminology applies to these Terms of Use,"
 msgstr "Следующая терминология применяется к этим условиям использования,"
 
-#: templates/app/terms-of-use.html:171
+#: templates/app/terms-of-use.html:172
 msgid "Disclaimer Notice"
 msgstr "Уведомление об отказе от ответственности"
 
-#: templates/app/terms-of-use.html:175
+#: templates/app/terms-of-use.html:176
 msgid ""
 "and any agreements: \"Client\", \"You\" and \"Your\" refers to you, the\n"
 "              person accessing this website and accepting the Company's "
@@ -1162,11 +1162,11 @@ msgstr ""
 " и любые соглашения: \"Клиент\", \"Вы\" и \"Ваш\" относится к вам, под "
 "вами понимается лицо осуществляющее доступ к этом"
 
-#: templates/app/terms-of-use.html:190
+#: templates/app/terms-of-use.html:191
 msgid "Terms of service"
 msgstr "Условия обслуживания"
 
-#: templates/app/terms-of-use.html:191
+#: templates/app/terms-of-use.html:192
 msgid ""
 "Service is a set of whiskey, cigar, magazine &amp; paper box,\n"
 "              hereinafter reffered to as the "
@@ -1174,11 +1174,11 @@ msgstr ""
 "Сервис представляет собой набор виски, сигары, журнала в картонной "
 "коробке, в дальнейшем именуемый"
 
-#: templates/app/terms-of-use.html:192
+#: templates/app/terms-of-use.html:193
 msgid "box"
 msgstr "коробка"
 
-#: templates/app/terms-of-use.html:193
+#: templates/app/terms-of-use.html:194
 msgid ""
 "We send you a box on the first dates of a next month after successful\n"
 "              payment. That means if you paid in January, the box will be"
@@ -1192,17 +1192,17 @@ msgstr ""
 "Мы отправим вам коробку в первых числах следующего месяца после успешной "
 "оплаты. Это означает, что если в"
 
-#: templates/app/terms-of-use.html:199
+#: templates/app/terms-of-use.html:200
 msgid "Cookies"
 msgstr "Cookies"
 
-#: templates/app/terms-of-use.html:203
+#: templates/app/terms-of-use.html:204
 msgid ""
 "We employ the use of cookies. By using Bevbox's website you\n"
 "              consent to the use of cookies in accordance with Bevbox's"
 msgstr "Мы используем cookies. Используя сайт Bevbox, вы даёт"
 
-#: templates/app/terms-of-use.html:208
+#: templates/app/terms-of-use.html:209
 msgid ""
 "Most of the modern day interactive web sites use cookies to enable\n"
 "              us to retrieve user details for each visit. Cookies are "
@@ -1216,11 +1216,11 @@ msgstr ""
 "Большинство современных интерактивных веб-сайтов используют файлы "
 "cookies, для того чтоб"
 
-#: templates/app/terms-of-use.html:214
+#: templates/app/terms-of-use.html:215
 msgid "License"
 msgstr "Лицензия"
 
-#: templates/app/terms-of-use.html:217
+#: templates/app/terms-of-use.html:218
 msgid ""
 "Unless otherwise stated, Bevbox and/or it's licensors own the\n"
 "              intellectual property rights for all material on Bevbox. "
@@ -1232,7 +1232,7 @@ msgstr ""
 "Если не указано иное, Bevbox и / или его лицензиары владеют правами "
 "интеллектуальной собственности на все материалы на Bevbox"
 
-#: templates/app/terms-of-use.html:222
+#: templates/app/terms-of-use.html:223
 msgid ""
 "for your own personal use subject to restrictions set in these\n"
 "              terms and conditions."
@@ -1240,23 +1240,23 @@ msgstr ""
 "для вашего личного использования с учетом ограничений, установленных в "
 "этих условиях."
 
-#: templates/app/terms-of-use.html:224
+#: templates/app/terms-of-use.html:225
 msgid "You must not do without prior written approval:"
 msgstr "Вы не должны делать без предварительного письменного согласия:"
 
-#: templates/app/terms-of-use.html:227
+#: templates/app/terms-of-use.html:228
 msgid "Republish material from"
 msgstr "Переиздавать материал из"
 
-#: templates/app/terms-of-use.html:233
+#: templates/app/terms-of-use.html:234
 msgid "Sell, rent or sub-license material from"
 msgstr "Продавать, арендовать или сублицензировать материал из"
 
-#: templates/app/terms-of-use.html:239
+#: templates/app/terms-of-use.html:240
 msgid "Reproduce, duplicate or copy material from"
 msgstr "Воспроизводить, дублировать или копировать материалы из"
 
-#: templates/app/terms-of-use.html:245
+#: templates/app/terms-of-use.html:246
 msgid ""
 "Redistribute content from Bevbox (unless content is specifically\n"
 "              made for redistribution)."
@@ -1264,11 +1264,11 @@ msgstr ""
 "Распространять контент из Bevbox (если контент не предназначен специально"
 " для распространения)."
 
-#: templates/app/terms-of-use.html:248
+#: templates/app/terms-of-use.html:249
 msgid "Hyperlinking to our Content"
 msgstr "Гиперссылка на наш контент"
 
-#: templates/app/terms-of-use.html:253
+#: templates/app/terms-of-use.html:254
 msgid ""
 "The following organizations may link to our Web site without\n"
 "                  prior written approval:"
@@ -1276,19 +1276,19 @@ msgstr ""
 "Следующие организации могут ссылаться на наш веб-сайт без "
 "предварительного письменного разрешения:"
 
-#: templates/app/terms-of-use.html:256
+#: templates/app/terms-of-use.html:257
 msgid "Government agencies;"
 msgstr "Государственные органы;"
 
-#: templates/app/terms-of-use.html:257
+#: templates/app/terms-of-use.html:258
 msgid "Search engines;"
 msgstr "Поисковые системы;"
 
-#: templates/app/terms-of-use.html:258
+#: templates/app/terms-of-use.html:259
 msgid "News organizations;"
 msgstr "Новостные организации;"
 
-#: templates/app/terms-of-use.html:260
+#: templates/app/terms-of-use.html:261
 msgid ""
 "Online directory distributors when they list us in the\n"
 "                      directory may link to our Web site in the same "
@@ -1299,7 +1299,7 @@ msgstr ""
 "Распространители каталогов в интернете, когда они перечисляют нас в "
 "каталоге, могу"
 
-#: templates/app/terms-of-use.html:266
+#: templates/app/terms-of-use.html:267
 msgid ""
 "Systemwide Accredited Businesses except soliciting\n"
 "                      non-profit organizations, charity shopping malls, "
@@ -1311,7 +1311,7 @@ msgstr ""
 "Аккредитованные компании в масштабе всей системы, за исключением "
 "привлечения некоммерческих организаций"
 
-#: templates/app/terms-of-use.html:276
+#: templates/app/terms-of-use.html:277
 msgid ""
 "These organizations may link to our home page, to publications\n"
 "                  or to other Web site information so long as the link: "
@@ -1326,7 +1326,7 @@ msgstr ""
 "Эти организации могут ссылаться на нашу домашнюю страницу, публикации или"
 " другую информацию на веб-сайте"
 
-#: templates/app/terms-of-use.html:284
+#: templates/app/terms-of-use.html:285
 msgid ""
 "We may consider and approve in our sole discretion other link\n"
 "                  requests from the following types of organizations:"
@@ -1334,7 +1334,7 @@ msgstr ""
 "Мы можем рассмотреть и одобрить по своему усмотрению другие запросы на "
 "ссылки из следующих типов организаций:"
 
-#: templates/app/terms-of-use.html:288
+#: templates/app/terms-of-use.html:289
 msgid ""
 "commonly-known consumer and/or business information\n"
 "                      sources such as Chambers of Commerce, American "
@@ -1344,11 +1344,11 @@ msgstr ""
 "общеизвестные источники информации для потребителей и / или предприятий, "
 "такие как Торговые палаты, Американска"
 
-#: templates/app/terms-of-use.html:292
+#: templates/app/terms-of-use.html:293
 msgid "dot.com community sites;"
 msgstr "сайты сообщества dot.com;"
 
-#: templates/app/terms-of-use.html:294
+#: templates/app/terms-of-use.html:295
 msgid ""
 "associations or other groups representing charities,\n"
 "                      including charity giving sites,"
@@ -1356,15 +1356,15 @@ msgstr ""
 "ассоциации или другие группы, представляющие благотворительные "
 "организации, в том числе благотворительные сайты"
 
-#: templates/app/terms-of-use.html:297
+#: templates/app/terms-of-use.html:298
 msgid "online directory distributors;"
 msgstr "интернет-каталог дистрибьюторов;"
 
-#: templates/app/terms-of-use.html:298
+#: templates/app/terms-of-use.html:299
 msgid "internet portals;"
 msgstr "интернет-порталы;"
 
-#: templates/app/terms-of-use.html:300
+#: templates/app/terms-of-use.html:301
 msgid ""
 "accounting, law and consulting firms whose primary clients\n"
 "                      are businesses; and"
@@ -1372,11 +1372,11 @@ msgstr ""
 "бухгалтерские, юридические и консалтинговые фирмы, основными клиентами "
 "которых являются предприятия; а также"
 
-#: templates/app/terms-of-use.html:303
+#: templates/app/terms-of-use.html:304
 msgid "educational institutions and trade associations."
 msgstr "образовательные учреждения и торговые ассоциации"
 
-#: templates/app/terms-of-use.html:307
+#: templates/app/terms-of-use.html:308
 msgid ""
 "We will approve link requests from these organizations if we\n"
 "              determine that: (a) the link would not reflect unfavorably "
@@ -1400,7 +1400,7 @@ msgid ""
 "organization."
 msgstr "Мы утвердим запросы ссылок от этих организаций, если решим, что"
 
-#: templates/app/terms-of-use.html:319
+#: templates/app/terms-of-use.html:320
 msgid ""
 "These organizations may link to our home page, to publications or\n"
 "              to other Web site information so long as the link: (a) is "
@@ -1416,7 +1416,7 @@ msgstr ""
 "Эти организации могут ссылаться на нашу домашнюю страницу, на публикации "
 "или другую информацию на веб-сайте, если ссылка"
 
-#: templates/app/terms-of-use.html:325
+#: templates/app/terms-of-use.html:326
 msgid ""
 "If you are among the organizations listed in paragraph 2 above and\n"
 "              are interested in linking to our website, you must notify "
@@ -1426,7 +1426,7 @@ msgstr ""
 "Если вы относитесь к организациям, перечисленным в пункте 2 выше, и "
 "заинтересованы в размещении ссылок на наш веб-сайт"
 
-#: templates/app/terms-of-use.html:328
+#: templates/app/terms-of-use.html:329
 msgid ""
 "Please include\n"
 "              your name, your organization name, contact information "
@@ -1442,17 +1442,17 @@ msgstr ""
 "Пожалуйста, укажите ваше имя, название вашей организации, контактную "
 "информаци"
 
-#: templates/app/terms-of-use.html:335
+#: templates/app/terms-of-use.html:336
 msgid "Approved organizations may hyperlink to our Web site as follows:"
 msgstr ""
 "Утвержденные организации могут размещать гиперссылку на наш веб-сайт "
 "следующим образом"
 
-#: templates/app/terms-of-use.html:338
+#: templates/app/terms-of-use.html:339
 msgid "By use of our corporate name; or"
 msgstr "Используя наше фирменное наименование; или же"
 
-#: templates/app/terms-of-use.html:340
+#: templates/app/terms-of-use.html:341
 msgid ""
 "By use of the uniform resource locator (Web address) being\n"
 "                  linked to; or"
@@ -1460,7 +1460,7 @@ msgstr ""
 "С помощью унифицированного указателя ресурса (веб-адреса), на который "
 "делается ссылка; или же"
 
-#: templates/app/terms-of-use.html:344
+#: templates/app/terms-of-use.html:345
 msgid ""
 "By use of any other description of our Web site or material\n"
 "                  being linked to that makes sense within the context and"
@@ -1468,7 +1468,7 @@ msgid ""
 "                  of content on the linking party's site."
 msgstr ""
 
-#: templates/app/terms-of-use.html:349
+#: templates/app/terms-of-use.html:350
 msgid ""
 "No use of Bevbox's logo or other artwork will be allowed for\n"
 "              linking absent a trademark license agreement."
@@ -1476,11 +1476,11 @@ msgstr ""
 "Использование любого другого описания нашего веб-сайта или материалов, на"
 " которые делается ссылка"
 
-#: templates/app/terms-of-use.html:353
+#: templates/app/terms-of-use.html:354
 msgid "Iframes"
 msgstr "Фреймы"
 
-#: templates/app/terms-of-use.html:356
+#: templates/app/terms-of-use.html:357
 msgid ""
 "Without prior approval and express written permission, you may not\n"
 "              create frames around our Web pages or use other techniques "
@@ -1493,11 +1493,11 @@ msgstr ""
 "можете создавать фреймы вокруг наших веб-страниц или использовать другие "
 "методы"
 
-#: templates/app/terms-of-use.html:362
+#: templates/app/terms-of-use.html:363
 msgid "Reservation of Rights"
 msgstr "Резервирование прав"
 
-#: templates/app/terms-of-use.html:364
+#: templates/app/terms-of-use.html:365
 msgid ""
 "We reserve the right at any time and in its sole discretion to\n"
 "              request that you remove all links or any particular link to"
@@ -1515,11 +1515,11 @@ msgstr ""
 "Мы оставляем за собой право в любое время и по своему усмотрению просить "
 "вас удалить все ссылки или любу"
 
-#: templates/app/terms-of-use.html:373
+#: templates/app/terms-of-use.html:374
 msgid "Removal of links from our website"
 msgstr "Удаление ссылок с нашего сайта"
 
-#: templates/app/terms-of-use.html:375
+#: templates/app/terms-of-use.html:376
 msgid ""
 "If you find any link on our Web site or any linked web site\n"
 "              objectionable for any reason, you may contact us about "
@@ -1531,7 +1531,7 @@ msgstr ""
 "Если по какой-либо причине вы обнаружите какую-либо ссылку на нашем "
 "веб-сайте или на любом связанном веб-сайте"
 
-#: templates/app/terms-of-use.html:379
+#: templates/app/terms-of-use.html:380
 msgid ""
 "Whilst we endeavour to ensure that the information on this website\n"
 "              is correct, we do not warrant its completeness or accuracy;"
@@ -1543,11 +1543,11 @@ msgstr ""
 "Хотя мы стремимся к тому, чтобы информация на этом сайте была правильной,"
 " мы не гарантируем ее полноту или точность"
 
-#: templates/app/terms-of-use.html:386
+#: templates/app/terms-of-use.html:387
 msgid "Content Liability"
 msgstr "Ответственность за содержание"
 
-#: templates/app/terms-of-use.html:388
+#: templates/app/terms-of-use.html:389
 msgid ""
 "We shall have no responsibility or liability for any content\n"
 "              appearing on your Web site. You agree to indemnify and "
@@ -1567,11 +1567,11 @@ msgstr ""
 "Мы не несем никакой ответственности за любой контент, появляющийся на "
 "вашем веб-сайте. Вы соглашаетесь освободить нас "
 
-#: templates/app/terms-of-use.html:398
+#: templates/app/terms-of-use.html:399
 msgid "Disclaimer"
 msgstr "Отказ"
 
-#: templates/app/terms-of-use.html:401
+#: templates/app/terms-of-use.html:402
 msgid ""
 "To the maximum extent permitted by applicable law, we exclude all\n"
 "              representations, warranties and conditions relating to our "
@@ -1587,7 +1587,7 @@ msgstr ""
 "В максимальной степени, допускаемой применимым законодательством, мы "
 "исключаем все заявления, гарантии и условия, касающиес"
 
-#: templates/app/terms-of-use.html:410
+#: templates/app/terms-of-use.html:411
 msgid ""
 "limit or exclude our or your liability for death or personal\n"
 "                  injury resulting from negligence;"
@@ -1595,7 +1595,7 @@ msgstr ""
 "ограничивать и исключать нашу или вашу ответственность за смерть или "
 "телесные повреждения в результате халатности"
 
-#: templates/app/terms-of-use.html:414
+#: templates/app/terms-of-use.html:415
 msgid ""
 "limit or exclude our or your liability for fraud or fraudulent\n"
 "                  misrepresentation;"
@@ -1603,7 +1603,7 @@ msgstr ""
 "ограничивать и исключать нашу или вашу ответственность за мошенничество "
 "или мошенническое искажение фактов;"
 
-#: templates/app/terms-of-use.html:418
+#: templates/app/terms-of-use.html:419
 msgid ""
 "limit any of our or your liabilities in any way that is not\n"
 "                  permitted under applicable law; or"
@@ -1611,7 +1611,7 @@ msgstr ""
 "ограничивать наши или ваши обязательства любым способом, который не "
 "разрешен действующим законодательством; или же"
 
-#: templates/app/terms-of-use.html:422
+#: templates/app/terms-of-use.html:423
 msgid ""
 "exclude any of our or your liabilities that may not be\n"
 "                  excluded under applicable law;"
@@ -1619,7 +1619,7 @@ msgstr ""
 "исключать любые наши или ваши обязательства, которые не могут быть "
 "исключены в соответствии с действующим законодательством;"
 
-#: templates/app/terms-of-use.html:426
+#: templates/app/terms-of-use.html:427
 msgid ""
 "we are not responsible for damages caused by the work of the\n"
 "                  third-party and force majeure circumstances against on "
@@ -1628,7 +1628,7 @@ msgstr ""
 "мы не несем ответственности за ущерб коробки и её наполнения, причиненный"
 " работой третьей стороной или в следствии форс-мажора"
 
-#: templates/app/terms-of-use.html:430
+#: templates/app/terms-of-use.html:431
 msgid ""
 "The limitations and exclusions of liability set out in this\n"
 "              Section and elsewhere in this disclaimer: (a) are subject "
@@ -1646,7 +1646,7 @@ msgstr ""
 "действие предыдущего пункта; и (b) регулирует все обязательства, "
 "возникающие в соответствии с заявлением об отказ"
 
-#: templates/app/terms-of-use.html:437
+#: templates/app/terms-of-use.html:438
 msgid ""
 "To the extent that the website and the information and services on\n"
 "              the website are provided free of charge, we will not be "
@@ -1656,7 +1656,7 @@ msgstr ""
 "Если веб-сайт и информация и услуги на нем предоставляются бесплатно, мы "
 "не несем ответственности за любые потери или ущерб любого характера"
 
-#: templates/app/terms-of-use.html:445
+#: templates/app/terms-of-use.html:446
 msgid ""
 "If you have any questions about this Terms of Use,\n"
 "              please contact us:"
