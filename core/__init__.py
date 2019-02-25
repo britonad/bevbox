@@ -1,6 +1,6 @@
 import os
 
-from flask import abort, Flask, g
+from flask import abort, Flask, g, request, render_template
 from flask_babel import Babel
 from flask_sqlalchemy import SQLAlchemy
 from flask_migrate import Migrate
@@ -67,6 +67,16 @@ def create_app() -> Flask:
         lang = g.get('lang', None)
         if lang and lang not in application.config['LANGUAGES'].keys():
             return abort(404)
+
+    @application.errorhandler(404)
+    def not_found(error):
+        lang = request.path.split('/')[1].lower()
+        if lang and lang in application.config['LANGUAGES'].keys():
+            g.lang = lang
+        else:
+            g.lang = 'uk'
+
+        return render_template('404.html'), 404
 
     # Register blueprints
     from admin.views import admin_bp
