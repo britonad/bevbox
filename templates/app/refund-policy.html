@@ -159,19 +159,25 @@
             <div field="text" class="t-text t-text_md " style="">
               {{ _('Our refund policy is as simple as ABC. If you are not satisfied
               with a delivered box and you didn\'t open a whiskey bottle, not
-              smoked cigar and saved the look of magazine and box, then just
+              smoked a cigar and saved the look of a magazine and the box, then just
               request a refund by means of') }}
               <a href="{{ url_for('app.contacts') }}" style="">{{ _('contact form') }}</a>
-              {{ _('or by') }} <a href="mailto:bevbox.com.ua@gmail.com" style="">e-mail</a> {{ _('or just
-              say what should be replaced and we\'ll pack a new box for you. To
-              do so you need to provide us with such details by means of
-              mentioned above methods:') }}<br />
+              {{ _('or by') }} <a href="mailto:bevbox.com.ua@gmail.com" style="">e-mail</a>.
+              {{ _('In order to be able to get the refund, we need the following
+              information and actions from you:') }}<br />
               <ul>
-                <li>{{ _('your phone number') }}</li>
-                <li>{{ _('first and Last name') }}</li>
-                <li>{{ _('subscription type') }}</li>
-                <li>{{ _('date of receving of a box') }}</li>
+                <li>{{ _('send us back the box') }}</li>
+                <li>{{ _('your credit card number for the refund') }}</li>
               </ul>
+              <br />
+              {{ _('In case you want to change only the contents of the box,
+              we need from you the following information and actions:')}}<br />
+              <ul>
+                <li>{{ _('send us back the box') }}</li>
+                <li>{{ _('provide us with information as in subscription form
+                  through methods mentioned above') }}</li>
+              </ul>
+              {{ _('P.S. In a case of a refund/replacement, we are not cover shipping fees again.') }}<br />
               {{ _('That\'s it.') }}
             </div>
           </div>
