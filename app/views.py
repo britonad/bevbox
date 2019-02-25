@@ -104,11 +104,6 @@ def email_success():
     return render_template('app/email_success.html')
 
 
-@app_bp.route('/404/')
-def not_found():
-    return render_template('404.html')
-
-
 @app_bp.route('/maintenance/')
 def maintenance():
     return render_template('app/maintenance.html')
