@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Bevbox 1.0.0\n"
 "Report-Msgid-Bugs-To: vladyslav.krylasov@gmail.com\n"
-"POT-Creation-Date: 2019-02-25 21:53+0200\n"
+"POT-Creation-Date: 2019-02-25 22:42+0200\n"
 "PO-Revision-Date: 2019-01-20 17:42+0200\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: uk\n"
@@ -405,13 +405,13 @@ msgstr ""
 "Ми молода, працьовита команда з 2-х людей, які надають послуги "
 "підписування на віскі, сигари та журнали."
 
-#: templates/app/home.html:1026
+#: templates/app/home.html:1035
 msgid ""
 "Any questions left? Drop us a message by\n"
 "                            means of"
 msgstr "Залишилися питання? Напишіть нам повідомлення за допомогою"
 
-#: templates/app/home.html:1032 templates/app/refund-policy.html:164
+#: templates/app/home.html:1041 templates/app/refund-policy.html:164
 msgid "contact form"
 msgstr "контактної форми"
 
@@ -1008,6 +1008,18 @@ msgstr "умовами використання"
 #: templates/app/subscription.html:304
 msgid "refund policy"
 msgstr "політикою повернення коштів"
+
+#: templates/app/success.html:3 templates/app/success.html:49
+msgid "Success"
+msgstr "Успіх"
+
+#: templates/app/success.html:56
+msgid ""
+"Thank you for choosing us, we'll call you back soon to\n"
+"                  confirm your subscription."
+msgstr ""
+"Дякуємо, що обрали нас, ми передзвонимо вам найближчим часом, щоб "
+"підтвердити ваше підписування."
 
 #: templates/app/terms-of-use.html:5
 msgid "Bevbox Terms of Use"
