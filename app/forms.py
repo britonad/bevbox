@@ -90,8 +90,8 @@ class SubscriptionForm(BaseForm):
         default=True,
         description=_(
             'Uncheck if you do not need it and yes, it reduces the cost of '
-            'the box by 129₴. E.g.: Junior will cost 1253₴, Middle 2366₴, '
-            'Senior 3347₴.'
+            'the box by ₴ 129. E.g.: Junior will cost ₴ 1576, Middle ₴ 2981, '
+            'Senior ₴ 4216.'
         )
     )
     preferences = TextAreaField(
