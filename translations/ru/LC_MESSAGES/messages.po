@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Bevbox 1.0.0\n"
 "Report-Msgid-Bugs-To: vladyslav.krylasov@gmail.com\n"
-"POT-Creation-Date: 2019-02-25 22:42+0200\n"
+"POT-Creation-Date: 2019-02-27 10:03+0200\n"
 "PO-Revision-Date: 2019-01-20 17:42+0200\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: ru\n"
@@ -58,12 +58,12 @@ msgstr "Дебютант 1 месяц / ₴ 1705"
 #: app/forms.py:64
 #, python-format
 msgid "Middle 2 months / ₴ 3239 (you save 5%(percent)s)"
-msgstr "Аматер 2 месяца / ₴ 3239 (вы сэкономите 5%(percent)s)"
+msgstr "Класик 2 месяца / ₴ 3239 (вы сэкономите 5%(percent)s)"
 
 #: app/forms.py:71
 #, python-format
 msgid "Senior 3 months / ₴ 4603 (you save 10%(percent)s)"
-msgstr "Тертый калач 3 месяца / ₴ 4603 (вы сэкономите 10%(percent)s) "
+msgstr "Ценитель / ₴ 4603 (вы сэкономите 10%(percent)s) "
 
 #: app/forms.py:79
 msgid "City"
@@ -87,8 +87,8 @@ msgid ""
 "₴ 129. E.g.: Junior will cost ₴ 1576, Middle ₴ 2981, Senior ₴ 4216."
 msgstr ""
 "Снимите флажок, если вам это не нужно, и да, это снижает стоимость "
-"коробки на ₴ 129. Например: Дебютант будет стоить ₴ 1576, Аматер ₴ 2981, "
-"Тертый калач ₴ 4216."
+"коробки на ₴ 129. Например: Дебютант будет стоить ₴ 1576, Класик ₴ 2981, "
+"Ценитель ₴ 4216."
 
 #: app/forms.py:98
 msgid "Preferences"
@@ -356,7 +356,7 @@ msgstr ""
 
 #: templates/app/home.html:778
 msgid "Middle"
-msgstr "Аматер"
+msgstr "Класик"
 
 #: templates/app/home.html:781
 #, python-format
@@ -374,7 +374,7 @@ msgstr ""
 
 #: templates/app/home.html:831
 msgid "Senior"
-msgstr "Тертый калач"
+msgstr "Ценитель"
 
 #: templates/app/home.html:834
 #, python-format
@@ -396,12 +396,12 @@ msgstr "Пару слов о нас"
 
 #: templates/app/home.html:916
 msgid ""
-"We are a young, hard-working team of 2 people who\n"
+"We are a team of 2 people who\n"
 "                                        provide a subscription service "
 "for whiskey, cigars, and magazines."
 msgstr ""
-"Мы молодая, трудолюбивая команда из 2 человек, которая предоставляет "
-"услуги подписки на виски, сигары и журналы."
+"Мы команда из 2 человек, которые предоставляют услуги подписки на виски, "
+"сигары и журналы."
 
 #: templates/app/home.html:1035
 msgid ""
@@ -1667,4 +1667,14 @@ msgid ""
 msgstr ""
 "Если у вас есть какие-либо вопросы об этих Условиях использования, "
 "пожалуйста, свяжитесь с нами:"
+
+#~ msgid ""
+#~ "We are a young, hard-working team of 2 people who\n"
+#~ "                                        provide a "
+#~ "subscription service for whiskey, cigars, "
+#~ "and magazines."
+#~ msgstr ""
+#~ "Мы молодая, трудолюбивая команда из 2"
+#~ " человек, которая предоставляет услуги "
+#~ "подписки на виски, сигары и журналы."
 

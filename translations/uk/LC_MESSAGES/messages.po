@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Bevbox 1.0.0\n"
 "Report-Msgid-Bugs-To: vladyslav.krylasov@gmail.com\n"
-"POT-Creation-Date: 2019-02-25 22:42+0200\n"
+"POT-Creation-Date: 2019-02-27 10:03+0200\n"
 "PO-Revision-Date: 2019-01-20 17:42+0200\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: uk\n"
@@ -53,17 +53,17 @@ msgstr "Тип підписування"
 
 #: app/forms.py:61
 msgid "Junior 1 month / ₴ 1705"
-msgstr "Хоружний 1 місяць / ₴ 1705"
+msgstr "Дебютант 1 місяць / ₴ 1705"
 
 #: app/forms.py:64
 #, python-format
 msgid "Middle 2 months / ₴ 3239 (you save 5%(percent)s)"
-msgstr "Осавул 2 місяць / ₴ 3239 (ви збергігаєте 5%(percent)s)"
+msgstr "Класик 2 місяць / ₴ 3239 (ви збергігаєте 5%(percent)s)"
 
 #: app/forms.py:71
 #, python-format
 msgid "Senior 3 months / ₴ 4603 (you save 10%(percent)s)"
-msgstr "Гетьман 3 місяць / ₴ 4603 (ви збергігаєте 10%(percent)s)"
+msgstr "Шанувальник 3 місяць / ₴ 4603 (ви збергігаєте 10%(percent)s)"
 
 #: app/forms.py:79
 msgid "City"
@@ -87,8 +87,8 @@ msgid ""
 "₴ 129. E.g.: Junior will cost ₴ 1576, Middle ₴ 2981, Senior ₴ 4216."
 msgstr ""
 "Зніміть пташку, якщо вам не потрібно і так, це зменшує вартість коробки "
-"на ₴ 129. Тобто, Хоружний буде коштувати ₴ 1576, Осавул ₴ 2981, Гетьман ₴"
-" 4216."
+"на ₴ 129. Тобто, Дебютант буде коштувати ₴ 1576, Класик ₴ 2981, "
+"Шанувальник ₴ 4216."
 
 #: app/forms.py:98
 msgid "Preferences"
@@ -345,7 +345,7 @@ msgstr "Ось список наших доступних підписуванн
 
 #: templates/app/home.html:726
 msgid "Junior"
-msgstr "Хорунжий"
+msgstr "Дебютант"
 
 #: templates/app/home.html:738
 msgid ""
@@ -358,7 +358,7 @@ msgstr ""
 
 #: templates/app/home.html:778
 msgid "Middle"
-msgstr "Осавул"
+msgstr "Класик"
 
 #: templates/app/home.html:781
 #, python-format
@@ -376,7 +376,7 @@ msgstr ""
 
 #: templates/app/home.html:831
 msgid "Senior"
-msgstr "Гетьман"
+msgstr "Шанувальник"
 
 #: templates/app/home.html:834
 #, python-format
@@ -398,12 +398,12 @@ msgstr "Слово про нас"
 
 #: templates/app/home.html:916
 msgid ""
-"We are a young, hard-working team of 2 people who\n"
+"We are a team of 2 people who\n"
 "                                        provide a subscription service "
 "for whiskey, cigars, and magazines."
 msgstr ""
-"Ми молода, працьовита команда з 2-х людей, які надають послуги "
-"підписування на віскі, сигари та журнали."
+"Ми - команда з двох осіб, які надають послуги підписки на віскі, сигари "
+"та журнали."
 
 #: templates/app/home.html:1035
 msgid ""
@@ -1536,4 +1536,14 @@ msgstr ""
 
 #~ msgid "That's it."
 #~ msgstr "Ось і все."
+
+#~ msgid ""
+#~ "We are a young, hard-working team of 2 people who\n"
+#~ "                                        provide a "
+#~ "subscription service for whiskey, cigars, "
+#~ "and magazines."
+#~ msgstr ""
+#~ "Ми молода, працьовита команда з 2-х "
+#~ "людей, які надають послуги підписування "
+#~ "на віскі, сигари та журнали."
 
