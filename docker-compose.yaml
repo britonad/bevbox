@@ -1,0 +1,84 @@
+# Bevbox docker-compose.yaml
+version: '3.7'
+
+services:
+
+  postgresql:
+    image: postgres:alpine
+    environment:
+      POSTGRES_DB: /run/secrets/postgres_db
+      POSTGRES_USER: /run/secrets/postgres_user
+      POSTGRES_PASSWORD: /run/secrets/postgres_password
+    ports:
+      - 5432:5432
+    volumes:
+      - "postgres:/var/lib/postgresql/data"
+    restart: always
+    secrets:
+      - postgres_db
+      - postgres_user
+      - postgres_password
+
+  backend:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    environment:
+      APP_ENV: "prod"
+      SECRET_KEY: /run/secrets/secret_key
+      BOT_TOKEN: /run/secrets/bot_token
+      CHANNEL_ID: /run/secrets/channel_id
+      EMAIL_RECIPIENT: /run/secrets/email_recipient
+      MAILGUN_API_KEY: /run/secrets/mailgun_api_key
+      MAILGUN_DOMAIN_NAME: /run/secrets/mailgun_domain_name
+      SQLALCHEMY_DATABASE_URI: /run/secrets/sqlalchemy_database_uri
+    depends_on:
+      - postgresql
+    restart: always
+    secrets:
+      - secret_key
+      - bot_token
+      - channel_id
+      - email_recipient
+      - mailgun_api_key
+      - mailgun_domain_name
+      - sqlalchemy_database_uri
+
+  nginx:
+    image: nginx:alpine
+    ports:
+      - 80:80
+      - 443:443
+    volumes:
+      - "./conf/bevbox.conf:/etc/nginx/conf.d/default.conf"
+      - "./static:/app/static"
+      - "${HOME}/.config/docker-volumes/etc/letsencrypt:/etc/letsencrypt"
+    depends_on:
+      - backend
+    restart: always
+
+volumes:
+  postgres:
+    driver: local
+
+secrets:
+  secret_key:
+    file: ./secrets/secret_key.txt
+  bot_token:
+    file: ./secrets/bot_token.txt
+  channel_id:
+    file: ./secrets/channel_id.txt
+  email_recipient:
+    file: ./secrets/email_recipient.txt
+  mailgun_api_key:
+    file: ./secrets/mailgun_api_key.txt
+  mailgun_domain_name:
+    file: ./secrets/mailgun_domain_name.txt
+  postgres_db:
+    file: ./secrets/postgres_db.txt
+  postgres_user:
+    file: ./secrets/postgres_user.txt
+  postgres_password:
+    file: ./secrets/postgres_password.txt
+  sqlalchemy_database_uri:
+    file: ./secrets/sqlalchemy_database_uri.txt
