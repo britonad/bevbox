@@ -7,5 +7,3 @@ coverage/
 core/local_settings.py
 messages.pot
 .pytest_cache/
-!secrets/.gitkeep
-secrets
