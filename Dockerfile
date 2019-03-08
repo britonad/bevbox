@@ -41,5 +41,5 @@ RUN apk add --no-cache --virtual .build-deps \
 # We copy the rest of the codebase into the image.
 COPY . .
 
-# Finally, we run gunicorn.
-CMD gunicorn -b 0.0.0.0 --workers 2 --log-level DEBUG --timeout 90 manage:app
+# Run docker entry point.
+CMD [ "./docker-entrypoint.sh" ]
