@@ -5,5 +5,4 @@
 coverage/
 core/local_settings.py
 messages.pot
-secrets
 .git/
