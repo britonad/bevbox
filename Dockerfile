@@ -42,4 +42,4 @@ RUN apk add --no-cache --virtual .build-deps \
 COPY . .
 
 # Run docker entry point.
-CMD [ "./docker-entrypoint.sh" ]
+CMD [ "/bin/sh", "./start-cmd.sh" ]
