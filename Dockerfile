@@ -41,5 +41,5 @@ RUN apk add --no-cache --virtual .build-deps \
 # We copy the rest of the codebase into the image.
 COPY . .
 
-# Run docker entry point.
+# Run docker start command.
 CMD [ "/bin/sh", "./start-cmd.sh" ]
