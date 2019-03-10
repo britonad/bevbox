@@ -1,5 +1,5 @@
 #!/bin/sh
-# Backend Dockerfile entry point.
+# Backend Dockerfile start command.
 
 # Run migrations.
 python manage.py db upgrade
