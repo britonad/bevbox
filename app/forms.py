@@ -7,7 +7,7 @@ from wtforms.fields import (
     StringField,
     TextAreaField
 )
-from wtforms.validators import DataRequired, Email, Length
+from wtforms.validators import DataRequired, Email, Length, ValidationError
 
 
 class BaseForm(FlaskForm):
@@ -58,21 +58,29 @@ class SubscriptionForm(BaseForm):
         label=_('Subscription type'),
         default='middle',
         choices=(
-            ('junior', _('Junior 1 month / ₴ 1705')),
+            ('junior', _('Junior 1 month / ₴ 2391')),
             (
                 'middle',
                 _(
-                    'Middle 2 months / ₴ 3239 (you save 5%(percent)s)',
+                    'Middle 2 months / ₴ 4542 (you save 5%(percent)s)',
                     percent='%'
                 )
             ),
             (
                 'senior',
                 _(
-                    'Senior 3 months / ₴ 4603 (you save 10%(percent)s)',
+                    'Senior 3 months / ₴ 6455 (you save 10%(percent)s)',
                     percent='%'
                 )
             )
+        )
+    )
+    payment_option = RadioField(
+        label=_('Payment option'),
+        default='cc',
+        choices=(
+            ('cc', _('Credit Card Prepayment')),
+            ('ip', _('Imposed Payment'))
         )
     )
     city = StringField(
@@ -85,14 +93,40 @@ class SubscriptionForm(BaseForm):
         validators=[DataRequired()],
         render_kw={'placeholder': 1}
     )
-    additions = BooleanField(
-        label=_('Do you need guillotine & matches as well?'),
+    # delivery_option = RadioField(
+    #     label=_('Delivery option'),
+    #     default='ww',
+    #     choices=(
+    #         ('ww', _('Warehouse-Warehouse')),
+    #         ('wa', _('Warehouse-Address'))
+    #     )
+    # )
+    # delivery_address = StringField(
+    #     label=_('Delivery Address'),
+    #     validators=[Length(max=256)],
+    #     render_kw={'placeholder': _('Verkhniy Val, 31')},
+    #     description=_(
+    #         'You can omit this field if you chose delivery option '
+    #         'Warehouse-Warehouse.'
+    #     )
+    # )
+    matches = BooleanField(
+        label=_('Matches'),
         default=True,
-        description=_(
-            'Uncheck if you do not need it and yes, it reduces the cost of '
-            'the box by ₴ 129. E.g.: Junior will cost ₴ 1576, Middle ₴ 2981, '
-            'Senior ₴ 4216.'
-        )
+        render_kw={},
+        description=_('Not include matches? - ₴50')
+    )
+    stones = BooleanField(
+        label=_('Stones'),
+        default=True,
+        render_kw={},
+        description=_('Not include stones? - ₴200')
+    )
+    guillotine = BooleanField(
+        label=_('Guillotine'),
+        default=True,
+        render_kw={},
+        description=_('Not include guillotine? - ₴80')
     )
     preferences = TextAreaField(
         label=_('Preferences'),
@@ -104,12 +138,41 @@ class SubscriptionForm(BaseForm):
             )
         }
     )
+    callback = BooleanField(
+        label=_('Callback'),
+        default=True,
+        render_kw={'checked': 'checked'},
+        description=_(
+            'Call me back to confirm my order.'
+        )
+    )
 
     def __init__(self, *args, **kwargs):
         super().__init__(*args, **kwargs)
 
-        # Set checked attr..
-        if self.additions.data:
-            self.additions.render_kw = {'checked': 'checked'}
-        else:
-            self.additions.render_kw = {'checked': ''}
+        # TODO: Follow SOLID.
+        # Set checked attr.
+        checked = {'checked': 'checked'}
+        if self.is_submitted():
+            if self.matches.data:
+                self.matches.render_kw = checked
+
+            if self.stones.data:
+                self.stones.render_kw = checked
+
+            if self.guillotine.data:
+                self.guillotine.render_kw = checked
+
+            if not self.callback.data:
+                self.callback.render_kw = {}
+
+    # def validate_delivery_address(self, field):
+    #     # TODO: Fix hardcode.
+    #     if not field.data and self.delivery_option.data == 'wa':
+    #         raise ValidationError(
+    #             _(
+    #                 'Delivery address should be set when delivery option is '
+    #                 'Warehouse-Address.'
+    #             )
+    #         )
+
