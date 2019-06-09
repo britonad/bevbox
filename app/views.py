@@ -25,9 +25,7 @@ def home():
 
 @app_bp.route('/subscription/', methods=['GET', 'POST'])
 def subscription():
-    context = {}
     subscription_type = request.args.get('type', 'middle')
-
     form = SubscriptionForm(request.form)
 
     if form.validate_on_submit():
@@ -44,21 +42,33 @@ def subscription():
             'у відділення "Нової Пошти" <b>№{}</b>.\n'
             'Email: <a href="mailto:{email}">{email}</a>\n'
             'Телефон: <a href="tel:{tel}">{tel}</a>\n'
-            'Гільйотина та сірники: <b>{}</b>\n'
-            'Побажання: <b>{}</b>'
+            'Варіант оплати: <b>{}</b>\n'
+            # 'Варіант доставки: <b>{}</b>\n'
+            # 'Адресса доставки: <b>{}</b>\n'
+            'Сірники: <b>{}</b>\n'
+            'Каміньці: <b>{}</b>\n'
+            'Гільйотина: <b>{}</b>\n'
+            'Побажання: <b>{}</b>\n'
+            'Callback: <b>{}</b>'
         ).format(
             order.id,
             str(escape(order_data['name'].strip())),
             str(escape(order_data['city'].strip())),
             str(escape(order_data['subscription_type'].strip())),
             str(escape(order_data['department'])),
-            'так' if order_data['additions'] else 'ні',
+            str(escape(order_data['payment_option'])),
+            # str(escape(order_data['delivery_option'])),
+            # str(escape(order_data.get('delivery_address', '-').strip())),
+            'ні' if order_data['matches'] else 'так',
+            'ні' if order_data['stones'] else 'так',
+            'ні' if order_data['guillotine'] else 'так',
             str(
                 escape(
                     order_data['preferences']
                     if order_data['preferences'] else 'Немає'
                 ).strip()
             ),
+            'телефонувати' if order_data['callback'] else 'не телефонувати',
             email=str(escape(order_data['email'].strip())),
             tel=str(escape(order_data['phone'].strip()))
         )
@@ -72,7 +82,6 @@ def subscription():
     return render_template(
         'app/subscription.html',
         form=form,
-        context=context,
         subscription_type=subscription_type
     )
 
