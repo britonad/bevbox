@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Bevbox 1.0.0\n"
 "Report-Msgid-Bugs-To: vladyslav.krylasov@gmail.com\n"
-"POT-Creation-Date: 2019-02-27 10:07+0200\n"
+"POT-Creation-Date: 2019-06-09 21:22+0300\n"
 "PO-Revision-Date: 2019-01-20 17:42+0200\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: ru\n"
@@ -52,51 +52,82 @@ msgid "Subscription type"
 msgstr "Тип подписки"
 
 #: app/forms.py:61
-msgid "Junior 1 month / ₴ 1705"
-msgstr "Дебютант 1 месяц / ₴ 1705"
+msgid "Junior 1 month / ₴ 2391"
+msgstr "Дебютант 1 месяц / ₴ 2391"
 
 #: app/forms.py:64
 #, python-format
-msgid "Middle 2 months / ₴ 3239 (you save 5%(percent)s)"
-msgstr "Класик 2 месяца / ₴ 3239 (вы сэкономите 5%(percent)s)"
+msgid "Middle 2 months / ₴ 4542 (you save 5%(percent)s)"
+msgstr "Класик 2 месяца / ₴ 4542 (вы сэкономите 5%(percent)s)"
 
 #: app/forms.py:71
 #, python-format
-msgid "Senior 3 months / ₴ 4603 (you save 10%(percent)s)"
-msgstr "Ценитель / ₴ 4603 (вы сэкономите 10%(percent)s) "
+msgid "Senior 3 months / ₴ 6455 (you save 10%(percent)s)"
+msgstr "Ценитель / ₴ 6455 (вы сэкономите 10%(percent)s) "
 
 #: app/forms.py:79
+msgid "Payment option"
+msgstr "Вариант оплаты"
+
+#: app/forms.py:82
+msgid "Credit Card Prepayment"
+msgstr "Предоплата кредитной картой"
+
+#: app/forms.py:83
+msgid "Imposed Payment"
+msgstr "Наложенный платеж"
+
+#: app/forms.py:87
 msgid "City"
 msgstr "Город"
 
-#: app/forms.py:81 templates/app/home.html:1007
+#: app/forms.py:89 templates/app/home.html:1007
 msgid "Kyiv"
 msgstr "Киев"
 
-#: app/forms.py:84
+#: app/forms.py:92
 msgid "Department of New Post (NovaPoshta)"
 msgstr "Отделение Новой Почты"
 
-#: app/forms.py:89
-msgid "Do you need guillotine & matches as well?"
-msgstr "Вам нужны спички и гильотина?"
+#: app/forms.py:114
+msgid "Matches"
+msgstr "Спички"
 
-#: app/forms.py:91
-msgid ""
-"Uncheck if you do not need it and yes, it reduces the cost of the box by "
-"₴ 129. E.g.: Junior will cost ₴ 1576, Middle ₴ 2981, Senior ₴ 4216."
-msgstr ""
-"Снимите флажок, если вам это не нужно, и да, это снижает стоимость "
-"коробки на ₴ 129. Например: Дебютант будет стоить ₴ 1576, Класик ₴ 2981, "
-"Ценитель ₴ 4216."
+#: app/forms.py:117
+msgid "Not include matches? - ₴50"
+msgstr "Не добавлять спички? - ₴50"
 
-#: app/forms.py:98
+#: app/forms.py:120
+msgid "Stones"
+msgstr "Камни"
+
+#: app/forms.py:123
+msgid "Not include stones? - ₴200"
+msgstr "Не добавлять камни? - ₴200"
+
+#: app/forms.py:126
+msgid "Guillotine"
+msgstr "Гильотина"
+
+#: app/forms.py:129
+msgid "Not include guillotine? - ₴80"
+msgstr "Не добавлять гильотину? - ₴80"
+
+#: app/forms.py:132
 msgid "Preferences"
 msgstr "Препочтения"
 
-#: app/forms.py:101
+#: app/forms.py:135
 msgid "I like a single malt whiskey etc. Leave blank if doesnt have one."
 msgstr "Мне нравится односолодовый виски и т.д. Оставьте пустым, если нет."
+
+#: app/forms.py:142
+msgid "Callback"
+msgstr "Callback"
+
+#: app/forms.py:145
+msgid "Call me back to confirm my order."
+msgstr "Перезвони мне, чтобы подтвердить мой заказ."
 
 #: templates/404.html:3
 msgid "Page not found"
@@ -1043,23 +1074,23 @@ msgstr "Bevbox cтраница подписки. "
 msgid "SUBSCRIPTION"
 msgstr "ПОДПИСКА"
 
-#: templates/app/subscription.html:244
+#: templates/app/subscription.html:280
 msgid "Subscribe now"
 msgstr "Подписаться сейчас"
 
-#: templates/app/subscription.html:285
+#: templates/app/subscription.html:321
 msgid "By clicking the button you agree our"
 msgstr "Нажимая кнопку, вы соглашаетесь с нашей"
 
-#: templates/app/subscription.html:290
+#: templates/app/subscription.html:326
 msgid "privacy policy"
 msgstr "политикой конфиденциальности"
 
-#: templates/app/subscription.html:297
+#: templates/app/subscription.html:333
 msgid "terms of use"
 msgstr "условиями использования"
 
-#: templates/app/subscription.html:304
+#: templates/app/subscription.html:340
 msgid "refund policy"
 msgstr "политикой возврата"
 
@@ -1667,14 +1698,4 @@ msgid ""
 msgstr ""
 "Если у вас есть какие-либо вопросы об этих Условиях использования, "
 "пожалуйста, свяжитесь с нами:"
-
-#~ msgid ""
-#~ "We are a young, hard-working team of 2 people who\n"
-#~ "                                        provide a "
-#~ "subscription service for whiskey, cigars, "
-#~ "and magazines."
-#~ msgstr ""
-#~ "Мы молодая, трудолюбивая команда из 2"
-#~ " человек, которая предоставляет услуги "
-#~ "подписки на виски, сигары и журналы."
 
