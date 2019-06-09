@@ -193,6 +193,11 @@
                       )
                   }}
                   {{
+                      render_radio_input(
+                        form.payment_option
+                      )
+                  }}
+                  {{
                       render_field(
                         form.city,
                         **form.city.render_kw
@@ -204,10 +209,35 @@
                         **form.department.render_kw
                       )
                   }}
+                  {#
+                  {{
+                      render_radio_input(
+                        form.delivery_option
+                      )
+                  }}
+                  {{
+                      render_field(
+                        form.delivery_address,
+                        **form.delivery_address.render_kw
+                      )
+                  }}
+                  #}
                   {{
                       render_checkbox_input(
-                        form.additions,
-                        **form.additions.render_kw
+                        form.matches,
+                        **form.matches.render_kw
+                      )
+                  }}
+                  {{
+                      render_checkbox_input(
+                        form.stones,
+                        **form.stones.render_kw
+                      )
+                  }}
+                  {{
+                      render_checkbox_input(
+                        form.guillotine,
+                        **form.guillotine.render_kw
                       )
                   }}
                   {{
@@ -215,6 +245,12 @@
                         form.preferences,
                         style='color:#000000; border:1px solid #949494; height:102px',
                         **form.preferences.render_kw
+                      )
+                  }}
+                  {{
+                      render_checkbox_input(
+                        form.callback,
+                        **form.callback.render_kw
                       )
                   }}
                  <!--[if IE 8]>
