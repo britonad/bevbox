@@ -1,5 +1,5 @@
 import requests
-from flask import current_app
+from flask import current_app, render_template
 
 
 def send_email(
@@ -28,8 +28,8 @@ def send_email(
 
 
 def send_message_to_channel(cid: str, text: str) -> dict:
-    """
-    Sends a message by provided a text argument to a specified Telegram channel.
+    """Sends a message by provided a text argument to a specified Telegram
+    channel.
     """
 
     api_url = '{}/bot{}/sendMessage'.format(
@@ -45,3 +45,31 @@ def send_message_to_channel(cid: str, text: str) -> dict:
             'parse_mode': 'html'
         }
     ).json()
+
+
+def send_invoice(
+        email: str, message: str, subject: str, **kwargs: dict
+) -> str:
+    """Send a message to users that subscribed to a mailing list."""
+
+    response = requests.post(
+        'https://api.mailgun.net/v3/{}/messages'.format(
+            current_app.config['MAILGUN_DOMAIN_NAME']
+        ),
+        auth=('api', current_app.config['MAILGUN_API_KEY']),
+        data={
+            'from': 'Bevbox Company <{}>'.format(
+                current_app.config['EMAIL_RECIPIENT']
+            ),
+            'to': email,
+            'subject': subject,
+            'html': render_template(
+                'app/email_template.html',
+                subject=subject,
+                message=message,
+                **kwargs
+            )
+        }
+    ).text
+
+    return response
