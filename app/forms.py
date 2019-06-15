@@ -7,13 +7,11 @@ from wtforms.fields import (
     StringField,
     TextAreaField
 )
-from wtforms.validators import DataRequired, Email, Length, ValidationError
+from wtforms.validators import DataRequired, Email, Length
 
 
 class BaseForm(FlaskForm):
-    """
-    A base form representation.
-    """
+    """A base form representation."""
 
     email = StringField(
         label=_('E-mail'),
@@ -28,9 +26,7 @@ class BaseForm(FlaskForm):
 
 
 class ContactForm(BaseForm):
-    """
-    A representation of a contact form.
-    """
+    """A representation of a contact form."""
 
     subject = StringField(
         label=_('Subject'),
@@ -45,9 +41,15 @@ class ContactForm(BaseForm):
 
 
 class SubscriptionForm(BaseForm):
-    """
-    A representation of a subscription form.
-    """
+    """A representation of a subscription form."""
+
+    # Payment options values.
+    CREDIT_CARD = 'cc'
+    IMPOSED_PAYMENT = 'ip'
+    # Subscriptions options values.
+    JUNIOR = 'junior'
+    MIDDLE = 'middle'
+    SENIOR = 'senior'
 
     phone = StringField(
         label=_('Phone'),
@@ -58,16 +60,16 @@ class SubscriptionForm(BaseForm):
         label=_('Subscription type'),
         default='middle',
         choices=(
-            ('junior', _('Junior 1 month / ₴ 2391')),
+            (JUNIOR, _('Junior 1 month / ₴ 2391')),
             (
-                'middle',
+                MIDDLE,
                 _(
                     'Middle 2 months / ₴ 4542 (you save 5%(percent)s)',
                     percent='%'
                 )
             ),
             (
-                'senior',
+                SENIOR,
                 _(
                     'Senior 3 months / ₴ 6455 (you save 10%(percent)s)',
                     percent='%'
@@ -77,10 +79,10 @@ class SubscriptionForm(BaseForm):
     )
     payment_option = RadioField(
         label=_('Payment option'),
-        default='cc',
+        default=CREDIT_CARD,
         choices=(
-            ('cc', _('Credit Card Prepayment')),
-            ('ip', _('Imposed Payment'))
+            (CREDIT_CARD, _('Credit Card Prepayment')),
+            (IMPOSED_PAYMENT, _('Imposed Payment'))
         )
     )
     city = StringField(
