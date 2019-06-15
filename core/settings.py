@@ -40,6 +40,7 @@ class Dev(Common):
     MAILGUN_API_KEY = ''
     EMAIL_RECIPIENT = ''
     MAILGUN_DOMAIN_NAME = ''
+    CREDIT_CARD = ''
 
 
 class Prod(Common):
@@ -54,3 +55,4 @@ class Prod(Common):
     MAILGUN_API_KEY = os.environ.get('MAILGUN_API_KEY')
     MAILGUN_DOMAIN_NAME = os.environ.get('MAILGUN_DOMAIN_NAME')
     EMAIL_RECIPIENT = os.environ.get('EMAIL_RECIPIENT')
+    CREDIT_CARD = os.environ.get('CREDIT_CARD')
