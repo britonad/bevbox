@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Bevbox 1.0.0\n"
 "Report-Msgid-Bugs-To: vladyslav.krylasov@gmail.com\n"
-"POT-Creation-Date: 2019-06-09 21:22+0300\n"
+"POT-Creation-Date: 2019-06-15 14:10+0300\n"
 "PO-Revision-Date: 2019-01-20 17:42+0200\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: uk\n"
@@ -19,117 +19,129 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 2.6.0\n"
 
-#: app/forms.py:19
+#: app/forms.py:17
 msgid "E-mail"
 msgstr "Електронна пошта"
 
-#: app/forms.py:24
+#: app/forms.py:22
 msgid "Name"
 msgstr "Ім'я"
 
-#: app/forms.py:26
+#: app/forms.py:24
 msgid "John Doe"
 msgstr "Микола Чередник"
 
-#: app/forms.py:36
+#: app/forms.py:32
 msgid "Subject"
 msgstr "Тема"
 
-#: app/forms.py:38
+#: app/forms.py:34
 msgid "A subject."
 msgstr "Тема листа."
 
-#: app/forms.py:41
+#: app/forms.py:37
 msgid "Message"
 msgstr "Повідомлення"
 
-#: app/forms.py:53
+#: app/forms.py:55
 msgid "Phone"
 msgstr "Телефон"
 
-#: app/forms.py:58
+#: app/forms.py:60
 msgid "Subscription type"
 msgstr "Тип підписування"
 
-#: app/forms.py:61
+#: app/forms.py:63
 msgid "Junior 1 month / ₴ 2391"
 msgstr "Дебютант 1 місяць / ₴ 2391"
 
-#: app/forms.py:64
+#: app/forms.py:66
 #, python-format
 msgid "Middle 2 months / ₴ 4542 (you save 5%(percent)s)"
 msgstr "Класик 2 місяць / ₴ 4542 (ви збергігаєте 5%(percent)s)"
 
-#: app/forms.py:71
+#: app/forms.py:73
 #, python-format
 msgid "Senior 3 months / ₴ 6455 (you save 10%(percent)s)"
 msgstr "Шанувальник 3 місяць / ₴ 6455 (ви збергігаєте 10%(percent)s)"
 
-#: app/forms.py:79
+#: app/forms.py:81
 msgid "Payment option"
 msgstr "Варіант оплати"
 
-#: app/forms.py:82
+#: app/forms.py:84
 msgid "Credit Card Prepayment"
 msgstr "Передоплата кредитною карткою"
 
-#: app/forms.py:83
+#: app/forms.py:85
 msgid "Imposed Payment"
 msgstr "Накладений платіж"
 
-#: app/forms.py:87
+#: app/forms.py:89
 msgid "City"
 msgstr "Місто"
 
-#: app/forms.py:89 templates/app/home.html:1007
+#: app/forms.py:91 templates/app/home.html:1007
 msgid "Kyiv"
 msgstr "Київ"
 
-#: app/forms.py:92
+#: app/forms.py:94
 msgid "Department of New Post (NovaPoshta)"
 msgstr "Відділення Нової Пошти"
 
-#: app/forms.py:114
+#: app/forms.py:116
 msgid "Matches"
 msgstr "Сірники"
 
-#: app/forms.py:117
+#: app/forms.py:119
 msgid "Not include matches? - ₴50"
 msgstr "Не додавати сірники? - ₴50"
 
-#: app/forms.py:120
+#: app/forms.py:122
 msgid "Stones"
 msgstr "Камені"
 
-#: app/forms.py:123
+#: app/forms.py:125
 msgid "Not include stones? - ₴200"
 msgstr "Не додавати камені? - ₴200"
 
-#: app/forms.py:126
+#: app/forms.py:128
 msgid "Guillotine"
 msgstr "Гільйотина"
 
-#: app/forms.py:129
+#: app/forms.py:131
 msgid "Not include guillotine? - ₴80"
 msgstr "Не додавати гільйотину? - ₴80"
 
-#: app/forms.py:132
+#: app/forms.py:134
 msgid "Preferences"
 msgstr "Вподобання"
 
-#: app/forms.py:135
+#: app/forms.py:137
 msgid "I like a single malt whiskey etc. Leave blank if doesnt have one."
 msgstr ""
 "Мені подобається односолодовий віскі і т.д. Залиште порожнім, якщо у вас "
 "їх немає."
 
-#: app/forms.py:142
+#: app/forms.py:144
 msgid "Callback"
 msgstr "Callback"
 
-#: app/forms.py:145
+#: app/forms.py:147
 msgid "Call me back to confirm my order."
 msgstr "Передзвоніть мені, щоб підтвердити моє замовлення."
+
+#: app/utils.py:26 templates/app/home.html:726
+msgid "Junior"
+msgstr "Дебютант"
+
+#: app/utils.py:27 templates/app/home.html:778
+msgid "Middle"
+msgstr "Класик"
+
+#: app/utils.py:28 templates/app/home.html:831
+msgid "Senior"
+msgstr "Шанувальник"
 
 #: templates/404.html:3
 msgid "Page not found"
@@ -374,10 +386,6 @@ msgstr "Наші підписування"
 msgid "Here's list of our available subscriptions plans."
 msgstr "Ось список наших доступних підписуваннь."
 
-#: templates/app/home.html:726
-msgid "Junior"
-msgstr "Дебютант"
-
 #: templates/app/home.html:738
 msgid ""
 "You will receive one time a box\n"
@@ -386,10 +394,6 @@ msgid ""
 msgstr ""
 "Ви отримаєте один раз коробку, наповнену з віскі, сигарою та журналом за "
 "цей тип підписування."
-
-#: templates/app/home.html:778
-msgid "Middle"
-msgstr "Класик"
 
 #: templates/app/home.html:781
 #, python-format
@@ -404,10 +408,6 @@ msgid ""
 msgstr ""
 "У цьому випадку ви отримаєте дві унікальні коробки протягом двох місяців,"
 " наповненними з віскі, сигарою і журналом."
-
-#: templates/app/home.html:831
-msgid "Senior"
-msgstr "Шанувальник"
 
 #: templates/app/home.html:834
 #, python-format
@@ -1564,3 +1564,27 @@ msgid ""
 "If you have any questions about this Terms of Use,\n"
 "              please contact us:"
 msgstr ""
+
+#: templates/invoice/invoice_msg.html:1
+#, python-format
+msgid "Dear, %(name)s"
+msgstr "Любий, %(name)s"
+
+#: templates/invoice/invoice_msg.html:3
+#, python-format
+msgid ""
+"Thank you for choosing of \"%(subscription_type)s\" type of the "
+"subscription"
+msgstr "Дякуємо, за вибір типа підписки \"%(subscription_type)s\""
+
+#: templates/invoice/invoice_msg.html:8
+msgid "The total sum to be paid"
+msgstr "Загальна сума до сплати"
+
+#: templates/invoice/invoice_msg.html:9
+msgid "Credit card number"
+msgstr "Номер кредитної карти"
+
+#~ msgid "Bevbox Invoice"
+#~ msgstr ""
+
