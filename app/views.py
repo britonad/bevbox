@@ -12,7 +12,13 @@ from jinja2.filters import escape
 
 from app.forms import ContactForm, SubscriptionForm
 from app.models import Order
-from app.utils import send_email, send_message_to_channel
+from app.utils import (
+    create_invoice_msg,
+    create_order_notification_msg,
+    send_email,
+    send_invoice,
+    send_message_to_channel,
+)
 from core import db
 
 app_bp = Blueprint('app', __name__)
@@ -25,57 +31,32 @@ def home():
 
 @app_bp.route('/subscription/', methods=['GET', 'POST'])
 def subscription():
-    subscription_type = request.args.get('type', 'middle')
+    subscription_type = request.args.get('type', SubscriptionForm.MIDDLE)
     form = SubscriptionForm(request.form)
 
     if form.validate_on_submit():
         order_data = deepcopy(form.data)
         order_data.pop('csrf_token')
 
+        # Save to a DB order info.
         order = Order(**order_data)
         db.session.add(order)
         db.session.commit()
 
-        msg = (
-            'Замовлення <b>№{}</b>.\n'
-            'Клієнт <b>{}</b> з міста <b>{}</b> замовив підписку <b>{}</b> '
-            'у відділення "Нової Пошти" <b>№{}</b>.\n'
-            'Email: <a href="mailto:{email}">{email}</a>\n'
-            'Телефон: <a href="tel:{tel}">{tel}</a>\n'
-            'Варіант оплати: <b>{}</b>\n'
-            # 'Варіант доставки: <b>{}</b>\n'
-            # 'Адресса доставки: <b>{}</b>\n'
-            'Сірники: <b>{}</b>\n'
-            'Каміньці: <b>{}</b>\n'
-            'Гільйотина: <b>{}</b>\n'
-            'Побажання: <b>{}</b>\n'
-            'Callback: <b>{}</b>'
-        ).format(
-            order.id,
-            str(escape(order_data['name'].strip())),
-            str(escape(order_data['city'].strip())),
-            str(escape(order_data['subscription_type'].strip())),
-            str(escape(order_data['department'])),
-            str(escape(order_data['payment_option'])),
-            # str(escape(order_data['delivery_option'])),
-            # str(escape(order_data.get('delivery_address', '-').strip())),
-            'ні' if order_data['matches'] else 'так',
-            'ні' if order_data['stones'] else 'так',
-            'ні' if order_data['guillotine'] else 'так',
-            str(
-                escape(
-                    order_data['preferences']
-                    if order_data['preferences'] else 'Немає'
-                ).strip()
-            ),
-            'телефонувати' if order_data['callback'] else 'не телефонувати',
-            email=str(escape(order_data['email'].strip())),
-            tel=str(escape(order_data['phone'].strip()))
-        )
+        # Notify about an order.
         send_message_to_channel(
-            current_app.config['CHANNEL_ID'],
-            msg
+            cid=current_app.config['CHANNEL_ID'],
+            text=create_order_notification_msg(order, order_data)
         )
+
+        # Send an invoice to a customer in case of choosing credit card
+        # payment option.
+        if order_data['payment_option'] == SubscriptionForm.CREDIT_CARD:
+            send_invoice(
+                email=str(escape(order_data['email'].strip())),
+                message=create_invoice_msg(order_data),
+                subject='Bevbox Invoice'
+            )
 
         return redirect(url_for('app.success'))
 
