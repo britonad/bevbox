@@ -1,0 +1,9 @@
+<p>{{ _('Dear, %(name)s', name=name) }}.</p>
+<p>
+  {{ _(
+    'Thank you for choosing of "%(subscription_type)s" type of the subscription',
+    subscription_type=subscription_type
+  )
+  }}.
+<p><b> {{ _('The total sum to be paid') }}:</b> ₴{{ cost }}.</p>
+<p><b>{{ _('Credit card number') }}:</b> {{ credit_card }}.</p>
