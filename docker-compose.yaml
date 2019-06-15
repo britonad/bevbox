@@ -28,6 +28,7 @@ services:
       MAILGUN_API_KEY: ${MAILGUN_API_KEY}
       MAILGUN_DOMAIN_NAME: ${MAILGUN_DOMAIN_NAME}
       SQLALCHEMY_DATABASE_URI: ${SQLALCHEMY_DATABASE_URI}
+      CREDIT_CARD: ${CREDIT_CARD}
     depends_on:
       - postgresql
     restart: always
