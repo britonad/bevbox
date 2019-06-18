@@ -1,9 +1,11 @@
 import os
 
+import sentry_sdk
 from flask import abort, Flask, g, request, render_template
 from flask_babel import Babel
 from flask_sqlalchemy import SQLAlchemy
 from flask_migrate import Migrate
+from sentry_sdk.integrations.flask import FlaskIntegration
 
 try:
     from core import local_settings as settings
@@ -45,6 +47,9 @@ def create_app() -> Flask:
     babel.init_app(application)
     db.init_app(application)
     migration.init_app(application, db)
+
+    # Initialize sentry integration.
+    sentry_sdk.init(integrations=[FlaskIntegration()])
 
     @babel.localeselector
     def get_locale():

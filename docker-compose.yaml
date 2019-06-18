@@ -1,5 +1,5 @@
 # Bevbox docker-compose.yaml
-version: '3.7'
+version: "3.7"
 
 services:
 
@@ -29,6 +29,7 @@ services:
       MAILGUN_DOMAIN_NAME: ${MAILGUN_DOMAIN_NAME}
       SQLALCHEMY_DATABASE_URI: ${SQLALCHEMY_DATABASE_URI}
       CREDIT_CARD: ${CREDIT_CARD}
+      SENTRY_DSN: ${SENTRY_DSN}
     depends_on:
       - postgresql
     restart: always
