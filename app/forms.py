@@ -157,9 +157,6 @@ class SubscriptionForm(BaseForm):
             if self.guillotine.data:
                 self.guillotine.render_kw = checked
 
-            if not self.callback.data:
-                self.callback.render_kw = {}
-
     # def validate_delivery_address(self, field):
     #     # TODO: Fix hardcode.
     #     if not field.data and self.delivery_option.data == 'wa':
