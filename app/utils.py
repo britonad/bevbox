@@ -85,7 +85,7 @@ def create_order_notification_msg(order: Order, order_data: dict) -> str:
         'Гільйотина: <b>{}</b>\n'
         'Побажання: <b>{}</b>\n'
         '\n'
-        '<b>Вартість</b>: <i>{}</i>'
+        '<b>Вартість</b>: <i>₴{}</i>'
     ).format(
         order.id,
         str(escape(order_data['name'].strip())),
