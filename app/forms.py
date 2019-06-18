@@ -140,14 +140,6 @@ class SubscriptionForm(BaseForm):
             )
         }
     )
-    callback = BooleanField(
-        label=_('Callback'),
-        default=True,
-        render_kw={'checked': 'checked'},
-        description=_(
-            'Call me back to confirm my order.'
-        )
-    )
 
     def __init__(self, *args, **kwargs):
         super().__init__(*args, **kwargs)

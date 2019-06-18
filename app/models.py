@@ -21,7 +21,6 @@ class Order(db.Model):
     stones = db.Column(db.Boolean, nullable=True)
     guillotine = db.Column(db.Boolean, nullable=True)
     preferences = db.Column(db.Text, nullable=True)
-    callback = db.Column(db.Boolean, nullable=True)
 
     def __repr__(self):
         return '<Order {}-{}>'.format(self.email, self.id)

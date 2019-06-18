@@ -81,7 +81,6 @@ def create_order_notification_msg(order: Order, order_data: dict) -> str:
         'Каміньці: <b>{}</b>\n'
         'Гільйотина: <b>{}</b>\n'
         'Побажання: <b>{}</b>\n'
-        'Callback: <b>{}</b>'
     ).format(
         order.id,
         str(escape(order_data['name'].strip())),
@@ -100,7 +99,6 @@ def create_order_notification_msg(order: Order, order_data: dict) -> str:
                 if order_data['preferences'] else 'Немає'
             ).strip()
         ),
-        'телефонувати' if order_data['callback'] else 'не телефонувати',
         email=str(escape(order_data['email'].strip())),
         tel=str(escape(order_data['phone'].strip()))
     )
