@@ -112,6 +112,12 @@ class SubscriptionForm(BaseForm):
     #         'Warehouse-Warehouse.'
     #     )
     # )
+    cigar = BooleanField(
+        label=_('Cigar'),
+        default=True,
+        render_kw={},
+        description=_('Not include cigar? - ₴500')
+    )
     matches = BooleanField(
         label=_('Matches'),
         default=True,
@@ -148,6 +154,9 @@ class SubscriptionForm(BaseForm):
         # Set checked attr.
         checked = {'checked': 'checked'}
         if self.is_submitted():
+            if self.cigar.data:
+                self.cigar.render_kw = checked
+
             if self.matches.data:
                 self.matches.render_kw = checked
 
@@ -156,6 +165,7 @@ class SubscriptionForm(BaseForm):
 
             if self.guillotine.data:
                 self.guillotine.render_kw = checked
+
 
     # def validate_delivery_address(self, field):
     #     # TODO: Fix hardcode.

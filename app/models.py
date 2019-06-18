@@ -17,6 +17,7 @@ class Order(db.Model):
     department = db.Column(db.Integer, nullable=False)
     # delivery_option = db.Column(db.String(2), nullable=False)
     # delivery_address = db.Column(db.String(256), nullable=True)
+    cigar = db.Column(db.Boolean, nullable=True)
     matches = db.Column(db.Boolean, nullable=True)
     stones = db.Column(db.Boolean, nullable=True)
     guillotine = db.Column(db.Boolean, nullable=True)

@@ -224,6 +224,12 @@
                   #}
                   {{
                       render_checkbox_input(
+                        form.cigar,
+                        **form.matches.render_kw
+                      )
+                  }}
+                  {{
+                      render_checkbox_input(
                         form.matches,
                         **form.matches.render_kw
                       )

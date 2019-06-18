@@ -34,11 +34,13 @@ def get_subscription_name(subscription_type: str) -> str:
 def calculate_subscription_cost(order_data: dict) -> int:
     """Calculates cost of subscription that relies on additions."""
 
+    # TODO: Decouple functionality.
     subscription_price = get_price(order_data['subscription_type'])
+    cigar = 500 if order_data['cigar'] else 0
     matches = 50 if order_data['matches'] else 0
     guillotine = 80 if order_data['guillotine'] else 0
     stones = 200 if order_data['stones'] else 0
-    reduced_goods_price = matches + guillotine + stones
+    reduced_goods_price = cigar + matches + guillotine + stones
 
     if order_data['subscription_type'] == SubscriptionForm.SENIOR:
         reduced_goods_price *= 3
@@ -77,6 +79,7 @@ def create_order_notification_msg(order: Order, order_data: dict) -> str:
         'Варіант оплати: <b>{}</b>\n'
         # 'Варіант доставки: <b>{}</b>\n'
         # 'Адресса доставки: <b>{}</b>\n'
+        'Сигара: <b>{}</b>\n'
         'Сірники: <b>{}</b>\n'
         'Каміньці: <b>{}</b>\n'
         'Гільйотина: <b>{}</b>\n'
@@ -90,6 +93,7 @@ def create_order_notification_msg(order: Order, order_data: dict) -> str:
         str(escape(order_data['payment_option'])),
         # str(escape(order_data['delivery_option'])),
         # str(escape(order_data.get('delivery_address', '-').strip())),
+        'ні' if order_data['cigar'] else 'так',
         'ні' if order_data['matches'] else 'так',
         'ні' if order_data['stones'] else 'так',
         'ні' if order_data['guillotine'] else 'так',
