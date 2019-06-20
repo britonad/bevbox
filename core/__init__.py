@@ -49,7 +49,10 @@ def create_app() -> Flask:
     migration.init_app(application, db)
 
     # Initialize sentry integration.
-    sentry_sdk.init(integrations=[FlaskIntegration()])
+    sentry_sdk.init(
+        environment=environment,
+        integrations=[FlaskIntegration()]
+    )
 
     @babel.localeselector
     def get_locale():
