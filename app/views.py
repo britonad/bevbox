@@ -31,8 +31,9 @@ def home():
 
 @app_bp.route('/subscription/', methods=['GET', 'POST'])
 def subscription():
-    subscription_type = request.args.get('type', SubscriptionForm.MIDDLE)
+    subscription_type = request.args.get('type', SubscriptionForm.JUNIOR)
     form = SubscriptionForm(request.form)
+    form.subscription_type.data = subscription_type
 
     if form.validate_on_submit():
         order_data = deepcopy(form.data)

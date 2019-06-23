@@ -58,7 +58,7 @@ class SubscriptionForm(BaseForm):
     )
     subscription_type = RadioField(
         label=_('Subscription type'),
-        default='middle',
+        default=MIDDLE,
         choices=(
             (JUNIOR, _('Junior 1 month / ₴ 2391')),
             (
