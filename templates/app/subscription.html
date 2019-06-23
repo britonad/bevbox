@@ -186,12 +186,14 @@
                         **form.phone.render_kw
                       )
                   }}
+                  {#
                   {{
                       render_radio_input(
                         form.subscription_type,
                         checked_value=subscription_type
                       )
                   }}
+                  #}
                   {{
                       render_radio_input(
                         form.payment_option

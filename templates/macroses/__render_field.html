@@ -8,7 +8,7 @@
           data-redactor-toolbar="no"
       >
         {# Renders an error as a label. #}
-        {{ field.errors.0 }}
+        {{ field.errors.0 }} {% if field.flags.required %}<b style="color: red;">*</b>{% endif %}
       </div>
       <div class="t-input-block">
         {{
@@ -27,7 +27,7 @@
           class="t-input-title t-descr t-descr_md"
           data-redactor-toolbar="no"
       >
-        {{ field.label }}
+        {{ field.label }} {% if field.flags.required %}<b style="color: red;">*</b>{% endif %}
       </div>
       <div class="t-input-block">
         {{
