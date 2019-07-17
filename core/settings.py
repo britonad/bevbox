@@ -31,7 +31,6 @@ class Dev(Common):
     """
 
     DEBUG = True
-    TESTING = True
     SQLALCHEMY_DATABASE_URI = 'postgresql://root:root@localhost/bevbox'
     SQLALCHEMY_TRACK_MODIFICATIONS = True
     SQLALCHEMY_ECHO = True
