@@ -8,9 +8,7 @@ STATIC_DIR = os.path.join(BASE_DIR, 'static')
 
 
 class Common:
-    """
-    Common settings class. All children inherit from this one.
-    """
+    """Common settings class. All children inherit from this one."""
 
     DEBUG = False
     SQLALCHEMY_TRACK_MODIFICATIONS = False
@@ -26,9 +24,7 @@ class Common:
 
 
 class Dev(Common):
-    """
-    Development settings for local development.
-    """
+    """Development settings for local development."""
 
     DEBUG = True
     SQLALCHEMY_DATABASE_URI = 'postgresql://root:root@localhost/bevbox'
@@ -42,10 +38,35 @@ class Dev(Common):
     CREDIT_CARD = ''
 
 
+class Testing(Common):
+    """Testing settings."""
+
+    DEBUG = True
+    TESTING = True
+
+    # Alchemy settings.
+    SQLALCHEMY_DATABASE_URI = 'sqlite://'
+    SQLALCHEMY_TRACK_MODIFICATIONS = True
+    SQLALCHEMY_ECHO = True
+
+    # Telegram settings.
+    CHANNEL_ID = ''
+    BOT_TOKEN = ''
+
+    # Mailgun settings.
+    MAILGUN_API_KEY = ''
+    MAILGUN_DOMAIN_NAME = ''
+    EMAIL_RECIPIENT = ''
+
+    # Credit card
+    CREDIT_CARD = '5411 1111 1111 1111'
+
+    # WTForms settings.
+    WTF_CSRF_ENABLED = False
+
+
 class Prod(Common):
-    """
-    Product settings.
-    """
+    """Product settings."""
 
     DEBUG = False
     SQLALCHEMY_DATABASE_URI = os.environ.get('SQLALCHEMY_DATABASE_URI')

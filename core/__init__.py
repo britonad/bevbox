@@ -36,7 +36,8 @@ def create_app() -> Flask:
     environment = os.environ.get('APP_ENV', 'dev')
     environments = {
         'dev': settings.Dev,
-        'prod': settings.Prod
+        'prod': settings.Prod,
+        'testing': settings.Testing
     }
     if environment in environments:
         application.config.from_object(environments[environment])
