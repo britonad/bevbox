@@ -21,9 +21,8 @@ migration = Migrate()
 
 
 def create_app() -> Flask:
-    """
-    This function creates application with predefined settings that depends on
-    environment variable of a system.
+    """This function creates application with predefined settings that
+    depends on environment variable of a system.
     """
 
     application = Flask(

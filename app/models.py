@@ -2,8 +2,7 @@ from core import db
 
 
 class Order(db.Model):
-    """
-    Order model representation. It basically interacts with a subscription
+    """Order model representation. It basically interacts with a subscription
     form.
     """
 
