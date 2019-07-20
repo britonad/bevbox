@@ -25,6 +25,7 @@ clean:
 	-@echo "### Cleaning *.pyc and .DS_Store files "
 	-@find . -name '*.pyc' -exec rm -f {} \;
 	-@find . -name '.DS_Store' -exec rm -f {} \;
+	-@find . -name '.swp' -exec rm -f {} \;
 
 create-pot:
 	-@echo "Creating pot and translation files."
@@ -49,4 +50,4 @@ compile-messages:
 
 tests:
 	-@echo "Running tests..."
-	-@coverage run --source=app -m pytest app/tests.py -v && coverage report
+	-@coverage run --source=app,core -m pytest app/tests.py -v && coverage report
